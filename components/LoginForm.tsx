@@ -24,14 +24,14 @@ export default function LoginForm() {
     try {
       let success = false;
       
-      if (useApiKey && apiKey) {
+      if (useApiKey && apiKeyId && privateKey) {
         // Use API key authentication
-        success = await kalshiAPI.loginWithApiKey(apiKey);
+        success = await kalshiAPI.loginWithApiKey(apiKeyId, privateKey);
         if (success) {
-          setCredentials({ email: '', password: '', apiKey });
+          setCredentials({ email: '', password: '', apiKey: `${apiKeyId}:${privateKey}` });
           setAuthenticated(true);
         } else {
-          setError('Invalid API key. Please check that you copied it correctly from Kalshi settings.');
+          setError('Invalid API credentials. Please check your API Key ID and Private Key.');
         }
       } else {
         // Use email/password
@@ -98,39 +98,55 @@ export default function LoginForm() {
             </div>
 
             {useApiKey ? (
-              <div>
-                <label htmlFor="apiKey" className="block text-sm font-medium text-slate-300 mb-2">
-                  Kalshi API Key
-                </label>
-                <div className="relative">
-                  <Key className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                  <input
-                    id="apiKey"
-                    type="password"
-                    value={apiKey}
-                    onChange={(e) => setApiKey(e.target.value)}
-                    className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                    placeholder="Enter your Kalshi API key"
-                    required
-                  />
+              <>
+                <div>
+                  <label htmlFor="apiKeyId" className="block text-sm font-medium text-slate-300 mb-2">
+                    API Key ID
+                  </label>
+                  <div className="relative">
+                    <Key className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                    <input
+                      id="apiKeyId"
+                      type="text"
+                      value={apiKeyId}
+                      onChange={(e) => setApiKeyId(e.target.value)}
+                      className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                      placeholder="Your API Key ID"
+                      required
+                    />
+                  </div>
                 </div>
-                <div className="mt-2 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
-                  <p className="text-xs text-yellow-400 mb-2">
-                    <strong>Important:</strong> Make sure to copy the entire API key including any prefixes.
-                  </p>
-                  <p className="text-xs text-slate-400">
-                    Get your API key from{' '}
-                    <a
-                      href="https://kalshi.com/settings/api"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-400 hover:text-blue-300 underline"
-                    >
-                      Kalshi Settings → API
-                    </a>
-                  </p>
+
+                <div>
+                  <label htmlFor="privateKey" className="block text-sm font-medium text-slate-300 mb-2">
+                    Private Key
+                  </label>
+                  <div className="relative">
+                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                    <input
+                      id="privateKey"
+                      type="password"
+                      value={privateKey}
+                      onChange={(e) => setPrivateKey(e.target.value)}
+                      className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                      placeholder="Your Private Key"
+                      required
+                    />
+                  </div>
                 </div>
-              </div>
+
+                <div className="p-3 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                  <p className="text-xs text-blue-400 mb-2">
+                    <strong>You need BOTH values from Kalshi:</strong>
+                  </p>
+                  <div className="space-y-1 text-xs text-slate-400">
+                    <p>1. Go to <a href="https://kalshi.com/settings/api" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">Kalshi Settings → API</a></p>
+                    <p>2. Generate a new API key</p>
+                    <p>3. Copy the <strong>API Key ID</strong></p>
+                    <p>4. Copy the <strong>Private Key</strong> (shown once!)</p>
+                  </div>
+                </div>
+              </>
             ) : (
               <>
                 <div>
