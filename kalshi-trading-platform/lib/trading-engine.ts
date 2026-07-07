@@ -257,7 +257,7 @@ export class TradingEngine {
       const order: TradeOrder = {
         market_id: signal.market.id,
         side: signal.side!,
-        action: signal.action,
+        action: 'buy', // Always 'buy' for new positions
         quantity,
         type: 'market',
       };
