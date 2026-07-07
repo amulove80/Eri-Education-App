@@ -135,15 +135,15 @@ export default function LoginForm() {
                   </div>
                 </div>
 
-                <div className="p-3 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                  <p className="text-xs text-blue-400 mb-2">
-                    <strong>You need BOTH values from Kalshi:</strong>
+                <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg">
+                  <p className="text-xs text-red-400 font-semibold mb-2">
+                    ⚠️ API Key authentication requires a backend server
                   </p>
                   <div className="space-y-1 text-xs text-slate-400">
-                    <p>1. Go to <a href="https://kalshi.com/settings/api" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">Kalshi Settings → API</a></p>
-                    <p>2. Generate a new API key</p>
-                    <p>3. Copy the <strong>API Key ID</strong></p>
-                    <p>4. Copy the <strong>Private Key</strong> (shown once!)</p>
+                    <p>RSA private keys cannot be used securely in browser apps.</p>
+                    <p className="pt-2 text-slate-300">
+                      <strong>Please use Email/Password instead</strong> or set up a backend server.
+                    </p>
                   </div>
                 </div>
               </>
