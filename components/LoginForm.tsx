@@ -216,7 +216,7 @@ export default function LoginForm() {
                       />
                     </div>
                     <p className="text-xs text-slate-400 mt-2 text-center">
-                      Enter the 6-digit code from your authenticator app
+                      Enter the code sent to your phone via SMS or from your authenticator app
                     </p>
                     <button
                       type="button"
