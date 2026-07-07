@@ -85,6 +85,22 @@ export class KalshiAPI {
     }
   }
 
+  async loginWithApiKey(apiKey: string): Promise<boolean> {
+    try {
+      // For API key authentication, we directly set the token
+      // Kalshi API keys can be used as bearer tokens
+      this.token = apiKey;
+      
+      // Verify the token works by making a test request
+      const response = await this.client.get('/portfolio/balance');
+      return response.status === 200;
+    } catch (error) {
+      console.error('API key authentication failed:', error);
+      this.token = null;
+      return false;
+    }
+  }
+
   async getMarkets(filters?: {
     category?: string;
     status?: string;

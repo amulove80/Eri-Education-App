@@ -3,13 +3,15 @@
 import { useState } from 'react';
 import { useStore } from '@/lib/store';
 import { kalshiAPI } from '@/lib/kalshi-api';
-import { Lock, Mail, TrendingUp } from 'lucide-react';
+import { Lock, Mail, TrendingUp, Key } from 'lucide-react';
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [apiKey, setApiKey] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [useApiKey, setUseApiKey] = useState(true); // Default to API key for OAuth users
 
   const { setAuthenticated, setCredentials } = useStore();
 
@@ -19,13 +21,26 @@ export default function LoginForm() {
     setIsLoading(true);
 
     try {
-      const success = await kalshiAPI.login({ email, password });
+      let success = false;
+      
+      if (useApiKey && apiKey) {
+        // Use API key authentication
+        success = await kalshiAPI.loginWithApiKey(apiKey);
+        if (success) {
+          setCredentials({ email: '', password: '', apiKey });
+        }
+      } else {
+        // Use email/password
+        success = await kalshiAPI.login({ email, password });
+        if (success) {
+          setCredentials({ email, password });
+        }
+      }
       
       if (success) {
         setAuthenticated(true);
-        setCredentials({ email, password });
       } else {
-        setError('Invalid credentials. Please check your email and password.');
+        setError('Authentication failed. Please check your credentials.');
       }
     } catch (err) {
       setError('Login failed. Please try again.');
@@ -56,41 +71,99 @@ export default function LoginForm() {
           <h2 className="text-xl font-bold text-white mb-6">Sign In</h2>
           
           <form onSubmit={handleLogin} className="space-y-4">
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
-                Email
-              </label>
-              <div className="relative">
-                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input
-                  id="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                  placeholder="your@email.com"
-                  required
-                />
-              </div>
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <button
+                type="button"
+                onClick={() => setUseApiKey(true)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  useApiKey
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                }`}
+              >
+                API Key (Recommended)
+              </button>
+              <button
+                type="button"
+                onClick={() => setUseApiKey(false)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  !useApiKey
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+                }`}
+              >
+                Email/Password
+              </button>
             </div>
 
-            <div>
-              <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
-                Password
-              </label>
-              <div className="relative">
-                <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input
-                  id="password"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                  placeholder="••••••••"
-                  required
-                />
+            {useApiKey ? (
+              <div>
+                <label htmlFor="apiKey" className="block text-sm font-medium text-slate-300 mb-2">
+                  Kalshi API Key
+                </label>
+                <div className="relative">
+                  <Key className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                  <input
+                    id="apiKey"
+                    type="password"
+                    value={apiKey}
+                    onChange={(e) => setApiKey(e.target.value)}
+                    className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                    placeholder="Enter your Kalshi API key"
+                    required
+                  />
+                </div>
+                <p className="text-xs text-slate-400 mt-2">
+                  Get your API key from your{' '}
+                  <a
+                    href="https://kalshi.com/settings/api"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 underline"
+                  >
+                    Kalshi account settings
+                  </a>
+                </p>
               </div>
-            </div>
+            ) : (
+              <>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+                    Email
+                  </label>
+                  <div className="relative">
+                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                    <input
+                      id="email"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
+                    Password
+                  </label>
+                  <div className="relative">
+                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                    <input
+                      id="password"
+                      type="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                      placeholder="••••••••"
+                      required
+                    />
+                  </div>
+                </div>
+              </>
+            )}
 
             {error && (
               <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3">
@@ -109,14 +182,15 @@ export default function LoginForm() {
 
           <div className="mt-6 pt-6 border-t border-slate-700">
             <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
-              <h3 className="text-sm font-semibold text-blue-400 mb-2">Configuration</h3>
+              <h3 className="text-sm font-semibold text-blue-400 mb-2">For Google OAuth Users</h3>
               <p className="text-xs text-slate-400 mb-3">
-                Enter your Kalshi API credentials. You can find these in your Kalshi account settings.
+                If you sign in to Kalshi with Google, use <strong>API Key</strong> authentication:
               </p>
               <div className="space-y-1 text-xs text-slate-500">
-                <p>• API credentials are stored locally</p>
-                <p>• Never share your credentials</p>
-                <p>• Use demo mode for testing</p>
+                <p>1. Go to <a href="https://kalshi.com/settings/api" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">kalshi.com/settings/api</a></p>
+                <p>2. Generate a new API key</p>
+                <p>3. Copy and paste it above</p>
+                <p className="pt-2 text-slate-400">• Credentials stored locally in browser only</p>
               </div>
             </div>
           </div>
