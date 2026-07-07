@@ -85,28 +85,37 @@ export class KalshiAPI {
     }
   }
 
-  async loginWithApiKey(apiKey: string): Promise<boolean> {
+  async loginWithApiKey(apiKeyId: string, privateKey: string): Promise<boolean> {
     try {
-      // Kalshi API keys are used directly as bearer tokens
-      // Set the token first
-      this.token = apiKey.trim();
+      // Kalshi uses API Key ID + Private Key for authentication
+      // Format: base64(apiKeyId:privateKey) or use them separately
+      const credentials = `${apiKeyId.trim()}:${privateKey.trim()}`;
+      const encodedCredentials = btoa(credentials);
       
-      // Verify the token works by making a test request to a simple endpoint
+      // Try Basic auth format first
+      this.token = encodedCredentials;
+      this.client.defaults.headers.common['Authorization'] = `Basic ${encodedCredentials}`;
+      
+      // Verify the credentials work
       try {
         const response = await this.client.get('/exchange/status');
         if (response.status === 200) {
           return true;
         }
       } catch (testError) {
-        console.error('Exchange status check failed, trying balance:', testError);
+        console.error('Basic auth failed, trying as bearer token');
       }
       
-      // If that fails, try the balance endpoint
+      // Try as bearer token if basic auth failed
+      this.token = credentials;
+      this.client.defaults.headers.common['Authorization'] = `Bearer ${credentials}`;
+      
       const response = await this.client.get('/portfolio/balance');
       return response.status === 200;
     } catch (error: any) {
       console.error('API key authentication failed:', error.response?.data || error.message);
       this.token = null;
+      delete this.client.defaults.headers.common['Authorization'];
       return false;
     }
   }

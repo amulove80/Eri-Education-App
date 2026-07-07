@@ -8,7 +8,8 @@ import { Lock, Mail, TrendingUp, Key } from 'lucide-react';
 export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [apiKey, setApiKey] = useState('');
+  const [apiKeyId, setApiKeyId] = useState('');
+  const [privateKey, setPrivateKey] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [useApiKey, setUseApiKey] = useState(true); // Default to API key for OAuth users
@@ -113,17 +114,22 @@ export default function LoginForm() {
                     required
                   />
                 </div>
-                <p className="text-xs text-slate-400 mt-2">
-                  Get your API key from your{' '}
-                  <a
-                    href="https://kalshi.com/settings/api"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 underline"
-                  >
-                    Kalshi account settings
-                  </a>
-                </p>
+                <div className="mt-2 p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
+                  <p className="text-xs text-yellow-400 mb-2">
+                    <strong>Important:</strong> Make sure to copy the entire API key including any prefixes.
+                  </p>
+                  <p className="text-xs text-slate-400">
+                    Get your API key from{' '}
+                    <a
+                      href="https://kalshi.com/settings/api"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 underline"
+                    >
+                      Kalshi Settings → API
+                    </a>
+                  </p>
+                </div>
               </div>
             ) : (
               <>
