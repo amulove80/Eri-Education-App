@@ -8,11 +8,13 @@ import { Lock, Mail, TrendingUp, Key } from 'lucide-react';
 export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [twoFactorCode, setTwoFactorCode] = useState('');
   const [apiKeyId, setApiKeyId] = useState('');
   const [privateKey, setPrivateKey] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [useApiKey, setUseApiKey] = useState(true); // Default to API key for OAuth users
+  const [needsTwoFactor, setNeedsTwoFactor] = useState(false);
+  const [useApiKey, setUseApiKey] = useState(false); // Default to email/password since API keys need backend
 
   const { setAuthenticated, setCredentials } = useStore();
 
@@ -203,16 +205,19 @@ export default function LoginForm() {
           </form>
 
           <div className="mt-6 pt-6 border-t border-slate-700">
-            <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
-              <h3 className="text-sm font-semibold text-blue-400 mb-2">For Google OAuth Users</h3>
+            <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
+              <h3 className="text-sm font-semibold text-yellow-400 mb-2">⚠️ Important Security Note</h3>
               <p className="text-xs text-slate-400 mb-3">
-                If you sign in to Kalshi with Google, use <strong>API Key</strong> authentication:
+                <strong>For Google OAuth users:</strong> Unfortunately, Kalshi's API key system uses RSA private keys that cannot be safely used in browser apps.
               </p>
               <div className="space-y-1 text-xs text-slate-500">
-                <p>1. Go to <a href="https://kalshi.com/settings/api" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">kalshi.com/settings/api</a></p>
-                <p>2. Generate a new API key</p>
-                <p>3. Copy and paste it above</p>
-                <p className="pt-2 text-slate-400">• Credentials stored locally in browser only</p>
+                <p><strong>Options:</strong></p>
+                <p>1. Create a Kalshi account with email/password (use that here)</p>
+                <p>2. Set up a backend server to handle API key signing</p>
+                <p>3. Use Kalshi directly for Google OAuth accounts</p>
+                <p className="pt-2 text-red-400">
+                  <strong>Never share your RSA private key with anyone!</strong>
+                </p>
               </div>
             </div>
           </div>

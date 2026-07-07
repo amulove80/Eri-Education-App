@@ -70,17 +70,35 @@ export class KalshiAPI {
     });
   }
 
-  async login(credentials: KalshiCredentials): Promise<boolean> {
+  async login(credentials: KalshiCredentials, twoFactorCode?: string): Promise<boolean | 'needs_2fa'> {
     try {
-      const response = await this.client.post('/login', {
+      const payload: any = {
         email: credentials.email,
         password: credentials.password,
-      });
+      };
+      
+      if (twoFactorCode) {
+        payload.code = twoFactorCode;
+      }
+      
+      const response = await this.client.post('/login', payload);
       
       this.token = response.data.token;
       return true;
-    } catch (error) {
+    } catch (error: any) {
       console.error('Login failed:', error);
+      
+      // Check if 2FA is required
+      if (error.response?.status === 401 && error.response?.data?.message?.includes('2FA')) {
+        return 'needs_2fa';
+      }
+      
+      // Check for various 2FA-related error messages
+      const errorMsg = error.response?.data?.message?.toLowerCase() || '';
+      if (errorMsg.includes('two') || errorMsg.includes('2fa') || errorMsg.includes('authenticat')) {
+        return 'needs_2fa';
+      }
+      
       return false;
     }
   }
