@@ -37,12 +37,19 @@ export default function LoginForm() {
         }
       } else {
         // Use email/password
-        success = await kalshiAPI.login({ email, password });
-        if (success) {
+        const result = await kalshiAPI.login({ email, password }, twoFactorCode);
+        
+        if (result === 'needs_2fa') {
+          setNeedsTwoFactor(true);
+          setError('');
+          return;
+        } else if (result === true) {
           setCredentials({ email, password });
           setAuthenticated(true);
         } else {
-          setError('Invalid email or password. Please try again.');
+          setError(needsTwoFactor 
+            ? 'Invalid 2FA code. Please try again.' 
+            : 'Invalid email or password. Please try again.');
         }
       }
     } catch (err) {
@@ -151,41 +158,79 @@ export default function LoginForm() {
               </>
             ) : (
               <>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
-                    Email
-                  </label>
-                  <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                    <input
-                      id="email"
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                      placeholder="your@email.com"
-                      required
-                    />
-                  </div>
-                </div>
+                {!needsTwoFactor ? (
+                  <>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+                        Email
+                      </label>
+                      <div className="relative">
+                        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                        <input
+                          id="email"
+                          type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                          placeholder="your@email.com"
+                          required
+                        />
+                      </div>
+                    </div>
 
-                <div>
-                  <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
-                    Password
-                  </label>
-                  <div className="relative">
-                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                    <input
-                      id="password"
-                      type="password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                      placeholder="••••••••"
-                      required
-                    />
+                    <div>
+                      <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
+                        Password
+                      </label>
+                      <div className="relative">
+                        <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                        <input
+                          id="password"
+                          type="password"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                          className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                          placeholder="••••••••"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div>
+                    <label htmlFor="twoFactorCode" className="block text-sm font-medium text-slate-300 mb-2">
+                      Two-Factor Authentication Code
+                    </label>
+                    <div className="relative">
+                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                      <input
+                        id="twoFactorCode"
+                        type="text"
+                        value={twoFactorCode}
+                        onChange={(e) => setTwoFactorCode(e.target.value)}
+                        className="w-full pl-11 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-center text-2xl tracking-widest"
+                        placeholder="000000"
+                        maxLength={6}
+                        autoFocus
+                        required
+                      />
+                    </div>
+                    <p className="text-xs text-slate-400 mt-2 text-center">
+                      Enter the 6-digit code from your authenticator app
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setNeedsTwoFactor(false);
+                        setTwoFactorCode('');
+                        setError('');
+                      }}
+                      className="text-xs text-blue-400 hover:text-blue-300 mt-2 underline"
+                    >
+                      ← Back to login
+                    </button>
                   </div>
-                </div>
+                )}
               </>
             )}
 
@@ -200,7 +245,7 @@ export default function LoginForm() {
               disabled={isLoading}
               className="w-full py-3 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-700 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-colors"
             >
-              {isLoading ? 'Signing in...' : 'Sign In'}
+              {isLoading ? 'Signing in...' : needsTwoFactor ? 'Verify Code' : 'Sign In'}
             </button>
           </form>
 
