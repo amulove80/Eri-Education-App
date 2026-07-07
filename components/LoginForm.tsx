@@ -28,19 +28,19 @@ export default function LoginForm() {
         success = await kalshiAPI.loginWithApiKey(apiKey);
         if (success) {
           setCredentials({ email: '', password: '', apiKey });
+          setAuthenticated(true);
+        } else {
+          setError('Invalid API key. Please check that you copied it correctly from Kalshi settings.');
         }
       } else {
         // Use email/password
         success = await kalshiAPI.login({ email, password });
         if (success) {
           setCredentials({ email, password });
+          setAuthenticated(true);
+        } else {
+          setError('Invalid email or password. Please try again.');
         }
-      }
-      
-      if (success) {
-        setAuthenticated(true);
-      } else {
-        setError('Authentication failed. Please check your credentials.');
       }
     } catch (err) {
       setError('Login failed. Please try again.');
