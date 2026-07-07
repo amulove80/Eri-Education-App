@@ -40,7 +40,7 @@ export interface MarketResponse {
 
 export class KalshiPublicAPI {
   private client: AxiosInstance;
-  private baseURL = 'https://api.elections.kalshi.com/trade-api/v2';
+  private baseURL = 'https://external-api.kalshi.com/trade-api/v2';
   
   constructor() {
     this.client = axios.create({
