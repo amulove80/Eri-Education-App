@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Guess Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #141414 0%, #e50914 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(229, 9, 20, 0.4);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            color: #e50914;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-title {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .hint-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .hint {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .category {
+            display: inline-block;
+            background: #e50914;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .answer-section {
+            margin-bottom: 25px;
+        }
+
+        .answer-input {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            border: 2px solid #e50914;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .answer-input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+        }
+
+        .answer-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-submit {
+            background: #e50914;
+            color: white;
+        }
+
+        .btn-submit:hover {
+            background: #f40612;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(229, 9, 20, 0.4);
+        }
+
+        .btn-skip {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .btn-skip:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .score-section {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 8px;
+        }
+
+        .score-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .score-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e50914;
+        }
+
+        .feedback {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .feedback.correct {
+            background: rgba(0, 255, 0, 0.2);
+            border: 2px solid #00ff00;
+            color: #00ff00;
+        }
+
+        .feedback.wrong {
+            background: rgba(255, 0, 0, 0.2);
+            border: 2px solid #ff0000;
+            color: #ff0000;
+        }
+
+        .game-over {
+            text-align: center;
+            display: none;
+        }
+
+        .game-over h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e50914;
+        }
+
+        .game-over p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .restart-btn {
+            background: #e50914;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .restart-btn:hover {
+            background: #f40612;
+            transform: scale(1.05);
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .shake {
+            animation: shake 0.5s;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .logo h1 {
+                font-size: 2rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>NETFLIX</h1>
+        </div>
+        <div class="game-title">🎬 Guess the Movie/Show!</div>
+
+        <div id="gameContent">
+            <div class="feedback" id="feedback"></div>
+
+            <div class="hint-section">
+                <div class="category" id="category"></div>
+                <div class="hint" id="hint"></div>
+            </div>
+
+            <div class="answer-section">
+                <input 
+                    type="text" 
+                    id="answerInput" 
+                    class="answer-input" 
+                    placeholder="Type your answer here..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-submit" id="submitBtn">Submit</button>
+                <button class="btn btn-skip" id="skipBtn">Skip</button>
+            </div>
+
+            <div class="score-section">
+                <div class="score-item">
+                    <span>✓ Correct:</span>
+                    <span class="score-number" id="correctScore">0</span>
+                </div>
+                <div class="score-item">
+                    <span>📊 Question:</span>
+                    <span class="score-number" id="questionNumber">1</span>
+                </div>
+                <div class="score-item">
+                    <span>✗ Wrong:</span>
+                    <span class="score-number" id="wrongScore">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-over" id="gameOver">
+            <h2>🎉 Game Over!</h2>
+            <p id="finalScore"></p>
+            <button class="restart-btn" id="restartBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script>
+        const netflixShows = [
+            {
+                title: "Stranger Things",
+                hint: "Kids in a small town battle supernatural forces from an alternate dimension called the Upside Down",
+                category: "Series"
+            },
+            {
+                title: "The Crown",
+                hint: "Chronicles the reign of Queen Elizabeth II and the British Royal Family",
+                category: "Series"
+            },
+            {
+                title: "Money Heist",
+                hint: "A criminal mastermind plans the biggest heist in recorded history",
+                category: "Series"
+            },
+            {
+                title: "Squid Game",
+                hint: "Desperate contestants compete in deadly children's games for a massive cash prize",
+                category: "Series"
+            },
+            {
+                title: "Wednesday",
+                hint: "A teenage girl with psychic abilities attends a school for outcasts",
+                category: "Series"
+            },
+            {
+                title: "Breaking Bad",
+                hint: "A chemistry teacher turns to manufacturing drugs after a cancer diagnosis",
+                category: "Series"
+            },
+            {
+                title: "Black Mirror",
+                hint: "Anthology series exploring dark twists on technology and society",
+                category: "Series"
+            },
+            {
+                title: "The Witcher",
+                hint: "A mutant monster hunter searches for his destiny in a world where people are often more wicked than beasts",
+                category: "Series"
+            },
+            {
+                title: "Ozark",
+                hint: "A financial advisor relocates his family to the Missouri Ozarks for a money laundering scheme",
+                category: "Series"
+            },
+            {
+                title: "Dark",
+                hint: "A German town's missing children expose the fractured relationships, time travel, and supernatural forces",
+                category: "Series"
+            },
+            {
+                title: "Bridgerton",
+                hint: "The eight close-knit siblings of this powerful family seek love and happiness in London high society",
+                category: "Series"
+            },
+            {
+                title: "Narcos",
+                hint: "Chronicles the gripping real-life stories of the drug kingpins of the late 1980s",
+                category: "Series"
+            },
+            {
+                title: "The Umbrella Academy",
+                hint: "Dysfunctional family of adopted sibling superheroes reunite to solve their father's death",
+                category: "Series"
+            },
+            {
+                title: "You",
+                hint: "A bookstore manager will do anything for love, even if it means becoming a killer",
+                category: "Series"
+            },
+            {
+                title: "Peaky Blinders",
+                hint: "A gangster family epic set in 1900s England centered on a gang who sew razor blades in their caps",
+                category: "Series"
+            },
+            {
+                title: "The Queen's Gambit",
+                hint: "An orphaned chess prodigy rises to the top while struggling with addiction",
+                category: "Series"
+            },
+            {
+                title: "Extraction",
+                hint: "A black-market mercenary undertakes a mission to rescue the kidnapped son of an imprisoned crime lord",
+                category: "Movie"
+            },
+            {
+                title: "Bird Box",
+                hint: "A woman and her children must blindfold themselves to survive mysterious creatures that drive people to suicide",
+                category: "Movie"
+            },
+            {
+                title: "Enola Holmes",
+                hint: "The younger sister of Sherlock solves her first mystery about a missing mother",
+                category: "Movie"
+            },
+            {
+                title: "Red Notice",
+                hint: "An Interpol agent tracks the world's most wanted art thief",
+                category: "Movie"
+            },
+            {
+                title: "Don't Look Up",
+                hint: "Two astronomers discover a comet heading towards Earth but struggle to warn humanity",
+                category: "Movie"
+            },
+            {
+                title: "Glass Onion",
+                hint: "A detective investigates a murder mystery on a tech billionaire's private Greek island",
+                category: "Movie"
+            },
+            {
+                title: "The Gray Man",
+                hint: "A CIA operative becomes the target of an international manhunt",
+                category: "Movie"
+            },
+            {
+                title: "Army of the Dead",
+                hint: "Mercenaries attempt a casino heist in Las Vegas during a zombie outbreak",
+                category: "Movie"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let correctAnswers = 0;
+        let wrongAnswers = 0;
+        let shuffledShows = [];
+
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function normalizeString(str) {
+            return str.toLowerCase()
+                .replace(/[^a-z0-9]/g, '')
+                .trim();
+        }
+
+        function startGame() {
+            shuffledShows = shuffleArray(netflixShows);
+            currentQuestion = 0;
+            correctAnswers = 0;
+            wrongAnswers = 0;
+            document.getElementById('gameContent').style.display = 'block';
+            document.getElementById('gameOver').style.display = 'none';
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            if (currentQuestion >= shuffledShows.length) {
+                endGame();
+                return;
+            }
+
+            const show = shuffledShows[currentQuestion];
+            document.getElementById('category').textContent = show.category;
+            document.getElementById('hint').textContent = show.hint;
+            document.getElementById('answerInput').value = '';
+            document.getElementById('questionNumber').textContent = currentQuestion + 1;
+            document.getElementById('correctScore').textContent = correctAnswers;
+            document.getElementById('wrongScore').textContent = wrongAnswers;
+            document.getElementById('feedback').style.display = 'none';
+            document.getElementById('answerInput').focus();
+        }
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('answerInput').value.trim();
+            
+            if (!userAnswer) {
+                document.getElementById('answerInput').classList.add('shake');
+                setTimeout(() => {
+                    document.getElementById('answerInput').classList.remove('shake');
+                }, 500);
+                return;
+            }
+
+            const correctAnswer = shuffledShows[currentQuestion].title;
+            const normalizedUser = normalizeString(userAnswer);
+            const normalizedCorrect = normalizeString(correctAnswer);
+
+            const feedback = document.getElementById('feedback');
+            
+            if (normalizedUser === normalizedCorrect) {
+                correctAnswers++;
+                feedback.textContent = `🎉 Correct! It was "${correctAnswer}"`;
+                feedback.className = 'feedback correct';
+            } else {
+                wrongAnswers++;
+                feedback.textContent = `❌ Wrong! The answer was "${correctAnswer}"`;
+                feedback.className = 'feedback wrong';
+            }
+
+            feedback.style.display = 'block';
+            
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 2000);
+        }
+
+        function skipQuestion() {
+            const correctAnswer = shuffledShows[currentQuestion].title;
+            const feedback = document.getElementById('feedback');
+            
+            wrongAnswers++;
+            feedback.textContent = `⏭️ Skipped! The answer was "${correctAnswer}"`;
+            feedback.className = 'feedback wrong';
+            feedback.style.display = 'block';
+
+            setTimeout(() => {
+                currentQuestion++;
+                loadQuestion();
+            }, 2000);
+        }
+
+        function endGame() {
+            document.getElementById('gameContent').style.display = 'none';
+            document.getElementById('gameOver').style.display = 'block';
+            
+            const totalQuestions = shuffledShows.length;
+            const percentage = Math.round((correctAnswers / totalQuestions) * 100);
+            
+            let message = '';
+            if (percentage >= 80) {
+                message = '🏆 Amazing! You\'re a Netflix expert!';
+            } else if (percentage >= 60) {
+                message = '👍 Great job! You know your Netflix!';
+            } else if (percentage >= 40) {
+                message = '😊 Not bad! Keep watching!';
+            } else {
+                message = '📺 Time to binge more Netflix shows!';
+            }
+
+            document.getElementById('finalScore').innerHTML = 
+                `${message}<br><br>` +
+                `You got <strong>${correctAnswers}</strong> out of <strong>${totalQuestions}</strong> correct!<br>` +
+                `Your score: <strong>${percentage}%</strong>`;
+        }
+
+        document.getElementById('submitBtn').addEventListener('click', checkAnswer);
+        document.getElementById('skipBtn').addEventListener('click', skipQuestion);
+        document.getElementById('restartBtn').addEventListener('click', startGame);
+        
+        document.getElementById('answerInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                checkAnswer();
+            }
+        });
+
+        startGame();
+    </script>
+</body>
+</html>
