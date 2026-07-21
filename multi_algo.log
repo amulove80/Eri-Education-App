@@ -1,0 +1,2422 @@
+
+╔════════════════════════════════════════════════════════════════════╗
+║         MULTI-ALGORITHM PUZZLE #135 SOLVER                         ║
+║                                                                    ║
+║  Running 8 parallel algorithms on different ranges                 ║
+║  Target: 16RGFo6hjq9ym6Pj7N5H7L1NR1rVPJyw2v                       ║
+║  Reward: 13.5 BTC                                                 ║
+╚════════════════════════════════════════════════════════════════════╝
+    
+
+Starting 9 parallel processes...
+Range: 0x4000000000000000000000000000000000 to 0x7fffffffffffffffffffffffffffffffff
+Segment size: 0xfffffffffffffffffffffffffffffffff
+
+[RANDOM-1] Starting random search in range
+[SEQ-backward-4] Starting sequential search
+[RANDOM-2] Starting random search in range
+[SEQ-forward-3] Starting sequential search
+[SEGMENT-6] Range: 0x4fffffffffffffffffffffffffffffffff to 0x5ffffffffffffffffffffffffffffffffd
+[SEGMENT-7] Range: 0x5ffffffffffffffffffffffffffffffffe to 0x6ffffffffffffffffffffffffffffffffc
+[BIRTHDAY-9] Starting birthday attack
+[SEGMENT-8] Range: 0x6ffffffffffffffffffffffffffffffffd to 0x7fffffffffffffffffffffffffffffffff
+[SEGMENT-5] Range: 0x4000000000000000000000000000000000 to 0x4ffffffffffffffffffffffffffffffffe
+[SEGMENT-8] Tested: 100,000 | Rate: 32815/s
+[SEGMENT-6] Tested: 100,000 | Rate: 32639/s
+[SEGMENT-7] Tested: 100,000 | Rate: 31980/s
+[SEQ-forward-3] Tested: 100,000 | Rate: 31396/s | Current: 0x400000000000000000000000000001869f
+[SEQ-backward-4] Tested: 100,000 | Rate: 31175/s | Current: 0x7ffffffffffffffffffffffffffffe7960
+[SEGMENT-5] Tested: 100,000 | Rate: 31134/s
+[RANDOM-2] Tested: 100,000 | Rate: 28830/s
+[RANDOM-1] Tested: 100,000 | Rate: 27810/s
+[BIRTHDAY-9] Tested: 100,000 | Unique: 100,000 | Rate: 27337/s
+[SEGMENT-8] Tested: 200,000 | Rate: 33722/s
+[SEGMENT-6] Tested: 200,000 | Rate: 32833/s
+[SEQ-forward-3] Tested: 200,000 | Rate: 31760/s | Current: 0x4000000000000000000000000000030d3f
+[SEQ-backward-4] Tested: 200,000 | Rate: 31692/s | Current: 0x7ffffffffffffffffffffffffffffcf2c0
+[SEGMENT-7] Tested: 200,000 | Rate: 31696/s
+[SEGMENT-5] Tested: 200,000 | Rate: 31354/s
+[RANDOM-1] Tested: 200,000 | Rate: 29137/s
+[RANDOM-2] Tested: 200,000 | Rate: 28604/s
+[BIRTHDAY-9] Tested: 200,000 | Unique: 200,000 | Rate: 27189/s
+[SEGMENT-6] Tested: 300,000 | Rate: 33182/s
+[SEGMENT-8] Tested: 300,000 | Rate: 33100/s
+[SEGMENT-7] Tested: 300,000 | Rate: 32198/s
+[SEGMENT-5] Tested: 300,000 | Rate: 32015/s
+[SEQ-backward-4] Tested: 300,000 | Rate: 31991/s | Current: 0x7ffffffffffffffffffffffffffffb6c20
+[SEQ-forward-3] Tested: 300,000 | Rate: 31574/s | Current: 0x40000000000000000000000000000493df
+
+======================================================================
+GLOBAL PROGRESS
+Time: 0.2 min | Total tested: 1,617,794
+Combined rate: 161778 keys/sec (9706680 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 300,000 | Rate: 29185/s
+[RANDOM-2] Tested: 300,000 | Rate: 28193/s
+[BIRTHDAY-9] Tested: 300,000 | Unique: 300,000 | Rate: 27391/s
+[SEGMENT-6] Tested: 400,000 | Rate: 33351/s
+[SEGMENT-8] Tested: 400,000 | Rate: 33020/s
+[SEGMENT-5] Tested: 400,000 | Rate: 32356/s
+[SEGMENT-7] Tested: 400,000 | Rate: 32151/s
+[SEQ-backward-4] Tested: 400,000 | Rate: 32032/s | Current: 0x7ffffffffffffffffffffffffffff9e580
+[SEQ-forward-3] Tested: 400,000 | Rate: 31862/s | Current: 0x4000000000000000000000000000061a7f
+[RANDOM-1] Tested: 400,000 | Rate: 29080/s
+[RANDOM-2] Tested: 400,000 | Rate: 28415/s
+[BIRTHDAY-9] Tested: 400,000 | Unique: 400,000 | Rate: 27678/s
+[SEGMENT-6] Tested: 500,000 | Rate: 33371/s
+[SEGMENT-8] Tested: 500,000 | Rate: 33066/s
+[SEGMENT-5] Tested: 500,000 | Rate: 32539/s
+[SEGMENT-7] Tested: 500,000 | Rate: 32522/s
+[SEQ-backward-4] Tested: 500,000 | Rate: 32229/s | Current: 0x7ffffffffffffffffffffffffffff85ee0
+[SEQ-forward-3] Tested: 500,000 | Rate: 32071/s | Current: 0x400000000000000000000000000007a11f
+[RANDOM-1] Tested: 500,000 | Rate: 28767/s
+[RANDOM-2] Tested: 500,000 | Rate: 28586/s
+[BIRTHDAY-9] Tested: 500,000 | Unique: 500,000 | Rate: 27786/s
+[SEGMENT-8] Tested: 600,000 | Rate: 33175/s
+[SEGMENT-6] Tested: 600,000 | Rate: 33156/s
+[SEGMENT-7] Tested: 600,000 | Rate: 32521/s
+[SEQ-backward-4] Tested: 600,000 | Rate: 32481/s | Current: 0x7ffffffffffffffffffffffffffff6d840
+[SEGMENT-5] Tested: 600,000 | Rate: 32230/s
+[SEQ-forward-3] Tested: 600,000 | Rate: 32190/s | Current: 0x40000000000000000000000000000927bf
+
+======================================================================
+GLOBAL PROGRESS
+Time: 0.3 min | Total tested: 3,242,843
+Combined rate: 162107 keys/sec (9726417 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 600,000 | Rate: 28832/s
+[RANDOM-1] Tested: 600,000 | Rate: 28735/s
+[SEGMENT-6] Tested: 700,000 | Rate: 33321/s
+[SEGMENT-8] Tested: 700,000 | Rate: 33186/s
+[SEQ-backward-4] Tested: 700,000 | Rate: 32602/s | Current: 0x7ffffffffffffffffffffffffffff551a0
+[SEGMENT-7] Tested: 700,000 | Rate: 32461/s
+[SEGMENT-5] Tested: 700,000 | Rate: 32118/s
+[SEQ-forward-3] Tested: 700,000 | Rate: 32058/s | Current: 0x40000000000000000000000000000aae5f
+[BIRTHDAY-9] Tested: 600,000 | Unique: 600,000 | Rate: 27468/s
+[SEGMENT-6] Tested: 800,000 | Rate: 33079/s
+[RANDOM-2] Tested: 700,000 | Rate: 28847/s
+[SEGMENT-8] Tested: 800,000 | Rate: 32963/s
+[RANDOM-1] Tested: 700,000 | Rate: 28721/s
+[SEGMENT-7] Tested: 800,000 | Rate: 32608/s
+[SEQ-backward-4] Tested: 800,000 | Rate: 32519/s | Current: 0x7ffffffffffffffffffffffffffff3cb00
+[SEQ-forward-3] Tested: 800,000 | Rate: 32191/s | Current: 0x40000000000000000000000000000c34ff
+[SEGMENT-5] Tested: 800,000 | Rate: 32192/s
+[BIRTHDAY-9] Tested: 700,000 | Unique: 700,000 | Rate: 27555/s
+[SEGMENT-6] Tested: 900,000 | Rate: 33168/s
+[SEGMENT-8] Tested: 900,000 | Rate: 32869/s
+[SEQ-backward-4] Tested: 900,000 | Rate: 32650/s | Current: 0x7ffffffffffffffffffffffffffff24460
+[SEGMENT-7] Tested: 900,000 | Rate: 32495/s
+[RANDOM-2] Tested: 800,000 | Rate: 28791/s
+[SEQ-forward-3] Tested: 900,000 | Rate: 32383/s | Current: 0x40000000000000000000000000000dbb9f
+[RANDOM-1] Tested: 800,000 | Rate: 28650/s
+[SEGMENT-5] Tested: 900,000 | Rate: 32181/s
+[BIRTHDAY-9] Tested: 800,000 | Unique: 800,000 | Rate: 27533/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 0.5 min | Total tested: 4,940,528
+Combined rate: 164660 keys/sec (9879595 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 1,000,000 | Rate: 33055/s
+[SEGMENT-6] Tested: 1,000,000 | Rate: 32959/s
+[SEQ-backward-4] Tested: 1,000,000 | Rate: 32792/s | Current: 0x7ffffffffffffffffffffffffffff0bdc0
+[SEQ-forward-3] Tested: 1,000,000 | Rate: 32311/s | Current: 0x40000000000000000000000000000f423f
+[SEGMENT-7] Tested: 1,000,000 | Rate: 32305/s
+[SEGMENT-5] Tested: 1,000,000 | Rate: 32059/s
+[RANDOM-2] Tested: 900,000 | Rate: 28811/s
+[RANDOM-1] Tested: 900,000 | Rate: 28592/s
+[BIRTHDAY-9] Tested: 900,000 | Unique: 900,000 | Rate: 27486/s
+[SEGMENT-6] Tested: 1,100,000 | Rate: 33020/s[SEGMENT-8] Tested: 1,100,000 | Rate: 33025/s
+
+[SEQ-backward-4] Tested: 1,100,000 | Rate: 32689/s | Current: 0x7fffffffffffffffffffffffffffef3720
+[SEGMENT-7] Tested: 1,100,000 | Rate: 32361/s
+[SEGMENT-5] Tested: 1,100,000 | Rate: 32357/s
+[SEQ-forward-3] Tested: 1,100,000 | Rate: 32332/s | Current: 0x400000000000000000000000000010c8df
+[RANDOM-2] Tested: 1,000,000 | Rate: 28811/s
+[RANDOM-1] Tested: 1,000,000 | Rate: 28667/s
+[SEGMENT-6] Tested: 1,200,000 | Rate: 33146/s
+[SEGMENT-8] Tested: 1,200,000 | Rate: 33078/s
+[BIRTHDAY-9] Tested: 1,000,000 | Unique: 1,000,000 | Rate: 27484/s
+[SEQ-backward-4] Tested: 1,200,000 | Rate: 32687/s | Current: 0x7fffffffffffffffffffffffffffedb080
+[SEGMENT-5] Tested: 1,200,000 | Rate: 32467/s
+[SEQ-forward-3] Tested: 1,200,000 | Rate: 32318/s | Current: 0x4000000000000000000000000000124f7f
+[SEGMENT-7] Tested: 1,200,000 | Rate: 32294/s
+[RANDOM-2] Tested: 1,100,000 | Rate: 28935/s
+[RANDOM-1] Tested: 1,100,000 | Rate: 28701/s
+[SEGMENT-6] Tested: 1,300,000 | Rate: 33179/s
+[SEGMENT-8] Tested: 1,300,000 | Rate: 33176/s
+[SEGMENT-5] Tested: 1,300,000 | Rate: 32774/s
+[SEQ-backward-4] Tested: 1,300,000 | Rate: 32644/s | Current: 0x7fffffffffffffffffffffffffffec29e0
+
+======================================================================
+GLOBAL PROGRESS
+Time: 0.7 min | Total tested: 6,528,136
+Combined rate: 163185 keys/sec (9791095 keys/min)
+======================================================================
+
+[BIRTHDAY-9] Tested: 1,100,000 | Unique: 1,100,000 | Rate: 27483/s
+[SEQ-forward-3] Tested: 1,300,000 | Rate: 32345/s | Current: 0x400000000000000000000000000013d61f
+[SEGMENT-7] Tested: 1,300,000 | Rate: 32204/s
+[RANDOM-2] Tested: 1,200,000 | Rate: 28821/s
+[RANDOM-1] Tested: 1,200,000 | Rate: 28589/s
+[SEGMENT-5] Tested: 1,400,000 | Rate: 33120/s
+[SEGMENT-6] Tested: 1,400,000 | Rate: 33066/s
+[SEGMENT-8] Tested: 1,400,000 | Rate: 33002/s
+[SEQ-backward-4] Tested: 1,400,000 | Rate: 32507/s | Current: 0x7fffffffffffffffffffffffffffeaa340
+[SEQ-forward-3] Tested: 1,400,000 | Rate: 32379/s | Current: 0x4000000000000000000000000000155cbf
+[SEGMENT-7] Tested: 1,400,000 | Rate: 32232/s
+[BIRTHDAY-9] Tested: 1,200,000 | Unique: 1,200,000 | Rate: 27434/s
+[SEGMENT-5] Tested: 1,500,000 | Rate: 33293/s
+[RANDOM-2] Tested: 1,300,000 | Rate: 28695/s
+[RANDOM-1] Tested: 1,300,000 | Rate: 28607/s
+[SEGMENT-6] Tested: 1,500,000 | Rate: 32987/s
+[SEGMENT-8] Tested: 1,500,000 | Rate: 32975/s
+[SEQ-forward-3] Tested: 1,500,000 | Rate: 32482/s | Current: 0x400000000000000000000000000016e35f
+[SEQ-backward-4] Tested: 1,500,000 | Rate: 32476/s | Current: 0x7fffffffffffffffffffffffffffe91ca0
+[SEGMENT-7] Tested: 1,500,000 | Rate: 32367/s
+[BIRTHDAY-9] Tested: 1,300,000 | Unique: 1,300,000 | Rate: 27439/s
+[SEGMENT-5] Tested: 1,600,000 | Rate: 33196/s
+[SEGMENT-8] Tested: 1,600,000 | Rate: 32957/s
+[SEGMENT-6] Tested: 1,600,000 | Rate: 32938/s
+[RANDOM-2] Tested: 1,400,000 | Rate: 28679/s
+[RANDOM-1] Tested: 1,400,000 | Rate: 28650/s
+[SEQ-backward-4] Tested: 1,600,000 | Rate: 32397/s | Current: 0x7fffffffffffffffffffffffffffe79600
+[SEQ-forward-3] Tested: 1,600,000 | Rate: 32397/s | Current: 0x40000000000000000000000000001869ff
+[SEGMENT-7] Tested: 1,600,000 | Rate: 32353/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 0.8 min | Total tested: 8,165,027
+Combined rate: 163285 keys/sec (9797126 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 1,700,000 | Rate: 33389/s
+[BIRTHDAY-9] Tested: 1,400,000 | Unique: 1,400,000 | Rate: 27490/s
+[SEGMENT-6] Tested: 1,700,000 | Rate: 32982/s
+[SEGMENT-8] Tested: 1,700,000 | Rate: 32880/s
+[RANDOM-1] Tested: 1,500,000 | Rate: 28731/s
+[RANDOM-2] Tested: 1,500,000 | Rate: 28642/s
+[SEQ-backward-4] Tested: 1,700,000 | Rate: 32377/s | Current: 0x7fffffffffffffffffffffffffffe60f60
+[SEGMENT-7] Tested: 1,700,000 | Rate: 32368/s
+[SEQ-forward-3] Tested: 1,700,000 | Rate: 32338/s | Current: 0x400000000000000000000000000019f09f
+[SEGMENT-5] Tested: 1,800,000 | Rate: 33363/s
+[BIRTHDAY-9] Tested: 1,500,000 | Unique: 1,500,000 | Rate: 27524/s
+[SEGMENT-6] Tested: 1,800,000 | Rate: 33022/s
+[SEGMENT-8] Tested: 1,800,000 | Rate: 33011/s
+[SEGMENT-7] Tested: 1,800,000 | Rate: 32440/s
+[SEQ-backward-4] Tested: 1,800,000 | Rate: 32338/s | Current: 0x7fffffffffffffffffffffffffffe488c0
+[SEQ-forward-3] Tested: 1,800,000 | Rate: 32294/s | Current: 0x40000000000000000000000000001b773f
+[RANDOM-1] Tested: 1,600,000 | Rate: 28693/s
+[RANDOM-2] Tested: 1,600,000 | Rate: 28621/s
+[SEGMENT-5] Tested: 1,900,000 | Rate: 33495/s
+[SEGMENT-8] Tested: 1,900,000 | Rate: 32932/s
+[SEGMENT-6] Tested: 1,900,000 | Rate: 32833/s
+[BIRTHDAY-9] Tested: 1,600,000 | Unique: 1,600,000 | Rate: 27450/s
+[SEGMENT-7] Tested: 1,900,000 | Rate: 32397/s
+[SEQ-backward-4] Tested: 1,900,000 | Rate: 32370/s | Current: 0x7fffffffffffffffffffffffffffe30220
+[SEQ-forward-3] Tested: 1,900,000 | Rate: 32265/s | Current: 0x40000000000000000000000000001cfddf
+[RANDOM-1] Tested: 1,700,000 | Rate: 28610/s
+[RANDOM-2] Tested: 1,700,000 | Rate: 28555/s
+[SEGMENT-5] Tested: 2,000,000 | Rate: 33482/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 1.0 min | Total tested: 9,803,111
+Combined rate: 163360 keys/sec (9801612 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 2,000,000 | Rate: 32867/s
+[SEGMENT-6] Tested: 2,000,000 | Rate: 32737/s
+[SEQ-backward-4] Tested: 2,000,000 | Rate: 32350/s | Current: 0x7fffffffffffffffffffffffffffe17b80
+[SEGMENT-7] Tested: 2,000,000 | Rate: 32338/s
+[SEQ-forward-3] Tested: 2,000,000 | Rate: 32261/s | Current: 0x40000000000000000000000000001e847f
+[BIRTHDAY-9] Tested: 1,700,000 | Unique: 1,700,000 | Rate: 27336/s
+[SEGMENT-5] Tested: 2,100,000 | Rate: 33312/s
+[RANDOM-1] Tested: 1,800,000 | Rate: 28516/s
+[RANDOM-2] Tested: 1,800,000 | Rate: 28476/s
+[SEGMENT-8] Tested: 2,100,000 | Rate: 32896/s
+[SEGMENT-6] Tested: 2,100,000 | Rate: 32721/s
+[SEQ-backward-4] Tested: 2,100,000 | Rate: 32490/s | Current: 0x7fffffffffffffffffffffffffffdff4e0
+[SEGMENT-7] Tested: 2,100,000 | Rate: 32260/s
+[SEQ-forward-3] Tested: 2,100,000 | Rate: 32185/s | Current: 0x4000000000000000000000000000200b1f
+[BIRTHDAY-9] Tested: 1,800,000 | Unique: 1,800,000 | Rate: 27292/s
+[SEGMENT-5] Tested: 2,200,000 | Rate: 33297/s
+[RANDOM-1] Tested: 1,900,000 | Rate: 28504/s
+[RANDOM-2] Tested: 1,900,000 | Rate: 28454/s
+[SEGMENT-8] Tested: 2,200,000 | Rate: 32885/s
+[SEGMENT-6] Tested: 2,200,000 | Rate: 32630/s
+[SEQ-backward-4] Tested: 2,200,000 | Rate: 32387/s | Current: 0x7fffffffffffffffffffffffffffde6e40
+[SEGMENT-7] Tested: 2,200,000 | Rate: 32190/s
+[SEQ-forward-3] Tested: 2,200,000 | Rate: 32137/s | Current: 0x40000000000000000000000000002191bf
+[SEGMENT-5] Tested: 2,300,000 | Rate: 33200/s
+[BIRTHDAY-9] Tested: 1,900,000 | Unique: 1,900,000 | Rate: 27239/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 1.2 min | Total tested: 11,331,775
+Combined rate: 161833 keys/sec (9709983 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 2,300,000 | Rate: 32842/s
+[RANDOM-1] Tested: 2,000,000 | Rate: 28483/s
+[RANDOM-2] Tested: 2,000,000 | Rate: 28458/s
+[SEGMENT-6] Tested: 2,300,000 | Rate: 32659/s
+[SEQ-backward-4] Tested: 2,300,000 | Rate: 32355/s | Current: 0x7fffffffffffffffffffffffffffdce7a0
+[SEQ-forward-3] Tested: 2,300,000 | Rate: 32137/s | Current: 0x400000000000000000000000000023185f
+[SEGMENT-7] Tested: 2,300,000 | Rate: 32133/s
+[SEGMENT-5] Tested: 2,400,000 | Rate: 33147/s
+[SEGMENT-8] Tested: 2,400,000 | Rate: 32801/s
+[BIRTHDAY-9] Tested: 2,000,000 | Unique: 2,000,000 | Rate: 27175/s
+[SEGMENT-6] Tested: 2,400,000 | Rate: 32574/s
+[RANDOM-1] Tested: 2,100,000 | Rate: 28477/s
+[RANDOM-2] Tested: 2,100,000 | Rate: 28407/s
+[SEQ-backward-4] Tested: 2,400,000 | Rate: 32426/s | Current: 0x7fffffffffffffffffffffffffffdb6100
+[SEQ-forward-3] Tested: 2,400,000 | Rate: 32169/s | Current: 0x4000000000000000000000000000249eff
+[SEGMENT-7] Tested: 2,400,000 | Rate: 32045/s
+[SEGMENT-5] Tested: 2,500,000 | Rate: 33075/s
+[SEGMENT-8] Tested: 2,500,000 | Rate: 32706/s
+[SEGMENT-6] Tested: 2,500,000 | Rate: 32614/s
+[BIRTHDAY-9] Tested: 2,100,000 | Unique: 2,100,000 | Rate: 27224/s
+[SEQ-backward-4] Tested: 2,500,000 | Rate: 32346/s | Current: 0x7fffffffffffffffffffffffffffd9da60
+[RANDOM-1] Tested: 2,200,000 | Rate: 28398/s
+[RANDOM-2] Tested: 2,200,000 | Rate: 28343/s
+[SEQ-forward-3] Tested: 2,500,000 | Rate: 32143/s | Current: 0x400000000000000000000000000026259f
+[SEGMENT-7] Tested: 2,500,000 | Rate: 32009/s
+[SEGMENT-5] Tested: 2,600,000 | Rate: 33016/s
+[SEGMENT-8] Tested: 2,600,000 | Rate: 32598/s
+[SEGMENT-6] Tested: 2,600,000 | Rate: 32586/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 1.3 min | Total tested: 12,892,277
+Combined rate: 161110 keys/sec (9666598 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 2,600,000 | Rate: 32342/s | Current: 0x7fffffffffffffffffffffffffffd853c0
+[BIRTHDAY-9] Tested: 2,200,000 | Unique: 2,200,000 | Rate: 27319/s
+[SEQ-forward-3] Tested: 2,600,000 | Rate: 32232/s | Current: 0x400000000000000000000000000027ac3f
+[SEGMENT-7] Tested: 2,600,000 | Rate: 32125/s
+[RANDOM-1] Tested: 2,300,000 | Rate: 28352/s
+[RANDOM-2] Tested: 2,300,000 | Rate: 28316/s
+[SEGMENT-5] Tested: 2,700,000 | Rate: 33014/s
+[SEGMENT-8] Tested: 2,700,000 | Rate: 32621/s
+[SEGMENT-6] Tested: 2,700,000 | Rate: 32553/s
+[SEQ-backward-4] Tested: 2,700,000 | Rate: 32356/s | Current: 0x7fffffffffffffffffffffffffffd6cd20
+[SEQ-forward-3] Tested: 2,700,000 | Rate: 32237/s | Current: 0x40000000000000000000000000002932df
+[SEGMENT-7] Tested: 2,700,000 | Rate: 32128/s
+[BIRTHDAY-9] Tested: 2,300,000 | Unique: 2,300,000 | Rate: 27361/s
+[RANDOM-1] Tested: 2,400,000 | Rate: 28450/s
+[RANDOM-2] Tested: 2,400,000 | Rate: 28312/s
+[SEGMENT-5] Tested: 2,800,000 | Rate: 32964/s
+[SEGMENT-8] Tested: 2,800,000 | Rate: 32746/s
+[SEGMENT-6] Tested: 2,800,000 | Rate: 32643/s
+[SEQ-backward-4] Tested: 2,800,000 | Rate: 32365/s | Current: 0x7fffffffffffffffffffffffffffd54680
+[SEQ-forward-3] Tested: 2,800,000 | Rate: 32215/s | Current: 0x40000000000000000000000000002ab97f
+[SEGMENT-7] Tested: 2,800,000 | Rate: 32133/s
+[BIRTHDAY-9] Tested: 2,400,000 | Unique: 2,400,000 | Rate: 27407/s
+[RANDOM-1] Tested: 2,500,000 | Rate: 28427/s
+[SEGMENT-5] Tested: 2,900,000 | Rate: 32886/s
+[RANDOM-2] Tested: 2,500,000 | Rate: 28345/s
+[SEGMENT-8] Tested: 2,900,000 | Rate: 32743/s
+[SEGMENT-6] Tested: 2,900,000 | Rate: 32680/s
+[SEQ-backward-4] Tested: 2,900,000 | Rate: 32418/s | Current: 0x7fffffffffffffffffffffffffffd3bfe0
+
+======================================================================
+GLOBAL PROGRESS
+Time: 1.5 min | Total tested: 14,568,948
+Combined rate: 161832 keys/sec (9709916 keys/min)
+======================================================================
+
+[SEQ-forward-3] Tested: 2,900,000 | Rate: 32189/s | Current: 0x40000000000000000000000000002c401f
+[SEGMENT-7] Tested: 2,900,000 | Rate: 32079/s
+[SEGMENT-5] Tested: 3,000,000 | Rate: 32919/s
+[BIRTHDAY-9] Tested: 2,500,000 | Unique: 2,500,000 | Rate: 27360/s
+[RANDOM-1] Tested: 2,600,000 | Rate: 28443/s
+[RANDOM-2] Tested: 2,600,000 | Rate: 28364/s
+[SEGMENT-6] Tested: 3,000,000 | Rate: 32698/s
+[SEGMENT-8] Tested: 3,000,000 | Rate: 32700/s
+[SEQ-backward-4] Tested: 3,000,000 | Rate: 32394/s | Current: 0x7fffffffffffffffffffffffffffd23940
+[SEQ-forward-3] Tested: 3,000,000 | Rate: 32191/s | Current: 0x40000000000000000000000000002dc6bf
+[SEGMENT-7] Tested: 3,000,000 | Rate: 32080/s
+[SEGMENT-5] Tested: 3,100,000 | Rate: 32870/s
+[RANDOM-2] Tested: 2,700,000 | Rate: 28477/s
+[SEGMENT-8] Tested: 3,100,000 | Rate: 32671/s
+[RANDOM-1] Tested: 2,700,000 | Rate: 28431/s
+[SEGMENT-6] Tested: 3,100,000 | Rate: 32642/s
+[BIRTHDAY-9] Tested: 2,600,000 | Unique: 2,600,000 | Rate: 27229/s
+[SEQ-backward-4] Tested: 3,100,000 | Rate: 32336/s | Current: 0x7fffffffffffffffffffffffffffd0b2a0
+[SEQ-forward-3] Tested: 3,100,000 | Rate: 32180/s | Current: 0x40000000000000000000000000002f4d5f
+[SEGMENT-7] Tested: 3,100,000 | Rate: 32052/s
+[SEGMENT-5] Tested: 3,200,000 | Rate: 32854/s
+[SEGMENT-8] Tested: 3,200,000 | Rate: 32658/s
+[SEGMENT-6] Tested: 3,200,000 | Rate: 32587/s
+[RANDOM-2] Tested: 2,800,000 | Rate: 28440/s
+[RANDOM-1] Tested: 2,800,000 | Rate: 28404/s
+[SEQ-backward-4] Tested: 3,200,000 | Rate: 32297/s | Current: 0x7fffffffffffffffffffffffffffcf2c00
+[BIRTHDAY-9] Tested: 2,700,000 | Unique: 2,700,000 | Rate: 27219/s
+[SEQ-forward-3] Tested: 3,200,000 | Rate: 32168/s | Current: 0x400000000000000000000000000030d3ff
+[SEGMENT-7] Tested: 3,200,000 | Rate: 32040/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 1.7 min | Total tested: 16,216,049
+Combined rate: 162120 keys/sec (9727171 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 3,300,000 | Rate: 32878/s
+[SEGMENT-8] Tested: 3,300,000 | Rate: 32649/s
+[SEGMENT-6] Tested: 3,300,000 | Rate: 32563/s
+[RANDOM-1] Tested: 2,900,000 | Rate: 28420/s
+[RANDOM-2] Tested: 2,900,000 | Rate: 28394/s
+[SEQ-backward-4] Tested: 3,300,000 | Rate: 32271/s | Current: 0x7fffffffffffffffffffffffffffcda560
+[SEQ-forward-3] Tested: 3,300,000 | Rate: 32187/s | Current: 0x4000000000000000000000000000325a9f
+[SEGMENT-7] Tested: 3,300,000 | Rate: 32123/s
+[BIRTHDAY-9] Tested: 2,800,000 | Unique: 2,800,000 | Rate: 27212/s
+[SEGMENT-5] Tested: 3,400,000 | Rate: 32913/s
+[SEGMENT-6] Tested: 3,400,000 | Rate: 32599/s
+[SEGMENT-8] Tested: 3,400,000 | Rate: 32591/s
+[RANDOM-1] Tested: 3,000,000 | Rate: 28501/s
+[SEQ-backward-4] Tested: 3,400,000 | Rate: 32220/s | Current: 0x7fffffffffffffffffffffffffffcc1ec0
+[SEQ-forward-3] Tested: 3,400,000 | Rate: 32179/s | Current: 0x400000000000000000000000000033e13f
+[RANDOM-2] Tested: 3,000,000 | Rate: 28383/s
+[SEGMENT-7] Tested: 3,400,000 | Rate: 32129/s
+[BIRTHDAY-9] Tested: 2,900,000 | Unique: 2,900,000 | Rate: 27306/s
+[SEGMENT-5] Tested: 3,500,000 | Rate: 32919/s
+[SEGMENT-6] Tested: 3,500,000 | Rate: 32568/s
+[SEGMENT-8] Tested: 3,500,000 | Rate: 32554/s
+[SEQ-backward-4] Tested: 3,500,000 | Rate: 32313/s | Current: 0x7fffffffffffffffffffffffffffca9820
+[RANDOM-1] Tested: 3,100,000 | Rate: 28528/s
+[SEGMENT-7] Tested: 3,500,000 | Rate: 32177/s
+[SEQ-forward-3] Tested: 3,500,000 | Rate: 32167/s | Current: 0x40000000000000000000000000003567df
+[RANDOM-2] Tested: 3,100,000 | Rate: 28375/s
+[SEGMENT-5] Tested: 3,600,000 | Rate: 32953/s
+[BIRTHDAY-9] Tested: 3,000,000 | Unique: 3,000,000 | Rate: 27342/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 1.8 min | Total tested: 17,785,660
+Combined rate: 161651 keys/sec (9699032 keys/min)
+======================================================================
+
+[SEGMENT-6] Tested: 3,600,000 | Rate: 32579/s
+[SEGMENT-8] Tested: 3,600,000 | Rate: 32562/s
+[SEQ-backward-4] Tested: 3,600,000 | Rate: 32332/s | Current: 0x7fffffffffffffffffffffffffffc91180
+[SEGMENT-7] Tested: 3,600,000 | Rate: 32198/s
+[SEQ-forward-3] Tested: 3,600,000 | Rate: 32168/s | Current: 0x400000000000000000000000000036ee7f
+[RANDOM-1] Tested: 3,200,000 | Rate: 28528/s
+[SEGMENT-5] Tested: 3,700,000 | Rate: 32925/s
+[RANDOM-2] Tested: 3,200,000 | Rate: 28331/s
+[BIRTHDAY-9] Tested: 3,100,000 | Unique: 3,100,000 | Rate: 27322/s
+[SEGMENT-8] Tested: 3,700,000 | Rate: 32608/s
+[SEGMENT-6] Tested: 3,700,000 | Rate: 32551/s
+[SEQ-backward-4] Tested: 3,700,000 | Rate: 32309/s | Current: 0x7fffffffffffffffffffffffffffc78ae0
+[SEGMENT-7] Tested: 3,700,000 | Rate: 32240/s
+[SEQ-forward-3] Tested: 3,700,000 | Rate: 32155/s | Current: 0x400000000000000000000000000038751f
+[SEGMENT-5] Tested: 3,800,000 | Rate: 32852/s
+[RANDOM-1] Tested: 3,300,000 | Rate: 28513/s
+[SEGMENT-8] Tested: 3,800,000 | Rate: 32674/s
+[RANDOM-2] Tested: 3,300,000 | Rate: 28327/s
+[SEGMENT-6] Tested: 3,800,000 | Rate: 32601/s
+[BIRTHDAY-9] Tested: 3,200,000 | Unique: 3,200,000 | Rate: 27297/s
+[SEQ-backward-4] Tested: 3,800,000 | Rate: 32287/s | Current: 0x7fffffffffffffffffffffffffffc60440
+[SEGMENT-7] Tested: 3,800,000 | Rate: 32209/s
+[SEQ-forward-3] Tested: 3,800,000 | Rate: 32121/s | Current: 0x400000000000000000000000000039fbbf
+[SEGMENT-5] Tested: 3,900,000 | Rate: 32819/s
+[SEGMENT-8] Tested: 3,900,000 | Rate: 32755/s
+[RANDOM-1] Tested: 3,400,000 | Rate: 28512/s
+[SEGMENT-6] Tested: 3,900,000 | Rate: 32602/s
+[RANDOM-2] Tested: 3,400,000 | Rate: 28332/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 2.0 min | Total tested: 19,374,888
+Combined rate: 161418 keys/sec (9685089 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 3,900,000 | Rate: 32294/s
+[BIRTHDAY-9] Tested: 3,300,000 | Unique: 3,300,000 | Rate: 27322/s
+[SEQ-backward-4] Tested: 3,900,000 | Rate: 32268/s | Current: 0x7fffffffffffffffffffffffffffc47da0
+[SEQ-forward-3] Tested: 3,900,000 | Rate: 32178/s | Current: 0x40000000000000000000000000003b825f
+[SEGMENT-5] Tested: 4,000,000 | Rate: 32794/s
+[SEGMENT-8] Tested: 4,000,000 | Rate: 32712/s
+[RANDOM-1] Tested: 3,500,000 | Rate: 28526/s
+[SEGMENT-6] Tested: 4,000,000 | Rate: 32597/s
+[RANDOM-2] Tested: 3,500,000 | Rate: 28321/s
+[SEGMENT-7] Tested: 4,000,000 | Rate: 32298/s
+[SEQ-backward-4] Tested: 4,000,000 | Rate: 32262/s | Current: 0x7fffffffffffffffffffffffffffc2f700
+[SEQ-forward-3] Tested: 4,000,000 | Rate: 32143/s | Current: 0x40000000000000000000000000003d08ff
+[BIRTHDAY-9] Tested: 3,400,000 | Unique: 3,400,000 | Rate: 27280/s
+[SEGMENT-5] Tested: 4,100,000 | Rate: 32802/s
+[SEGMENT-8] Tested: 4,100,000 | Rate: 32747/s
+[SEGMENT-6] Tested: 4,100,000 | Rate: 32556/s
+[RANDOM-1] Tested: 3,600,000 | Rate: 28540/s
+[SEGMENT-7] Tested: 4,100,000 | Rate: 32320/s
+[RANDOM-2] Tested: 3,600,000 | Rate: 28307/s
+[SEQ-backward-4] Tested: 4,100,000 | Rate: 32199/s | Current: 0x7fffffffffffffffffffffffffffc17060
+[SEQ-forward-3] Tested: 4,100,000 | Rate: 32123/s | Current: 0x40000000000000000000000000003e8f9f
+[SEGMENT-5] Tested: 4,200,000 | Rate: 32840/s
+[BIRTHDAY-9] Tested: 3,500,000 | Unique: 3,500,000 | Rate: 27279/s
+[SEGMENT-8] Tested: 4,200,000 | Rate: 32727/s
+[SEGMENT-6] Tested: 4,200,000 | Rate: 32626/s
+[RANDOM-1] Tested: 3,700,000 | Rate: 28560/s
+[SEGMENT-7] Tested: 4,200,000 | Rate: 32317/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 2.2 min | Total tested: 21,025,957
+Combined rate: 161697 keys/sec (9701812 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 4,200,000 | Rate: 32210/s | Current: 0x7fffffffffffffffffffffffffffbfe9c0
+[RANDOM-2] Tested: 3,700,000 | Rate: 28313/s
+[SEQ-forward-3] Tested: 4,200,000 | Rate: 32135/s | Current: 0x400000000000000000000000000040163f
+[SEGMENT-5] Tested: 4,300,000 | Rate: 32836/s
+[SEGMENT-8] Tested: 4,300,000 | Rate: 32717/s
+[SEGMENT-6] Tested: 4,300,000 | Rate: 32633/s
+[BIRTHDAY-9] Tested: 3,600,000 | Unique: 3,600,000 | Rate: 27314/s
+[RANDOM-1] Tested: 3,800,000 | Rate: 28560/s
+[SEGMENT-7] Tested: 4,300,000 | Rate: 32304/s
+[SEQ-backward-4] Tested: 4,300,000 | Rate: 32213/s | Current: 0x7fffffffffffffffffffffffffffbe6320
+[SEQ-forward-3] Tested: 4,300,000 | Rate: 32133/s | Current: 0x4000000000000000000000000000419cdf
+[SEGMENT-5] Tested: 4,400,000 | Rate: 32800/s
+[RANDOM-2] Tested: 3,800,000 | Rate: 28286/s
+[SEGMENT-8] Tested: 4,400,000 | Rate: 32690/s
+[SEGMENT-6] Tested: 4,400,000 | Rate: 32596/s
+[BIRTHDAY-9] Tested: 3,700,000 | Unique: 3,700,000 | Rate: 27310/s
+[SEGMENT-7] Tested: 4,400,000 | Rate: 32273/s
+[RANDOM-1] Tested: 3,900,000 | Rate: 28548/s
+[SEQ-backward-4] Tested: 4,400,000 | Rate: 32188/s | Current: 0x7fffffffffffffffffffffffffffbcdc80
+[SEGMENT-5] Tested: 4,500,000 | Rate: 32851/s
+[SEQ-forward-3] Tested: 4,400,000 | Rate: 32111/s | Current: 0x400000000000000000000000000043237f
+[SEGMENT-8] Tested: 4,500,000 | Rate: 32690/s
+[RANDOM-2] Tested: 3,900,000 | Rate: 28307/s
+[SEGMENT-6] Tested: 4,500,000 | Rate: 32578/s
+[BIRTHDAY-9] Tested: 3,800,000 | Unique: 3,800,000 | Rate: 27360/s
+[SEGMENT-7] Tested: 4,500,000 | Rate: 32290/s
+[SEQ-backward-4] Tested: 4,500,000 | Rate: 32173/s | Current: 0x7fffffffffffffffffffffffffffbb55e0
+
+======================================================================
+GLOBAL PROGRESS
+Time: 2.3 min | Total tested: 22,585,042
+Combined rate: 161283 keys/sec (9677004 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 4,600,000 | Rate: 32846/s
+[SEQ-forward-3] Tested: 4,500,000 | Rate: 32125/s | Current: 0x400000000000000000000000000044aa1f
+[RANDOM-1] Tested: 4,000,000 | Rate: 28549/s
+[SEGMENT-8] Tested: 4,600,000 | Rate: 32680/s
+[SEGMENT-6] Tested: 4,600,000 | Rate: 32591/s
+[RANDOM-2] Tested: 4,000,000 | Rate: 28291/s
+[SEGMENT-7] Tested: 4,600,000 | Rate: 32304/s
+[SEQ-backward-4] Tested: 4,600,000 | Rate: 32274/s | Current: 0x7fffffffffffffffffffffffffffb9cf40
+[BIRTHDAY-9] Tested: 3,900,000 | Unique: 3,900,000 | Rate: 27347/s
+[SEQ-forward-3] Tested: 4,600,000 | Rate: 32141/s | Current: 0x40000000000000000000000000004630bf
+[SEGMENT-5] Tested: 4,700,000 | Rate: 32797/s
+[RANDOM-1] Tested: 4,100,000 | Rate: 28565/s
+[SEGMENT-8] Tested: 4,700,000 | Rate: 32665/s
+[SEGMENT-6] Tested: 4,700,000 | Rate: 32570/s
+[RANDOM-2] Tested: 4,100,000 | Rate: 28266/s
+[SEGMENT-7] Tested: 4,700,000 | Rate: 32306/s
+[SEQ-backward-4] Tested: 4,700,000 | Rate: 32268/s | Current: 0x7fffffffffffffffffffffffffffb848a0
+[SEQ-forward-3] Tested: 4,700,000 | Rate: 32127/s | Current: 0x400000000000000000000000000047b75f
+[BIRTHDAY-9] Tested: 4,000,000 | Unique: 4,000,000 | Rate: 27317/s
+[SEGMENT-5] Tested: 4,800,000 | Rate: 32773/s
+[SEGMENT-8] Tested: 4,800,000 | Rate: 32668/s
+[RANDOM-1] Tested: 4,200,000 | Rate: 28562/s
+[SEGMENT-6] Tested: 4,800,000 | Rate: 32573/s
+[SEGMENT-7] Tested: 4,800,000 | Rate: 32335/s
+[RANDOM-2] Tested: 4,200,000 | Rate: 28267/s
+[SEQ-backward-4] Tested: 4,800,000 | Rate: 32272/s | Current: 0x7fffffffffffffffffffffffffffb6c200
+[SEQ-forward-3] Tested: 4,800,000 | Rate: 32130/s | Current: 0x4000000000000000000000000000493dff
+[SEGMENT-5] Tested: 4,900,000 | Rate: 32794/s
+[BIRTHDAY-9] Tested: 4,100,000 | Unique: 4,100,000 | Rate: 27351/s
+[SEGMENT-8] Tested: 4,900,000 | Rate: 32662/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 2.5 min | Total tested: 24,174,702
+Combined rate: 161129 keys/sec (9667714 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 4,300,000 | Rate: 28610/s
+[SEGMENT-6] Tested: 4,900,000 | Rate: 32571/s
+[SEGMENT-7] Tested: 4,900,000 | Rate: 32356/s
+[SEQ-backward-4] Tested: 4,900,000 | Rate: 32224/s | Current: 0x7fffffffffffffffffffffffffffb53b60
+[RANDOM-2] Tested: 4,300,000 | Rate: 28260/s
+[SEGMENT-5] Tested: 5,000,000 | Rate: 32782/s
+[SEQ-forward-3] Tested: 4,900,000 | Rate: 32111/s | Current: 0x40000000000000000000000000004ac49f
+[SEGMENT-8] Tested: 5,000,000 | Rate: 32675/s
+[SEGMENT-6] Tested: 5,000,000 | Rate: 32587/s
+[BIRTHDAY-9] Tested: 4,200,000 | Unique: 4,200,000 | Rate: 27338/s
+[RANDOM-1] Tested: 4,400,000 | Rate: 28616/s
+[SEGMENT-7] Tested: 5,000,000 | Rate: 32343/s
+[SEQ-backward-4] Tested: 5,000,000 | Rate: 32225/s | Current: 0x7fffffffffffffffffffffffffffb3b4c0
+[SEQ-forward-3] Tested: 5,000,000 | Rate: 32120/s | Current: 0x40000000000000000000000000004c4b3f
+[RANDOM-2] Tested: 4,400,000 | Rate: 28263/s
+[SEGMENT-5] Tested: 5,100,000 | Rate: 32750/s
+[SEGMENT-8] Tested: 5,100,000 | Rate: 32656/s
+[SEGMENT-6] Tested: 5,100,000 | Rate: 32539/s
+[RANDOM-1] Tested: 4,500,000 | Rate: 28623/s
+[SEGMENT-7] Tested: 5,100,000 | Rate: 32388/s
+[BIRTHDAY-9] Tested: 4,300,000 | Unique: 4,300,000 | Rate: 27280/s
+[SEQ-backward-4] Tested: 5,100,000 | Rate: 32227/s | Current: 0x7fffffffffffffffffffffffffffb22e20
+[SEGMENT-5] Tested: 5,200,000 | Rate: 32713/s
+[SEQ-forward-3] Tested: 5,100,000 | Rate: 32074/s | Current: 0x40000000000000000000000000004dd1df
+[RANDOM-2] Tested: 4,500,000 | Rate: 28244/s
+[SEGMENT-8] Tested: 5,200,000 | Rate: 32611/s
+[SEGMENT-6] Tested: 5,200,000 | Rate: 32516/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 2.7 min | Total tested: 25,890,182
+Combined rate: 161776 keys/sec (9706563 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 5,200,000 | Rate: 32403/s
+[RANDOM-1] Tested: 4,600,000 | Rate: 28585/s
+[BIRTHDAY-9] Tested: 4,400,000 | Unique: 4,400,000 | Rate: 27342/s
+[SEQ-backward-4] Tested: 5,200,000 | Rate: 32272/s | Current: 0x7fffffffffffffffffffffffffffb0a780
+[SEGMENT-5] Tested: 5,300,000 | Rate: 32709/s
+[SEQ-forward-3] Tested: 5,200,000 | Rate: 32071/s | Current: 0x40000000000000000000000000004f587f
+[SEGMENT-8] Tested: 5,300,000 | Rate: 32671/s
+[RANDOM-2] Tested: 4,600,000 | Rate: 28264/s
+[SEGMENT-6] Tested: 5,300,000 | Rate: 32523/s
+[SEGMENT-7] Tested: 5,300,000 | Rate: 32404/s
+[SEQ-backward-4] Tested: 5,300,000 | Rate: 32281/s | Current: 0x7fffffffffffffffffffffffffffaf20e0
+[RANDOM-1] Tested: 4,700,000 | Rate: 28582/s
+[BIRTHDAY-9] Tested: 4,500,000 | Unique: 4,500,000 | Rate: 27357/s
+[SEQ-forward-3] Tested: 5,300,000 | Rate: 32091/s | Current: 0x400000000000000000000000000050df1f
+[SEGMENT-8] Tested: 5,400,000 | Rate: 32695/s
+[SEGMENT-5] Tested: 5,400,000 | Rate: 32693/s
+[SEGMENT-6] Tested: 5,400,000 | Rate: 32524/s
+[RANDOM-2] Tested: 4,700,000 | Rate: 28306/s
+[SEGMENT-7] Tested: 5,400,000 | Rate: 32398/s
+[SEQ-backward-4] Tested: 5,400,000 | Rate: 32282/s | Current: 0x7fffffffffffffffffffffffffffad9a40
+[RANDOM-1] Tested: 4,800,000 | Rate: 28580/s
+[SEGMENT-5] Tested: 5,500,000 | Rate: 32737/s
+[SEGMENT-8] Tested: 5,500,000 | Rate: 32697/s
+[SEQ-forward-3] Tested: 5,400,000 | Rate: 32097/s | Current: 0x40000000000000000000000000005265bf
+[BIRTHDAY-9] Tested: 4,600,000 | Unique: 4,600,000 | Rate: 27327/s
+[SEGMENT-6] Tested: 5,500,000 | Rate: 32486/s
+[RANDOM-2] Tested: 4,800,000 | Rate: 28322/s
+[SEGMENT-7] Tested: 5,500,000 | Rate: 32355/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 2.8 min | Total tested: 27,592,424
+Combined rate: 162273 keys/sec (9736368 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 5,500,000 | Rate: 32263/s | Current: 0x7fffffffffffffffffffffffffffac13a0
+[SEGMENT-5] Tested: 5,600,000 | Rate: 32731/s
+[SEQ-forward-3] Tested: 5,500,000 | Rate: 32099/s | Current: 0x400000000000000000000000000053ec5f
+[SEGMENT-8] Tested: 5,600,000 | Rate: 32678/s
+[RANDOM-1] Tested: 4,900,000 | Rate: 28582/s
+[BIRTHDAY-9] Tested: 4,700,000 | Unique: 4,700,000 | Rate: 27299/s
+[SEGMENT-6] Tested: 5,600,000 | Rate: 32477/s
+[RANDOM-2] Tested: 4,900,000 | Rate: 28375/s
+[SEGMENT-7] Tested: 5,600,000 | Rate: 32337/s
+[SEQ-backward-4] Tested: 5,600,000 | Rate: 32245/s | Current: 0x7fffffffffffffffffffffffffffaa8d00
+[SEGMENT-5] Tested: 5,700,000 | Rate: 32698/s
+[SEGMENT-8] Tested: 5,700,000 | Rate: 32691/s
+[SEQ-forward-3] Tested: 5,600,000 | Rate: 32105/s | Current: 0x40000000000000000000000000005572ff
+[RANDOM-1] Tested: 5,000,000 | Rate: 28552/s
+[SEGMENT-6] Tested: 5,700,000 | Rate: 32507/s
+[BIRTHDAY-9] Tested: 4,800,000 | Unique: 4,800,000 | Rate: 27294/s
+[RANDOM-2] Tested: 5,000,000 | Rate: 28410/s
+[SEGMENT-7] Tested: 5,700,000 | Rate: 32332/s
+[SEQ-backward-4] Tested: 5,700,000 | Rate: 32228/s | Current: 0x7fffffffffffffffffffffffffffa90660
+[SEGMENT-8] Tested: 5,800,000 | Rate: 32713/s
+[SEGMENT-5] Tested: 5,800,000 | Rate: 32682/s
+[SEQ-forward-3] Tested: 5,700,000 | Rate: 32089/s | Current: 0x400000000000000000000000000056f99f
+[SEGMENT-6] Tested: 5,800,000 | Rate: 32521/s
+[RANDOM-1] Tested: 5,100,000 | Rate: 28543/s
+[BIRTHDAY-9] Tested: 4,900,000 | Unique: 4,900,000 | Rate: 27308/s
+[SEGMENT-7] Tested: 5,800,000 | Rate: 32296/s
+[RANDOM-2] Tested: 5,100,000 | Rate: 28387/s
+[SEQ-backward-4] Tested: 5,800,000 | Rate: 32227/s | Current: 0x7fffffffffffffffffffffffffffa77fc0
+
+======================================================================
+GLOBAL PROGRESS
+Time: 3.0 min | Total tested: 29,173,340
+Combined rate: 162040 keys/sec (9722415 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 5,900,000 | Rate: 32711/s
+[SEGMENT-5] Tested: 5,900,000 | Rate: 32686/s
+[SEQ-forward-3] Tested: 5,800,000 | Rate: 32102/s | Current: 0x400000000000000000000000000058803f
+[SEGMENT-6] Tested: 5,900,000 | Rate: 32522/s
+[RANDOM-1] Tested: 5,200,000 | Rate: 28541/s
+[SEGMENT-7] Tested: 5,900,000 | Rate: 32323/s
+[BIRTHDAY-9] Tested: 5,000,000 | Unique: 5,000,000 | Rate: 27297/s
+[RANDOM-2] Tested: 5,200,000 | Rate: 28387/s
+[SEQ-backward-4] Tested: 5,900,000 | Rate: 32205/s | Current: 0x7fffffffffffffffffffffffffffa5f920
+[SEGMENT-5] Tested: 6,000,000 | Rate: 32732/s
+[SEGMENT-8] Tested: 6,000,000 | Rate: 32731/s
+[SEQ-forward-3] Tested: 5,900,000 | Rate: 32111/s | Current: 0x40000000000000000000000000005a06df
+[SEGMENT-6] Tested: 6,000,000 | Rate: 32500/s
+[SEGMENT-7] Tested: 6,000,000 | Rate: 32370/s
+[RANDOM-1] Tested: 5,300,000 | Rate: 28557/s
+[SEGMENT-5] Tested: 6,100,000 | Rate: 32796/s
+[SEGMENT-8] Tested: 6,100,000 | Rate: 32761/s
+[SEQ-backward-4] Tested: 6,000,000 | Rate: 32196/s | Current: 0x7fffffffffffffffffffffffffffa47280
+[RANDOM-2] Tested: 5,300,000 | Rate: 28404/s
+[SEQ-forward-3] Tested: 6,000,000 | Rate: 32099/s | Current: 0x40000000000000000000000000005b8d7f
+[BIRTHDAY-9] Tested: 5,100,000 | Unique: 5,100,000 | Rate: 27179/s
+[SEGMENT-6] Tested: 6,100,000 | Rate: 32478/s
+[SEGMENT-7] Tested: 6,100,000 | Rate: 32382/s
+[RANDOM-1] Tested: 5,400,000 | Rate: 28596/s
+[SEGMENT-5] Tested: 6,200,000 | Rate: 32802/s
+[SEGMENT-8] Tested: 6,200,000 | Rate: 32743/s
+[SEQ-backward-4] Tested: 6,100,000 | Rate: 32206/s | Current: 0x7fffffffffffffffffffffffffffa2ebe0
+[SEQ-forward-3] Tested: 6,100,000 | Rate: 32126/s | Current: 0x40000000000000000000000000005d141f
+[RANDOM-2] Tested: 5,400,000 | Rate: 28430/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 3.2 min | Total tested: 30,974,425
+Combined rate: 162991 keys/sec (9779456 keys/min)
+======================================================================
+
+[SEGMENT-6] Tested: 6,200,000 | Rate: 32467/s
+[BIRTHDAY-9] Tested: 5,200,000 | Unique: 5,200,000 | Rate: 27187/s
+[SEGMENT-7] Tested: 6,200,000 | Rate: 32411/s
+[SEGMENT-5] Tested: 6,300,000 | Rate: 32790/s
+[RANDOM-1] Tested: 5,500,000 | Rate: 28587/s
+[SEQ-backward-4] Tested: 6,200,000 | Rate: 32216/s | Current: 0x7fffffffffffffffffffffffffffa16540
+[SEGMENT-8] Tested: 6,300,000 | Rate: 32720/s
+[SEQ-forward-3] Tested: 6,200,000 | Rate: 32128/s | Current: 0x40000000000000000000000000005e9abf
+[RANDOM-2] Tested: 5,500,000 | Rate: 28423/s
+[SEGMENT-6] Tested: 6,300,000 | Rate: 32488/s
+[SEGMENT-7] Tested: 6,300,000 | Rate: 32426/s
+[BIRTHDAY-9] Tested: 5,300,000 | Unique: 5,300,000 | Rate: 27181/s
+[SEGMENT-5] Tested: 6,400,000 | Rate: 32765/s
+[SEQ-backward-4] Tested: 6,300,000 | Rate: 32227/s | Current: 0x7fffffffffffffffffffffffffff9fdea0
+[SEGMENT-8] Tested: 6,400,000 | Rate: 32723/s
+[RANDOM-1] Tested: 5,600,000 | Rate: 28554/s
+[SEQ-forward-3] Tested: 6,300,000 | Rate: 32112/s | Current: 0x400000000000000000000000000060215f
+[SEGMENT-6] Tested: 6,400,000 | Rate: 32501/s
+[RANDOM-2] Tested: 5,600,000 | Rate: 28392/s
+[SEGMENT-7] Tested: 6,400,000 | Rate: 32426/s
+[SEGMENT-5] Tested: 6,500,000 | Rate: 32812/s
+[SEGMENT-8] Tested: 6,500,000 | Rate: 32732/s
+[SEQ-backward-4] Tested: 6,400,000 | Rate: 32226/s | Current: 0x7fffffffffffffffffffffffffff9e5800
+[BIRTHDAY-9] Tested: 5,400,000 | Unique: 5,400,000 | Rate: 27178/s
+[SEQ-forward-3] Tested: 6,400,000 | Rate: 32157/s | Current: 0x400000000000000000000000000061a7ff
+[RANDOM-1] Tested: 5,700,000 | Rate: 28540/s
+[SEGMENT-6] Tested: 6,500,000 | Rate: 32525/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 3.3 min | Total tested: 32,594,967
+Combined rate: 162944 keys/sec (9776615 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 6,500,000 | Rate: 32428/s
+[RANDOM-2] Tested: 5,700,000 | Rate: 28410/s
+[SEGMENT-5] Tested: 6,600,000 | Rate: 32814/s
+[SEQ-backward-4] Tested: 6,500,000 | Rate: 32242/s | Current: 0x7fffffffffffffffffffffffffff9cd160
+[SEGMENT-8] Tested: 6,600,000 | Rate: 32725/s
+[SEQ-forward-3] Tested: 6,500,000 | Rate: 32188/s | Current: 0x4000000000000000000000000000632e9f
+[BIRTHDAY-9] Tested: 5,500,000 | Unique: 5,500,000 | Rate: 27179/s
+[SEGMENT-6] Tested: 6,600,000 | Rate: 32531/s
+[RANDOM-1] Tested: 5,800,000 | Rate: 28557/s
+[SEGMENT-7] Tested: 6,600,000 | Rate: 32435/s
+[RANDOM-2] Tested: 5,800,000 | Rate: 28416/s
+[SEGMENT-5] Tested: 6,700,000 | Rate: 32787/s
+[SEGMENT-8] Tested: 6,700,000 | Rate: 32742/s
+[SEQ-backward-4] Tested: 6,600,000 | Rate: 32248/s | Current: 0x7fffffffffffffffffffffffffff9b4ac0
+[SEQ-forward-3] Tested: 6,600,000 | Rate: 32177/s | Current: 0x400000000000000000000000000064b53f
+[BIRTHDAY-9] Tested: 5,600,000 | Unique: 5,600,000 | Rate: 27185/s
+[SEGMENT-6] Tested: 6,700,000 | Rate: 32519/s
+[SEGMENT-7] Tested: 6,700,000 | Rate: 32446/s
+[RANDOM-1] Tested: 5,900,000 | Rate: 28568/s
+[RANDOM-2] Tested: 5,900,000 | Rate: 28425/s
+[SEGMENT-5] Tested: 6,800,000 | Rate: 32759/s
+[SEGMENT-8] Tested: 6,800,000 | Rate: 32730/s
+[SEQ-backward-4] Tested: 6,700,000 | Rate: 32216/s | Current: 0x7fffffffffffffffffffffffffff99c420
+[SEQ-forward-3] Tested: 6,700,000 | Rate: 32169/s | Current: 0x4000000000000000000000000000663bdf
+[SEGMENT-6] Tested: 6,800,000 | Rate: 32541/s
+[SEGMENT-7] Tested: 6,800,000 | Rate: 32465/s
+[BIRTHDAY-9] Tested: 5,700,000 | Unique: 5,700,000 | Rate: 27191/s
+[RANDOM-1] Tested: 6,000,000 | Rate: 28593/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 3.5 min | Total tested: 34,146,865
+Combined rate: 162574 keys/sec (9754460 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 6,900,000 | Rate: 32749/s
+[SEGMENT-8] Tested: 6,900,000 | Rate: 32718/s
+[RANDOM-2] Tested: 6,000,000 | Rate: 28444/s
+[SEQ-backward-4] Tested: 6,800,000 | Rate: 32211/s | Current: 0x7fffffffffffffffffffffffffff983d80
+[SEQ-forward-3] Tested: 6,800,000 | Rate: 32173/s | Current: 0x400000000000000000000000000067c27f
+[SEGMENT-6] Tested: 6,900,000 | Rate: 32573/s
+[SEGMENT-7] Tested: 6,900,000 | Rate: 32474/s
+[BIRTHDAY-9] Tested: 5,800,000 | Unique: 5,800,000 | Rate: 27200/s
+[RANDOM-1] Tested: 6,100,000 | Rate: 28602/s
+[SEGMENT-5] Tested: 7,000,000 | Rate: 32765/s
+[SEGMENT-8] Tested: 7,000,000 | Rate: 32694/s
+[SEQ-backward-4] Tested: 6,900,000 | Rate: 32213/s | Current: 0x7fffffffffffffffffffffffffff96b6e0
+[RANDOM-2] Tested: 6,100,000 | Rate: 28462/s
+[SEQ-forward-3] Tested: 6,900,000 | Rate: 32187/s | Current: 0x400000000000000000000000000069491f
+[SEGMENT-6] Tested: 7,000,000 | Rate: 32565/s
+[SEGMENT-7] Tested: 7,000,000 | Rate: 32484/s
+[SEGMENT-5] Tested: 7,100,000 | Rate: 32769/s
+[BIRTHDAY-9] Tested: 5,900,000 | Unique: 5,900,000 | Rate: 27227/s
+[RANDOM-1] Tested: 6,200,000 | Rate: 28603/s
+[SEGMENT-8] Tested: 7,100,000 | Rate: 32707/s
+[SEQ-backward-4] Tested: 7,000,000 | Rate: 32210/s | Current: 0x7fffffffffffffffffffffffffff953040
+[SEQ-forward-3] Tested: 7,000,000 | Rate: 32199/s | Current: 0x40000000000000000000000000006acfbf
+[RANDOM-2] Tested: 6,200,000 | Rate: 28449/s
+[SEGMENT-6] Tested: 7,100,000 | Rate: 32569/s
+[SEGMENT-7] Tested: 7,100,000 | Rate: 32517/s
+[SEGMENT-5] Tested: 7,200,000 | Rate: 32771/s
+[SEGMENT-8] Tested: 7,200,000 | Rate: 32746/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 3.7 min | Total tested: 35,888,648
+Combined rate: 163102 keys/sec (9786097 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 6,300,000 | Rate: 28621/s
+[BIRTHDAY-9] Tested: 6,000,000 | Unique: 6,000,000 | Rate: 27249/s
+[SEQ-backward-4] Tested: 7,100,000 | Rate: 32229/s | Current: 0x7fffffffffffffffffffffffffff93a9a0
+[SEQ-forward-3] Tested: 7,100,000 | Rate: 32220/s | Current: 0x40000000000000000000000000006c565f
+[SEGMENT-6] Tested: 7,200,000 | Rate: 32570/s
+[SEGMENT-7] Tested: 7,200,000 | Rate: 32524/s
+[RANDOM-2] Tested: 6,300,000 | Rate: 28454/s
+[SEGMENT-8] Tested: 7,300,000 | Rate: 32802/s
+[SEGMENT-5] Tested: 7,300,000 | Rate: 32743/s
+[SEQ-backward-4] Tested: 7,200,000 | Rate: 32241/s | Current: 0x7fffffffffffffffffffffffffff922300
+[BIRTHDAY-9] Tested: 6,100,000 | Unique: 6,100,000 | Rate: 27297/s
+[SEQ-forward-3] Tested: 7,200,000 | Rate: 32207/s | Current: 0x40000000000000000000000000006ddcff
+[RANDOM-1] Tested: 6,400,000 | Rate: 28614/s
+[SEGMENT-7] Tested: 7,300,000 | Rate: 32554/s
+[SEGMENT-6] Tested: 7,300,000 | Rate: 32553/s
+[RANDOM-2] Tested: 6,400,000 | Rate: 28463/s
+[SEGMENT-8] Tested: 7,400,000 | Rate: 32799/s
+[SEGMENT-5] Tested: 7,400,000 | Rate: 32710/s
+[SEQ-backward-4] Tested: 7,300,000 | Rate: 32232/s | Current: 0x7fffffffffffffffffffffffffff909c60
+[SEQ-forward-3] Tested: 7,300,000 | Rate: 32187/s | Current: 0x40000000000000000000000000006f639f
+[RANDOM-1] Tested: 6,500,000 | Rate: 28617/s
+[SEGMENT-7] Tested: 7,400,000 | Rate: 32578/s
+[SEGMENT-6] Tested: 7,400,000 | Rate: 32569/s
+[BIRTHDAY-9] Tested: 6,200,000 | Unique: 6,200,000 | Rate: 27274/s
+[RANDOM-2] Tested: 6,500,000 | Rate: 28486/s
+[SEGMENT-8] Tested: 7,500,000 | Rate: 32804/s
+[SEGMENT-5] Tested: 7,500,000 | Rate: 32731/s
+[SEQ-backward-4] Tested: 7,400,000 | Rate: 32213/s | Current: 0x7fffffffffffffffffffffffffff8f15c0
+[SEQ-forward-3] Tested: 7,400,000 | Rate: 32213/s | Current: 0x400000000000000000000000000070ea3f
+
+======================================================================
+GLOBAL PROGRESS
+Time: 3.8 min | Total tested: 37,584,976
+Combined rate: 163384 keys/sec (9803021 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 7,500,000 | Rate: 32563/s
+[SEGMENT-6] Tested: 7,500,000 | Rate: 32559/s
+[RANDOM-1] Tested: 6,600,000 | Rate: 28620/s
+[BIRTHDAY-9] Tested: 6,300,000 | Unique: 6,300,000 | Rate: 27305/s
+[SEGMENT-8] Tested: 7,600,000 | Rate: 32779/s
+[RANDOM-2] Tested: 6,600,000 | Rate: 28465/s
+[SEGMENT-5] Tested: 7,600,000 | Rate: 32709/s
+[SEQ-forward-3] Tested: 7,500,000 | Rate: 32248/s | Current: 0x40000000000000000000000000007270df
+[SEQ-backward-4] Tested: 7,500,000 | Rate: 32216/s | Current: 0x7fffffffffffffffffffffffffff8d8f20
+[SEGMENT-6] Tested: 7,600,000 | Rate: 32575/s
+[SEGMENT-7] Tested: 7,600,000 | Rate: 32548/s
+[RANDOM-1] Tested: 6,700,000 | Rate: 28627/s
+[BIRTHDAY-9] Tested: 6,400,000 | Unique: 6,400,000 | Rate: 27298/s
+[SEGMENT-8] Tested: 7,700,000 | Rate: 32755/s
+[SEGMENT-5] Tested: 7,700,000 | Rate: 32711/s
+[RANDOM-2] Tested: 6,700,000 | Rate: 28442/s
+[SEQ-forward-3] Tested: 7,600,000 | Rate: 32242/s | Current: 0x400000000000000000000000000073f77f
+[SEQ-backward-4] Tested: 7,600,000 | Rate: 32241/s | Current: 0x7fffffffffffffffffffffffffff8c0880
+[SEGMENT-7] Tested: 7,700,000 | Rate: 32580/s
+[SEGMENT-6] Tested: 7,700,000 | Rate: 32573/s
+[RANDOM-1] Tested: 6,800,000 | Rate: 28628/s
+[BIRTHDAY-9] Tested: 6,500,000 | Unique: 6,500,000 | Rate: 27312/s
+[SEGMENT-8] Tested: 7,800,000 | Rate: 32768/s
+[SEGMENT-5] Tested: 7,800,000 | Rate: 32719/s
+[RANDOM-2] Tested: 6,800,000 | Rate: 28468/s
+[SEQ-backward-4] Tested: 7,700,000 | Rate: 32235/s | Current: 0x7fffffffffffffffffffffffffff8a81e0
+[SEQ-forward-3] Tested: 7,700,000 | Rate: 32222/s | Current: 0x4000000000000000000000000000757e1f
+[SEGMENT-6] Tested: 7,800,000 | Rate: 32577/s
+[SEGMENT-7] Tested: 7,800,000 | Rate: 32564/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 4.0 min | Total tested: 39,241,582
+Combined rate: 163478 keys/sec (9808709 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 7,900,000 | Rate: 32801/s
+[RANDOM-1] Tested: 6,900,000 | Rate: 28602/s
+[SEGMENT-5] Tested: 7,900,000 | Rate: 32697/s
+[BIRTHDAY-9] Tested: 6,600,000 | Unique: 6,600,000 | Rate: 27308/s
+[SEQ-forward-3] Tested: 7,800,000 | Rate: 32223/s | Current: 0x40000000000000000000000000007704bf
+[SEQ-backward-4] Tested: 7,800,000 | Rate: 32221/s | Current: 0x7fffffffffffffffffffffffffff88fb40
+[RANDOM-2] Tested: 6,900,000 | Rate: 28454/s
+[SEGMENT-7] Tested: 7,900,000 | Rate: 32556/s
+[SEGMENT-6] Tested: 7,900,000 | Rate: 32556/s
+[SEGMENT-8] Tested: 8,000,000 | Rate: 32820/s
+[RANDOM-1] Tested: 7,000,000 | Rate: 28638/s
+[SEGMENT-5] Tested: 8,000,000 | Rate: 32711/s
+[SEQ-backward-4] Tested: 7,900,000 | Rate: 32226/s | Current: 0x7fffffffffffffffffffffffffff8774a0
+[BIRTHDAY-9] Tested: 6,700,000 | Unique: 6,700,000 | Rate: 27327/s
+[SEQ-forward-3] Tested: 7,900,000 | Rate: 32222/s | Current: 0x4000000000000000000000000000788b5f
+[SEGMENT-6] Tested: 8,000,000 | Rate: 32559/s
+[SEGMENT-7] Tested: 8,000,000 | Rate: 32555/s
+[RANDOM-2] Tested: 7,000,000 | Rate: 28467/s
+[SEGMENT-8] Tested: 8,100,000 | Rate: 32825/s
+[SEGMENT-5] Tested: 8,100,000 | Rate: 32719/s
+[RANDOM-1] Tested: 7,100,000 | Rate: 28648/s
+[SEQ-backward-4] Tested: 8,000,000 | Rate: 32251/s | Current: 0x7fffffffffffffffffffffffffff85ee00
+[SEQ-forward-3] Tested: 8,000,000 | Rate: 32221/s | Current: 0x40000000000000000000000000007a11ff
+[SEGMENT-6] Tested: 8,100,000 | Rate: 32567/s
+[SEGMENT-7] Tested: 8,100,000 | Rate: 32553/s
+[BIRTHDAY-9] Tested: 6,800,000 | Unique: 6,800,000 | Rate: 27324/s
+[RANDOM-2] Tested: 7,100,000 | Rate: 28461/s
+[SEGMENT-8] Tested: 8,200,000 | Rate: 32805/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 4.2 min | Total tested: 40,884,514
+Combined rate: 163511 keys/sec (9810660 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 8,200,000 | Rate: 32719/s
+[SEQ-backward-4] Tested: 8,100,000 | Rate: 32255/s | Current: 0x7fffffffffffffffffffffffffff846760
+[SEQ-forward-3] Tested: 8,100,000 | Rate: 32218/s | Current: 0x40000000000000000000000000007b989f
+[RANDOM-1] Tested: 7,200,000 | Rate: 28626/s
+[SEGMENT-6] Tested: 8,200,000 | Rate: 32575/s
+[SEGMENT-7] Tested: 8,200,000 | Rate: 32543/s
+[BIRTHDAY-9] Tested: 6,900,000 | Unique: 6,900,000 | Rate: 27330/s
+[SEGMENT-8] Tested: 8,300,000 | Rate: 32816/s
+[RANDOM-2] Tested: 7,200,000 | Rate: 28458/s
+[SEGMENT-5] Tested: 8,300,000 | Rate: 32701/s
+[SEQ-backward-4] Tested: 8,200,000 | Rate: 32251/s | Current: 0x7fffffffffffffffffffffffffff82e0c0
+[SEQ-forward-3] Tested: 8,200,000 | Rate: 32236/s | Current: 0x40000000000000000000000000007d1f3f
+[SEGMENT-6] Tested: 8,300,000 | Rate: 32569/s
+[RANDOM-1] Tested: 7,300,000 | Rate: 28634/s
+[SEGMENT-7] Tested: 8,300,000 | Rate: 32528/s
+[SEGMENT-8] Tested: 8,400,000 | Rate: 32812/s
+[BIRTHDAY-9] Tested: 7,000,000 | Unique: 7,000,000 | Rate: 27339/s
+[RANDOM-2] Tested: 7,300,000 | Rate: 28465/s
+[SEGMENT-5] Tested: 8,400,000 | Rate: 32708/s
+[SEQ-forward-3] Tested: 8,300,000 | Rate: 32251/s | Current: 0x40000000000000000000000000007ea5df
+[SEQ-backward-4] Tested: 8,300,000 | Rate: 32243/s | Current: 0x7fffffffffffffffffffffffffff815a20
+[SEGMENT-6] Tested: 8,400,000 | Rate: 32550/s
+[SEGMENT-7] Tested: 8,400,000 | Rate: 32524/s
+[RANDOM-1] Tested: 7,400,000 | Rate: 28614/s
+[SEGMENT-8] Tested: 8,500,000 | Rate: 32813/s
+[BIRTHDAY-9] Tested: 7,100,000 | Unique: 7,100,000 | Rate: 27337/s
+[SEGMENT-5] Tested: 8,500,000 | Rate: 32713/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 4.3 min | Total tested: 42,606,352
+Combined rate: 163844 keys/sec (9830668 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 7,400,000 | Rate: 28456/s
+[SEQ-forward-3] Tested: 8,400,000 | Rate: 32265/s | Current: 0x4000000000000000000000000000802c7f
+[SEQ-backward-4] Tested: 8,400,000 | Rate: 32240/s | Current: 0x7fffffffffffffffffffffffffff7fd380
+[SEGMENT-6] Tested: 8,500,000 | Rate: 32544/s
+[SEGMENT-7] Tested: 8,500,000 | Rate: 32527/s
+[SEGMENT-8] Tested: 8,600,000 | Rate: 32817/s
+[RANDOM-1] Tested: 7,500,000 | Rate: 28609/s
+[SEGMENT-5] Tested: 8,600,000 | Rate: 32688/s
+[BIRTHDAY-9] Tested: 7,200,000 | Unique: 7,200,000 | Rate: 27347/s
+[SEQ-forward-3] Tested: 8,500,000 | Rate: 32264/s | Current: 0x400000000000000000000000000081b31f
+[RANDOM-2] Tested: 7,500,000 | Rate: 28443/s
+[SEQ-backward-4] Tested: 8,500,000 | Rate: 32233/s | Current: 0x7fffffffffffffffffffffffffff7e4ce0
+[SEGMENT-7] Tested: 8,600,000 | Rate: 32530/s
+[SEGMENT-6] Tested: 8,600,000 | Rate: 32528/s
+[SEGMENT-8] Tested: 8,700,000 | Rate: 32827/s
+[RANDOM-1] Tested: 7,600,000 | Rate: 28614/s
+[SEGMENT-5] Tested: 8,700,000 | Rate: 32704/s
+[SEQ-forward-3] Tested: 8,600,000 | Rate: 32267/s | Current: 0x40000000000000000000000000008339bf
+[BIRTHDAY-9] Tested: 7,300,000 | Unique: 7,300,000 | Rate: 27351/s
+[SEQ-backward-4] Tested: 8,600,000 | Rate: 32218/s | Current: 0x7fffffffffffffffffffffffffff7cc640
+[RANDOM-2] Tested: 7,600,000 | Rate: 28440/s
+[SEGMENT-7] Tested: 8,700,000 | Rate: 32533/s
+[SEGMENT-6] Tested: 8,700,000 | Rate: 32523/s
+[SEGMENT-8] Tested: 8,800,000 | Rate: 32812/s
+[RANDOM-1] Tested: 7,700,000 | Rate: 28615/s
+[SEGMENT-5] Tested: 8,800,000 | Rate: 32697/s
+[SEQ-forward-3] Tested: 8,700,000 | Rate: 32304/s | Current: 0x400000000000000000000000000084c05f
+
+======================================================================
+GLOBAL PROGRESS
+Time: 4.5 min | Total tested: 44,246,796
+Combined rate: 163851 keys/sec (9831045 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 8,700,000 | Rate: 32211/s | Current: 0x7fffffffffffffffffffffffffff7b3fa0
+[SEGMENT-7] Tested: 8,800,000 | Rate: 32539/s
+[SEGMENT-6] Tested: 8,800,000 | Rate: 32519/s
+[BIRTHDAY-9] Tested: 7,400,000 | Unique: 7,400,000 | Rate: 27335/s
+[RANDOM-2] Tested: 7,700,000 | Rate: 28440/s
+[SEGMENT-8] Tested: 8,900,000 | Rate: 32795/s
+[SEGMENT-5] Tested: 8,900,000 | Rate: 32696/s
+[SEQ-forward-3] Tested: 8,800,000 | Rate: 32295/s | Current: 0x40000000000000000000000000008646ff
+[RANDOM-1] Tested: 7,800,000 | Rate: 28613/s
+[SEQ-backward-4] Tested: 8,800,000 | Rate: 32237/s | Current: 0x7fffffffffffffffffffffffffff79b900
+[SEGMENT-7] Tested: 8,900,000 | Rate: 32536/s
+[SEGMENT-6] Tested: 8,900,000 | Rate: 32532/s
+[RANDOM-2] Tested: 7,800,000 | Rate: 28426/s
+[SEGMENT-8] Tested: 9,000,000 | Rate: 32784/s
+[BIRTHDAY-9] Tested: 7,500,000 | Unique: 7,500,000 | Rate: 27304/s
+[SEGMENT-5] Tested: 9,000,000 | Rate: 32698/s
+[SEQ-forward-3] Tested: 8,900,000 | Rate: 32287/s | Current: 0x400000000000000000000000000087cd9f
+[SEQ-backward-4] Tested: 8,900,000 | Rate: 32250/s | Current: 0x7fffffffffffffffffffffffffff783260
+[RANDOM-1] Tested: 7,900,000 | Rate: 28610/s
+[SEGMENT-7] Tested: 9,000,000 | Rate: 32551/s
+[SEGMENT-6] Tested: 9,000,000 | Rate: 32510/s
+[SEGMENT-8] Tested: 9,100,000 | Rate: 32804/s
+[RANDOM-2] Tested: 7,900,000 | Rate: 28405/s
+[BIRTHDAY-9] Tested: 7,600,000 | Unique: 7,600,000 | Rate: 27315/s
+[SEGMENT-5] Tested: 9,100,000 | Rate: 32663/s
+[SEQ-backward-4] Tested: 9,000,000 | Rate: 32287/s | Current: 0x7fffffffffffffffffffffffffff76abc0
+[SEQ-forward-3] Tested: 9,000,000 | Rate: 32250/s | Current: 0x400000000000000000000000000089543f
+[RANDOM-1] Tested: 8,000,000 | Rate: 28617/s
+[SEGMENT-7] Tested: 9,100,000 | Rate: 32544/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 4.7 min | Total tested: 45,919,578
+Combined rate: 163973 keys/sec (9838385 keys/min)
+======================================================================
+
+[SEGMENT-6] Tested: 9,100,000 | Rate: 32487/s
+[SEGMENT-8] Tested: 9,200,000 | Rate: 32817/s
+[RANDOM-2] Tested: 8,000,000 | Rate: 28403/s
+[SEGMENT-5] Tested: 9,200,000 | Rate: 32650/s
+[SEQ-backward-4] Tested: 9,100,000 | Rate: 32284/s | Current: 0x7fffffffffffffffffffffffffff752520
+[BIRTHDAY-9] Tested: 7,700,000 | Unique: 7,700,000 | Rate: 27305/s
+[SEQ-forward-3] Tested: 9,100,000 | Rate: 32259/s | Current: 0x40000000000000000000000000008adadf
+[SEGMENT-7] Tested: 9,200,000 | Rate: 32547/s
+[RANDOM-1] Tested: 8,100,000 | Rate: 28620/s
+[SEGMENT-6] Tested: 9,200,000 | Rate: 32475/s
+[SEGMENT-8] Tested: 9,300,000 | Rate: 32821/s
+[SEQ-backward-4] Tested: 9,200,000 | Rate: 32290/s | Current: 0x7fffffffffffffffffffffffffff739e80
+[SEGMENT-5] Tested: 9,300,000 | Rate: 32625/s
+[SEQ-forward-3] Tested: 9,200,000 | Rate: 32258/s | Current: 0x40000000000000000000000000008c617f
+[RANDOM-2] Tested: 8,100,000 | Rate: 28397/s
+[BIRTHDAY-9] Tested: 7,800,000 | Unique: 7,800,000 | Rate: 27295/s
+[SEGMENT-7] Tested: 9,300,000 | Rate: 32534/s
+[RANDOM-1] Tested: 8,200,000 | Rate: 28634/s
+[SEGMENT-8] Tested: 9,400,000 | Rate: 32817/s
+[SEGMENT-6] Tested: 9,300,000 | Rate: 32459/s
+[SEQ-backward-4] Tested: 9,300,000 | Rate: 32286/s | Current: 0x7fffffffffffffffffffffffffff7217e0
+[SEGMENT-5] Tested: 9,400,000 | Rate: 32611/s
+[SEQ-forward-3] Tested: 9,300,000 | Rate: 32249/s | Current: 0x40000000000000000000000000008de81f
+[RANDOM-2] Tested: 8,200,000 | Rate: 28406/s
+[SEGMENT-7] Tested: 9,400,000 | Rate: 32541/s
+[SEGMENT-8] Tested: 9,500,000 | Rate: 32827/s
+[BIRTHDAY-9] Tested: 7,900,000 | Unique: 7,900,000 | Rate: 27291/s
+[SEGMENT-6] Tested: 9,400,000 | Rate: 32458/s
+[RANDOM-1] Tested: 8,300,000 | Rate: 28629/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 4.8 min | Total tested: 47,627,414
+Combined rate: 164208 keys/sec (9852470 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 9,400,000 | Rate: 32284/s | Current: 0x7fffffffffffffffffffffffffff709140
+[SEQ-forward-3] Tested: 9,400,000 | Rate: 32256/s | Current: 0x40000000000000000000000000008f6ebf
+[SEGMENT-5] Tested: 9,500,000 | Rate: 32598/s
+[SEGMENT-7] Tested: 9,500,000 | Rate: 32528/s
+[RANDOM-2] Tested: 8,300,000 | Rate: 28390/s
+[SEGMENT-8] Tested: 9,600,000 | Rate: 32820/s
+[SEGMENT-6] Tested: 9,500,000 | Rate: 32470/s
+[BIRTHDAY-9] Tested: 8,000,000 | Unique: 8,000,000 | Rate: 27302/s
+[RANDOM-1] Tested: 8,400,000 | Rate: 28650/s
+[SEQ-forward-3] Tested: 9,500,000 | Rate: 32281/s | Current: 0x400000000000000000000000000090f55f
+[SEQ-backward-4] Tested: 9,500,000 | Rate: 32281/s | Current: 0x7fffffffffffffffffffffffffff6f0aa0
+[SEGMENT-5] Tested: 9,600,000 | Rate: 32589/s
+[SEGMENT-7] Tested: 9,600,000 | Rate: 32530/s
+[SEGMENT-6] Tested: 9,600,000 | Rate: 32482/s
+[SEGMENT-8] Tested: 9,700,000 | Rate: 32813/s
+[RANDOM-2] Tested: 8,400,000 | Rate: 28388/s
+[BIRTHDAY-9] Tested: 8,100,000 | Unique: 8,100,000 | Rate: 27315/s
+[RANDOM-1] Tested: 8,500,000 | Rate: 28634/s
+[SEQ-forward-3] Tested: 9,600,000 | Rate: 32304/s | Current: 0x4000000000000000000000000000927bff
+[SEQ-backward-4] Tested: 9,600,000 | Rate: 32275/s | Current: 0x7fffffffffffffffffffffffffff6d8400
+[SEGMENT-5] Tested: 9,700,000 | Rate: 32587/s
+[SEGMENT-7] Tested: 9,700,000 | Rate: 32529/s
+[SEGMENT-6] Tested: 9,700,000 | Rate: 32496/s
+[SEGMENT-8] Tested: 9,800,000 | Rate: 32813/s
+[RANDOM-2] Tested: 8,500,000 | Rate: 28393/s
+[SEQ-forward-3] Tested: 9,700,000 | Rate: 32329/s | Current: 0x400000000000000000000000000094029f
+
+======================================================================
+GLOBAL PROGRESS
+Time: 5.0 min | Total tested: 49,284,149
+Combined rate: 164257 keys/sec (9855398 keys/min)
+======================================================================
+
+[BIRTHDAY-9] Tested: 8,200,000 | Unique: 8,200,000 | Rate: 27306/s
+[RANDOM-1] Tested: 8,600,000 | Rate: 28624/s
+[SEQ-backward-4] Tested: 9,700,000 | Rate: 32263/s | Current: 0x7fffffffffffffffffffffffffff6bfd60
+[SEGMENT-5] Tested: 9,800,000 | Rate: 32586/s
+[SEGMENT-7] Tested: 9,800,000 | Rate: 32521/s
+[SEGMENT-6] Tested: 9,800,000 | Rate: 32479/s
+[SEGMENT-8] Tested: 9,900,000 | Rate: 32790/s
+[SEQ-forward-3] Tested: 9,800,000 | Rate: 32345/s | Current: 0x400000000000000000000000000095893f
+[RANDOM-2] Tested: 8,600,000 | Rate: 28375/s
+[SEQ-backward-4] Tested: 9,800,000 | Rate: 32278/s | Current: 0x7fffffffffffffffffffffffffff6a76c0
+[RANDOM-1] Tested: 8,700,000 | Rate: 28647/s
+[SEGMENT-5] Tested: 9,900,000 | Rate: 32589/s
+[BIRTHDAY-9] Tested: 8,300,000 | Unique: 8,300,000 | Rate: 27299/s
+[SEGMENT-7] Tested: 9,900,000 | Rate: 32535/s
+[SEGMENT-6] Tested: 9,900,000 | Rate: 32474/s
+[SEGMENT-8] Tested: 10,000,000 | Rate: 32793/s
+[SEQ-forward-3] Tested: 9,900,000 | Rate: 32357/s | Current: 0x4000000000000000000000000000970fdf
+[RANDOM-2] Tested: 8,700,000 | Rate: 28396/s
+[SEQ-backward-4] Tested: 9,900,000 | Rate: 32284/s | Current: 0x7fffffffffffffffffffffffffff68f020
+[SEGMENT-5] Tested: 10,000,000 | Rate: 32581/s
+[RANDOM-1] Tested: 8,800,000 | Rate: 28649/s
+[SEGMENT-7] Tested: 10,000,000 | Rate: 32551/s
+[BIRTHDAY-9] Tested: 8,400,000 | Unique: 8,400,000 | Rate: 27303/s
+[SEGMENT-6] Tested: 10,000,000 | Rate: 32493/s
+[SEGMENT-8] Tested: 10,100,000 | Rate: 32782/s
+[SEQ-forward-3] Tested: 10,000,000 | Rate: 32349/s | Current: 0x400000000000000000000000000098967f
+[RANDOM-2] Tested: 8,800,000 | Rate: 28415/s
+[SEQ-backward-4] Tested: 10,000,000 | Rate: 32276/s | Current: 0x7fffffffffffffffffffffffffff676980
+
+======================================================================
+GLOBAL PROGRESS
+Time: 5.2 min | Total tested: 50,972,475
+Combined rate: 164403 keys/sec (9864203 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 10,100,000 | Rate: 32571/s
+[SEGMENT-7] Tested: 10,100,000 | Rate: 32553/s
+[RANDOM-1] Tested: 8,900,000 | Rate: 28653/s
+[SEGMENT-6] Tested: 10,100,000 | Rate: 32499/s
+[SEGMENT-8] Tested: 10,200,000 | Rate: 32776/s
+[BIRTHDAY-9] Tested: 8,500,000 | Unique: 8,500,000 | Rate: 27308/s
+[SEQ-forward-3] Tested: 10,100,000 | Rate: 32365/s | Current: 0x40000000000000000000000000009a1d1f
+[SEQ-backward-4] Tested: 10,100,000 | Rate: 32280/s | Current: 0x7fffffffffffffffffffffffffff65e2e0
+[RANDOM-2] Tested: 8,900,000 | Rate: 28430/s
+[SEGMENT-5] Tested: 10,200,000 | Rate: 32575/s
+[SEGMENT-7] Tested: 10,200,000 | Rate: 32550/s
+[SEGMENT-6] Tested: 10,200,000 | Rate: 32506/s
+[RANDOM-1] Tested: 9,000,000 | Rate: 28655/s
+[SEGMENT-8] Tested: 10,300,000 | Rate: 32780/s
+[BIRTHDAY-9] Tested: 8,600,000 | Unique: 8,600,000 | Rate: 27305/s
+[SEQ-forward-3] Tested: 10,200,000 | Rate: 32371/s | Current: 0x40000000000000000000000000009ba3bf
+[SEQ-backward-4] Tested: 10,200,000 | Rate: 32288/s | Current: 0x7fffffffffffffffffffffffffff645c40
+[SEGMENT-5] Tested: 10,300,000 | Rate: 32558/s
+[SEGMENT-7] Tested: 10,300,000 | Rate: 32553/s
+[RANDOM-2] Tested: 9,000,000 | Rate: 28418/s
+[SEGMENT-6] Tested: 10,300,000 | Rate: 32485/s
+[SEGMENT-8] Tested: 10,400,000 | Rate: 32771/s
+[RANDOM-1] Tested: 9,100,000 | Rate: 28646/s
+[SEQ-forward-3] Tested: 10,300,000 | Rate: 32349/s | Current: 0x40000000000000000000000000009d2a5f
+[BIRTHDAY-9] Tested: 8,700,000 | Unique: 8,700,000 | Rate: 27307/s
+[SEQ-backward-4] Tested: 10,300,000 | Rate: 32268/s | Current: 0x7fffffffffffffffffffffffffff62d5a0
+[SEGMENT-7] Tested: 10,400,000 | Rate: 32574/s
+[SEGMENT-5] Tested: 10,400,000 | Rate: 32559/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 5.3 min | Total tested: 52,545,668
+Combined rate: 164182 keys/sec (9850919 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 9,100,000 | Rate: 28432/s
+[SEGMENT-6] Tested: 10,400,000 | Rate: 32490/s
+[SEGMENT-8] Tested: 10,500,000 | Rate: 32761/s
+[RANDOM-1] Tested: 9,200,000 | Rate: 28638/s
+[SEQ-forward-3] Tested: 10,400,000 | Rate: 32350/s | Current: 0x40000000000000000000000000009eb0ff
+[BIRTHDAY-9] Tested: 8,800,000 | Unique: 8,800,000 | Rate: 27312/s
+[SEGMENT-7] Tested: 10,500,000 | Rate: 32580/s
+[SEQ-backward-4] Tested: 10,400,000 | Rate: 32266/s | Current: 0x7fffffffffffffffffffffffffff614f00
+[SEGMENT-5] Tested: 10,500,000 | Rate: 32562/s
+[SEGMENT-6] Tested: 10,500,000 | Rate: 32486/s
+[RANDOM-2] Tested: 9,200,000 | Rate: 28433/s
+[SEGMENT-8] Tested: 10,600,000 | Rate: 32754/s
+[SEQ-forward-3] Tested: 10,500,000 | Rate: 32372/s | Current: 0x4000000000000000000000000000a0379f
+[RANDOM-1] Tested: 9,300,000 | Rate: 28641/s
+[SEGMENT-7] Tested: 10,600,000 | Rate: 32581/s
+[SEQ-backward-4] Tested: 10,500,000 | Rate: 32267/s | Current: 0x7fffffffffffffffffffffffffff5fc860
+[SEGMENT-5] Tested: 10,600,000 | Rate: 32559/s
+[BIRTHDAY-9] Tested: 8,900,000 | Unique: 8,900,000 | Rate: 27309/s
+[SEGMENT-6] Tested: 10,600,000 | Rate: 32480/s
+[SEGMENT-8] Tested: 10,700,000 | Rate: 32745/s
+[RANDOM-2] Tested: 9,300,000 | Rate: 28417/s
+[SEQ-forward-3] Tested: 10,600,000 | Rate: 32371/s | Current: 0x4000000000000000000000000000a1be3f
+[SEGMENT-7] Tested: 10,700,000 | Rate: 32602/s
+[RANDOM-1] Tested: 9,400,000 | Rate: 28641/s
+[SEQ-backward-4] Tested: 10,600,000 | Rate: 32264/s | Current: 0x7fffffffffffffffffffffffffff5e41c0
+[SEGMENT-5] Tested: 10,700,000 | Rate: 32558/s
+[SEGMENT-6] Tested: 10,700,000 | Rate: 32475/s
+[BIRTHDAY-9] Tested: 9,000,000 | Unique: 9,000,000 | Rate: 27315/s
+[SEGMENT-8] Tested: 10,800,000 | Rate: 32748/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 5.5 min | Total tested: 54,195,939
+Combined rate: 164206 keys/sec (9852339 keys/min)
+======================================================================
+
+[SEQ-forward-3] Tested: 10,700,000 | Rate: 32369/s | Current: 0x4000000000000000000000000000a344df
+[RANDOM-2] Tested: 9,400,000 | Rate: 28425/s
+[SEGMENT-7] Tested: 10,800,000 | Rate: 32590/s
+[SEQ-backward-4] Tested: 10,700,000 | Rate: 32263/s | Current: 0x7fffffffffffffffffffffffffff5cbb20
+[SEGMENT-5] Tested: 10,800,000 | Rate: 32562/s
+[RANDOM-1] Tested: 9,500,000 | Rate: 28637/s
+[SEGMENT-6] Tested: 10,800,000 | Rate: 32467/s
+[SEGMENT-8] Tested: 10,900,000 | Rate: 32744/s
+[BIRTHDAY-9] Tested: 9,100,000 | Unique: 9,100,000 | Rate: 27315/s
+[SEQ-forward-3] Tested: 10,800,000 | Rate: 32363/s | Current: 0x4000000000000000000000000000a4cb7f
+[RANDOM-2] Tested: 9,500,000 | Rate: 28447/s
+[SEGMENT-7] Tested: 10,900,000 | Rate: 32574/s
+[SEQ-backward-4] Tested: 10,800,000 | Rate: 32264/s | Current: 0x7fffffffffffffffffffffffffff5b3480
+[SEGMENT-5] Tested: 10,900,000 | Rate: 32548/s
+[RANDOM-1] Tested: 9,600,000 | Rate: 28644/s
+[SEGMENT-6] Tested: 10,900,000 | Rate: 32478/s
+[SEGMENT-8] Tested: 11,000,000 | Rate: 32735/s
+[BIRTHDAY-9] Tested: 9,200,000 | Unique: 9,200,000 | Rate: 27310/s
+[SEQ-forward-3] Tested: 10,900,000 | Rate: 32352/s | Current: 0x4000000000000000000000000000a6521f
+[RANDOM-2] Tested: 9,600,000 | Rate: 28445/s
+[SEGMENT-7] Tested: 11,000,000 | Rate: 32574/s
+[SEQ-backward-4] Tested: 10,900,000 | Rate: 32278/s | Current: 0x7fffffffffffffffffffffffffff59ade0
+[SEGMENT-5] Tested: 11,000,000 | Rate: 32544/s
+[SEGMENT-6] Tested: 11,000,000 | Rate: 32480/s
+[RANDOM-1] Tested: 9,700,000 | Rate: 28635/s
+[SEGMENT-8] Tested: 11,100,000 | Rate: 32736/s
+[SEQ-forward-3] Tested: 11,000,000 | Rate: 32357/s | Current: 0x4000000000000000000000000000a7d8bf
+
+======================================================================
+GLOBAL PROGRESS
+Time: 5.7 min | Total tested: 55,888,915
+Combined rate: 164355 keys/sec (9861321 keys/min)
+======================================================================
+
+[BIRTHDAY-9] Tested: 9,300,000 | Unique: 9,300,000 | Rate: 27310/s
+[SEQ-backward-4] Tested: 11,000,000 | Rate: 32282/s | Current: 0x7fffffffffffffffffffffffffff582740
+[SEGMENT-7] Tested: 11,100,000 | Rate: 32568/s
+[SEGMENT-5] Tested: 11,100,000 | Rate: 32566/s
+[RANDOM-2] Tested: 9,700,000 | Rate: 28449/s
+[SEGMENT-6] Tested: 11,100,000 | Rate: 32478/s
+[SEGMENT-8] Tested: 11,200,000 | Rate: 32736/s
+[RANDOM-1] Tested: 9,800,000 | Rate: 28636/s
+[SEQ-forward-3] Tested: 11,100,000 | Rate: 32388/s | Current: 0x4000000000000000000000000000a95f5f
+[SEQ-backward-4] Tested: 11,100,000 | Rate: 32290/s | Current: 0x7fffffffffffffffffffffffffff56a0a0
+[SEGMENT-7] Tested: 11,200,000 | Rate: 32567/s
+[SEGMENT-5] Tested: 11,200,000 | Rate: 32558/s
+[BIRTHDAY-9] Tested: 9,400,000 | Unique: 9,400,000 | Rate: 27305/s
+[RANDOM-2] Tested: 9,800,000 | Rate: 28438/s
+[SEGMENT-6] Tested: 11,200,000 | Rate: 32470/s
+[SEGMENT-8] Tested: 11,300,000 | Rate: 32723/s
+[RANDOM-1] Tested: 9,900,000 | Rate: 28638/s
+[SEQ-forward-3] Tested: 11,200,000 | Rate: 32377/s | Current: 0x4000000000000000000000000000aae5ff
+[SEQ-backward-4] Tested: 11,200,000 | Rate: 32279/s | Current: 0x7fffffffffffffffffffffffffff551a00
+[SEGMENT-7] Tested: 11,300,000 | Rate: 32554/s
+[SEGMENT-5] Tested: 11,300,000 | Rate: 32535/s
+[SEGMENT-6] Tested: 11,300,000 | Rate: 32470/s
+[BIRTHDAY-9] Tested: 9,500,000 | Unique: 9,500,000 | Rate: 27285/s
+[RANDOM-2] Tested: 9,900,000 | Rate: 28430/s
+[SEGMENT-8] Tested: 11,400,000 | Rate: 32721/s
+[SEQ-forward-3] Tested: 11,300,000 | Rate: 32377/s | Current: 0x4000000000000000000000000000ac6c9f
+[RANDOM-1] Tested: 10,000,000 | Rate: 28629/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 5.8 min | Total tested: 57,541,405
+Combined rate: 164379 keys/sec (9862760 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 11,300,000 | Rate: 32266/s | Current: 0x7fffffffffffffffffffffffffff539360
+[SEGMENT-7] Tested: 11,400,000 | Rate: 32543/s
+[SEGMENT-5] Tested: 11,400,000 | Rate: 32523/s
+[SEGMENT-6] Tested: 11,400,000 | Rate: 32448/s
+[SEGMENT-8] Tested: 11,500,000 | Rate: 32715/s
+[BIRTHDAY-9] Tested: 9,600,000 | Unique: 9,600,000 | Rate: 27277/s
+[RANDOM-2] Tested: 10,000,000 | Rate: 28408/s
+[SEQ-forward-3] Tested: 11,400,000 | Rate: 32373/s | Current: 0x4000000000000000000000000000adf33f
+[RANDOM-1] Tested: 10,100,000 | Rate: 28610/s
+[SEGMENT-7] Tested: 11,500,000 | Rate: 32547/s
+[SEQ-backward-4] Tested: 11,400,000 | Rate: 32262/s | Current: 0x7fffffffffffffffffffffffffff520cc0
+[SEGMENT-5] Tested: 11,500,000 | Rate: 32517/s
+[SEGMENT-6] Tested: 11,500,000 | Rate: 32458/s
+[SEGMENT-8] Tested: 11,600,000 | Rate: 32729/s
+[SEQ-forward-3] Tested: 11,500,000 | Rate: 32377/s | Current: 0x4000000000000000000000000000af79df
+[RANDOM-2] Tested: 10,100,000 | Rate: 28421/s
+[BIRTHDAY-9] Tested: 9,700,000 | Unique: 9,700,000 | Rate: 27280/s
+[SEGMENT-7] Tested: 11,600,000 | Rate: 32548/s
+[SEQ-backward-4] Tested: 11,500,000 | Rate: 32266/s | Current: 0x7fffffffffffffffffffffffffff508620
+[RANDOM-1] Tested: 10,200,000 | Rate: 28608/s
+[SEGMENT-5] Tested: 11,600,000 | Rate: 32532/s
+[SEGMENT-6] Tested: 11,600,000 | Rate: 32464/s
+[SEGMENT-8] Tested: 11,700,000 | Rate: 32732/s
+[SEQ-forward-3] Tested: 11,600,000 | Rate: 32378/s | Current: 0x4000000000000000000000000000b1007f
+[RANDOM-2] Tested: 10,200,000 | Rate: 28415/s
+[SEQ-backward-4] Tested: 11,600,000 | Rate: 32291/s | Current: 0x7fffffffffffffffffffffffffff4eff80
+[BIRTHDAY-9] Tested: 9,800,000 | Unique: 9,800,000 | Rate: 27265/s
+[SEGMENT-5] Tested: 11,700,000 | Rate: 32535/s
+[SEGMENT-7] Tested: 11,700,000 | Rate: 32528/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 6.0 min | Total tested: 59,199,331
+Combined rate: 164419 keys/sec (9865110 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 10,300,000 | Rate: 28603/s
+[SEGMENT-6] Tested: 11,700,000 | Rate: 32473/s
+[SEGMENT-8] Tested: 11,800,000 | Rate: 32730/s
+[SEQ-forward-3] Tested: 11,700,000 | Rate: 32403/s | Current: 0x4000000000000000000000000000b2871f
+[SEQ-backward-4] Tested: 11,700,000 | Rate: 32295/s | Current: 0x7fffffffffffffffffffffffffff4d78e0
+[RANDOM-2] Tested: 10,300,000 | Rate: 28408/s
+[SEGMENT-5] Tested: 11,800,000 | Rate: 32543/s
+[SEGMENT-7] Tested: 11,800,000 | Rate: 32532/s
+[SEGMENT-6] Tested: 11,800,000 | Rate: 32488/s
+[BIRTHDAY-9] Tested: 9,900,000 | Unique: 9,900,000 | Rate: 27255/s
+[RANDOM-1] Tested: 10,400,000 | Rate: 28608/s
+[SEGMENT-8] Tested: 11,900,000 | Rate: 32717/s
+[SEQ-forward-3] Tested: 11,800,000 | Rate: 32416/s | Current: 0x4000000000000000000000000000b40dbf
+[SEQ-backward-4] Tested: 11,800,000 | Rate: 32287/s | Current: 0x7fffffffffffffffffffffffffff4bf240
+[SEGMENT-5] Tested: 11,900,000 | Rate: 32555/s
+[SEGMENT-7] Tested: 11,900,000 | Rate: 32518/s
+[RANDOM-2] Tested: 10,400,000 | Rate: 28409/s
+[SEGMENT-6] Tested: 11,900,000 | Rate: 32485/s
+[BIRTHDAY-9] Tested: 10,000,000 | Unique: 10,000,000 | Rate: 27275/s
+[SEGMENT-8] Tested: 12,000,000 | Rate: 32727/s
+[RANDOM-1] Tested: 10,500,000 | Rate: 28622/s
+[SEQ-forward-3] Tested: 11,900,000 | Rate: 32411/s | Current: 0x4000000000000000000000000000b5945f
+[SEGMENT-5] Tested: 12,000,000 | Rate: 32574/s
+[SEQ-backward-4] Tested: 11,900,000 | Rate: 32301/s | Current: 0x7fffffffffffffffffffffffffff4a6ba0
+[SEGMENT-7] Tested: 12,000,000 | Rate: 32534/s
+[RANDOM-2] Tested: 10,500,000 | Rate: 28427/s
+[SEGMENT-6] Tested: 12,000,000 | Rate: 32488/s
+[SEGMENT-8] Tested: 12,100,000 | Rate: 32737/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 6.2 min | Total tested: 60,879,631
+Combined rate: 164516 keys/sec (9870964 keys/min)
+======================================================================
+
+[SEQ-forward-3] Tested: 12,000,000 | Rate: 32415/s | Current: 0x4000000000000000000000000000b71aff
+[RANDOM-1] Tested: 10,600,000 | Rate: 28623/s
+[SEGMENT-5] Tested: 12,100,000 | Rate: 32575/s
+[SEQ-backward-4] Tested: 12,000,000 | Rate: 32299/s | Current: 0x7fffffffffffffffffffffffffff48e500
+[SEGMENT-7] Tested: 12,100,000 | Rate: 32534/s
+[SEGMENT-6] Tested: 12,100,000 | Rate: 32493/s
+[SEGMENT-8] Tested: 12,200,000 | Rate: 32736/s
+[RANDOM-2] Tested: 10,600,000 | Rate: 28438/s
+[BIRTHDAY-9] Tested: 10,100,000 | Unique: 10,100,000 | Rate: 27091/s
+[SEQ-forward-3] Tested: 12,100,000 | Rate: 32437/s | Current: 0x4000000000000000000000000000b8a19f
+[RANDOM-1] Tested: 10,700,000 | Rate: 28633/s
+[SEQ-backward-4] Tested: 12,100,000 | Rate: 32308/s | Current: 0x7fffffffffffffffffffffffffff475e60
+[SEGMENT-5] Tested: 12,200,000 | Rate: 32575/s
+[SEGMENT-7] Tested: 12,200,000 | Rate: 32547/s
+[SEGMENT-6] Tested: 12,200,000 | Rate: 32485/s
+[SEGMENT-8] Tested: 12,300,000 | Rate: 32719/s
+[SEQ-forward-3] Tested: 12,200,000 | Rate: 32435/s | Current: 0x4000000000000000000000000000ba283f
+[RANDOM-2] Tested: 10,700,000 | Rate: 28445/s
+[BIRTHDAY-9] Tested: 10,200,000 | Unique: 10,200,000 | Rate: 27079/s
+[RANDOM-1] Tested: 10,800,000 | Rate: 28641/s
+[SEGMENT-5] Tested: 12,300,000 | Rate: 32582/s
+[SEQ-backward-4] Tested: 12,200,000 | Rate: 32303/s | Current: 0x7fffffffffffffffffffffffffff45d7c0
+[SEGMENT-7] Tested: 12,300,000 | Rate: 32560/s
+[SEGMENT-6] Tested: 12,300,000 | Rate: 32482/s
+[SEGMENT-8] Tested: 12,400,000 | Rate: 32704/s
+[SEQ-forward-3] Tested: 12,300,000 | Rate: 32421/s | Current: 0x4000000000000000000000000000bbaedf
+[RANDOM-2] Tested: 10,800,000 | Rate: 28449/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 6.3 min | Total tested: 62,556,347
+Combined rate: 164599 keys/sec (9875943 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 10,900,000 | Rate: 28666/s
+[SEGMENT-5] Tested: 12,400,000 | Rate: 32588/s
+[BIRTHDAY-9] Tested: 10,300,000 | Unique: 10,300,000 | Rate: 27063/s
+[SEQ-backward-4] Tested: 12,300,000 | Rate: 32301/s | Current: 0x7fffffffffffffffffffffffffff445120
+[SEGMENT-7] Tested: 12,400,000 | Rate: 32556/s
+[SEGMENT-6] Tested: 12,400,000 | Rate: 32481/s
+[SEQ-forward-3] Tested: 12,400,000 | Rate: 32430/s | Current: 0x4000000000000000000000000000bd357f
+[SEGMENT-8] Tested: 12,500,000 | Rate: 32686/s
+[RANDOM-2] Tested: 10,900,000 | Rate: 28448/s
+[SEGMENT-5] Tested: 12,500,000 | Rate: 32575/s
+[SEQ-backward-4] Tested: 12,400,000 | Rate: 32311/s | Current: 0x7fffffffffffffffffffffffffff42ca80
+[RANDOM-1] Tested: 11,000,000 | Rate: 28661/s
+[SEGMENT-7] Tested: 12,500,000 | Rate: 32550/s
+[BIRTHDAY-9] Tested: 10,400,000 | Unique: 10,400,000 | Rate: 27079/s
+[SEGMENT-6] Tested: 12,500,000 | Rate: 32481/s
+[SEGMENT-8] Tested: 12,600,000 | Rate: 32687/s
+[SEQ-forward-3] Tested: 12,500,000 | Rate: 32421/s | Current: 0x4000000000000000000000000000bebc1f
+[RANDOM-2] Tested: 11,000,000 | Rate: 28458/s
+[SEGMENT-5] Tested: 12,600,000 | Rate: 32592/s
+[SEQ-backward-4] Tested: 12,500,000 | Rate: 32296/s | Current: 0x7fffffffffffffffffffffffffff4143e0
+[SEGMENT-7] Tested: 12,600,000 | Rate: 32554/s
+[RANDOM-1] Tested: 11,100,000 | Rate: 28658/s
+[BIRTHDAY-9] Tested: 10,500,000 | Unique: 10,500,000 | Rate: 27097/s
+[SEGMENT-6] Tested: 12,600,000 | Rate: 32486/s
+[SEQ-forward-3] Tested: 12,600,000 | Rate: 32440/s | Current: 0x4000000000000000000000000000c042bf
+[SEGMENT-8] Tested: 12,700,000 | Rate: 32677/s
+[SEGMENT-5] Tested: 12,700,000 | Rate: 32595/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 6.5 min | Total tested: 64,135,752
+Combined rate: 164428 keys/sec (9865698 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 11,100,000 | Rate: 28455/s
+[SEGMENT-7] Tested: 12,700,000 | Rate: 32550/s
+[SEQ-backward-4] Tested: 12,600,000 | Rate: 32290/s | Current: 0x7fffffffffffffffffffffffffff3fbd40
+[SEGMENT-6] Tested: 12,700,000 | Rate: 32503/s
+[RANDOM-1] Tested: 11,200,000 | Rate: 28659/s
+[BIRTHDAY-9] Tested: 10,600,000 | Unique: 10,600,000 | Rate: 27103/s
+[SEQ-forward-3] Tested: 12,700,000 | Rate: 32445/s | Current: 0x4000000000000000000000000000c1c95f
+[SEGMENT-8] Tested: 12,800,000 | Rate: 32666/s
+[SEGMENT-5] Tested: 12,800,000 | Rate: 32581/s
+[SEGMENT-7] Tested: 12,800,000 | Rate: 32558/s
+[SEQ-backward-4] Tested: 12,700,000 | Rate: 32284/s | Current: 0x7fffffffffffffffffffffffffff3e36a0
+[RANDOM-2] Tested: 11,200,000 | Rate: 28448/s
+[SEGMENT-6] Tested: 12,800,000 | Rate: 32488/s
+[SEQ-forward-3] Tested: 12,800,000 | Rate: 32468/s | Current: 0x4000000000000000000000000000c34fff
+[RANDOM-1] Tested: 11,300,000 | Rate: 28643/s
+[BIRTHDAY-9] Tested: 10,700,000 | Unique: 10,700,000 | Rate: 27110/s
+[SEGMENT-8] Tested: 12,900,000 | Rate: 32658/s
+[SEGMENT-5] Tested: 12,900,000 | Rate: 32561/s
+[SEGMENT-7] Tested: 12,900,000 | Rate: 32555/s
+[SEQ-backward-4] Tested: 12,800,000 | Rate: 32274/s | Current: 0x7fffffffffffffffffffffffffff3cb000
+[SEGMENT-6] Tested: 12,900,000 | Rate: 32486/s
+[SEQ-forward-3] Tested: 12,900,000 | Rate: 32477/s | Current: 0x4000000000000000000000000000c4d69f
+[RANDOM-2] Tested: 11,300,000 | Rate: 28442/s
+[RANDOM-1] Tested: 11,400,000 | Rate: 28652/s
+[SEGMENT-8] Tested: 13,000,000 | Rate: 32667/s
+[BIRTHDAY-9] Tested: 10,800,000 | Unique: 10,800,000 | Rate: 27113/s
+[SEGMENT-5] Tested: 13,000,000 | Rate: 32582/s
+[SEGMENT-7] Tested: 13,000,000 | Rate: 32555/s
+[SEQ-backward-4] Tested: 12,900,000 | Rate: 32274/s | Current: 0x7fffffffffffffffffffffffffff3b2960
+[SEQ-forward-3] Tested: 13,000,000 | Rate: 32496/s | Current: 0x4000000000000000000000000000c65d3f
+
+======================================================================
+GLOBAL PROGRESS
+Time: 6.7 min | Total tested: 65,821,955
+Combined rate: 164533 keys/sec (9871983 keys/min)
+======================================================================
+
+[SEGMENT-6] Tested: 13,000,000 | Rate: 32487/s
+[SEGMENT-8] Tested: 13,100,000 | Rate: 32683/s
+[RANDOM-2] Tested: 11,400,000 | Rate: 28427/s
+[RANDOM-1] Tested: 11,500,000 | Rate: 28643/s
+[BIRTHDAY-9] Tested: 10,900,000 | Unique: 10,900,000 | Rate: 27130/s
+[SEGMENT-5] Tested: 13,100,000 | Rate: 32582/s
+[SEQ-forward-3] Tested: 13,100,000 | Rate: 32541/s | Current: 0x4000000000000000000000000000c7e3df
+[SEQ-backward-4] Tested: 13,000,000 | Rate: 32291/s | Current: 0x7fffffffffffffffffffffffffff39a2c0
+[SEGMENT-7] Tested: 13,100,000 | Rate: 32541/s
+[SEGMENT-6] Tested: 13,100,000 | Rate: 32504/s
+[SEGMENT-8] Tested: 13,200,000 | Rate: 32700/s
+[RANDOM-2] Tested: 11,500,000 | Rate: 28433/s
+[RANDOM-1] Tested: 11,600,000 | Rate: 28635/s
+[SEGMENT-5] Tested: 13,200,000 | Rate: 32571/s
+[BIRTHDAY-9] Tested: 11,000,000 | Unique: 11,000,000 | Rate: 27126/s
+[SEQ-forward-3] Tested: 13,200,000 | Rate: 32548/s | Current: 0x4000000000000000000000000000c96a7f
+[SEQ-backward-4] Tested: 13,100,000 | Rate: 32286/s | Current: 0x7fffffffffffffffffffffffffff381c20
+[SEGMENT-7] Tested: 13,200,000 | Rate: 32523/s
+[SEGMENT-6] Tested: 13,200,000 | Rate: 32492/s
+[SEGMENT-8] Tested: 13,300,000 | Rate: 32703/s
+[RANDOM-2] Tested: 11,600,000 | Rate: 28429/s
+[RANDOM-1] Tested: 11,700,000 | Rate: 28668/s
+[SEGMENT-5] Tested: 13,300,000 | Rate: 32582/s
+[SEQ-forward-3] Tested: 13,300,000 | Rate: 32556/s | Current: 0x4000000000000000000000000000caf11f
+[SEQ-backward-4] Tested: 13,200,000 | Rate: 32291/s | Current: 0x7fffffffffffffffffffffffffff369580
+[SEGMENT-7] Tested: 13,300,000 | Rate: 32510/s
+[BIRTHDAY-9] Tested: 11,100,000 | Unique: 11,100,000 | Rate: 27122/s
+[SEGMENT-6] Tested: 13,300,000 | Rate: 32491/s
+[SEGMENT-8] Tested: 13,400,000 | Rate: 32699/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 6.8 min | Total tested: 67,521,008
+Combined rate: 164664 keys/sec (9879842 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 13,400,000 | Rate: 32591/s
+[RANDOM-2] Tested: 11,700,000 | Rate: 28427/s
+[SEQ-forward-3] Tested: 13,400,000 | Rate: 32552/s | Current: 0x4000000000000000000000000000cc77bf
+[RANDOM-1] Tested: 11,800,000 | Rate: 28661/s
+[SEQ-backward-4] Tested: 13,300,000 | Rate: 32298/s | Current: 0x7fffffffffffffffffffffffffff350ee0
+[SEGMENT-7] Tested: 13,400,000 | Rate: 32523/s
+[SEGMENT-6] Tested: 13,400,000 | Rate: 32491/s
+[SEGMENT-8] Tested: 13,500,000 | Rate: 32715/s
+[BIRTHDAY-9] Tested: 11,200,000 | Unique: 11,200,000 | Rate: 27115/s
+[SEGMENT-5] Tested: 13,500,000 | Rate: 32592/s
+[SEQ-forward-3] Tested: 13,500,000 | Rate: 32555/s | Current: 0x4000000000000000000000000000cdfe5f
+[SEQ-backward-4] Tested: 13,400,000 | Rate: 32292/s | Current: 0x7fffffffffffffffffffffffffff338840
+[SEGMENT-7] Tested: 13,500,000 | Rate: 32529/s
+[RANDOM-2] Tested: 11,800,000 | Rate: 28431/s
+[SEGMENT-6] Tested: 13,500,000 | Rate: 32522/s
+[RANDOM-1] Tested: 11,900,000 | Rate: 28661/s
+[SEGMENT-8] Tested: 13,600,000 | Rate: 32715/s
+[BIRTHDAY-9] Tested: 11,300,000 | Unique: 11,300,000 | Rate: 27114/s
+[SEGMENT-5] Tested: 13,600,000 | Rate: 32584/s
+[SEQ-forward-3] Tested: 13,600,000 | Rate: 32557/s | Current: 0x4000000000000000000000000000cf84ff
+[SEQ-backward-4] Tested: 13,500,000 | Rate: 32314/s | Current: 0x7fffffffffffffffffffffffffff3201a0
+[SEGMENT-6] Tested: 13,600,000 | Rate: 32533/s
+[SEGMENT-7] Tested: 13,600,000 | Rate: 32517/s
+[RANDOM-1] Tested: 12,000,000 | Rate: 28664/s
+[RANDOM-2] Tested: 11,900,000 | Rate: 28420/s
+[SEGMENT-8] Tested: 13,700,000 | Rate: 32703/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 7.0 min | Total tested: 69,134,898
+Combined rate: 164586 keys/sec (9875161 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 13,700,000 | Rate: 32592/s
+[BIRTHDAY-9] Tested: 11,400,000 | Unique: 11,400,000 | Rate: 27115/s
+[SEQ-forward-3] Tested: 13,700,000 | Rate: 32556/s | Current: 0x4000000000000000000000000000d10b9f
+[SEQ-backward-4] Tested: 13,600,000 | Rate: 32307/s | Current: 0x7fffffffffffffffffffffffffff307b00
+[SEGMENT-6] Tested: 13,700,000 | Rate: 32526/s
+[SEGMENT-7] Tested: 13,700,000 | Rate: 32511/s
+[SEGMENT-8] Tested: 13,800,000 | Rate: 32713/s
+[RANDOM-1] Tested: 12,100,000 | Rate: 28662/s
+[RANDOM-2] Tested: 12,000,000 | Rate: 28410/s
+[SEGMENT-5] Tested: 13,800,000 | Rate: 32606/s
+[SEQ-forward-3] Tested: 13,800,000 | Rate: 32560/s | Current: 0x4000000000000000000000000000d2923f
+[SEQ-backward-4] Tested: 13,700,000 | Rate: 32315/s | Current: 0x7fffffffffffffffffffffffffff2ef460
+[BIRTHDAY-9] Tested: 11,500,000 | Unique: 11,500,000 | Rate: 27113/s
+[SEGMENT-6] Tested: 13,800,000 | Rate: 32521/s
+[SEGMENT-7] Tested: 13,800,000 | Rate: 32517/s
+[SEGMENT-8] Tested: 13,900,000 | Rate: 32721/s
+[RANDOM-1] Tested: 12,200,000 | Rate: 28666/s
+[RANDOM-2] Tested: 12,100,000 | Rate: 28419/s
+[SEGMENT-5] Tested: 13,900,000 | Rate: 32608/s
+[SEQ-forward-3] Tested: 13,900,000 | Rate: 32563/s | Current: 0x4000000000000000000000000000d418df
+[SEQ-backward-4] Tested: 13,800,000 | Rate: 32310/s | Current: 0x7fffffffffffffffffffffffffff2d6dc0
+[SEGMENT-6] Tested: 13,900,000 | Rate: 32519/s
+[SEGMENT-7] Tested: 13,900,000 | Rate: 32516/s
+[SEGMENT-8] Tested: 14,000,000 | Rate: 32720/s
+[BIRTHDAY-9] Tested: 11,600,000 | Unique: 11,600,000 | Rate: 27109/s
+[RANDOM-1] Tested: 12,300,000 | Rate: 28667/s
+[RANDOM-2] Tested: 12,200,000 | Rate: 28416/s
+[SEGMENT-5] Tested: 14,000,000 | Rate: 32606/s
+[SEQ-forward-3] Tested: 14,000,000 | Rate: 32563/s | Current: 0x4000000000000000000000000000d59f7f
+
+======================================================================
+GLOBAL PROGRESS
+Time: 7.2 min | Total tested: 70,817,921
+Combined rate: 164672 keys/sec (9880344 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 13,900,000 | Rate: 32309/s | Current: 0x7fffffffffffffffffffffffffff2be720
+[SEGMENT-7] Tested: 14,000,000 | Rate: 32522/s
+[SEGMENT-6] Tested: 14,000,000 | Rate: 32517/s
+[SEGMENT-8] Tested: 14,100,000 | Rate: 32731/s
+[BIRTHDAY-9] Tested: 11,700,000 | Unique: 11,700,000 | Rate: 27117/s
+[SEGMENT-5] Tested: 14,100,000 | Rate: 32613/s
+[RANDOM-1] Tested: 12,400,000 | Rate: 28667/s
+[RANDOM-2] Tested: 12,300,000 | Rate: 28414/s
+[SEQ-forward-3] Tested: 14,100,000 | Rate: 32563/s | Current: 0x4000000000000000000000000000d7261f
+[SEQ-backward-4] Tested: 14,000,000 | Rate: 32312/s | Current: 0x7fffffffffffffffffffffffffff2a6080
+[SEGMENT-7] Tested: 14,100,000 | Rate: 32523/s
+[SEGMENT-6] Tested: 14,100,000 | Rate: 32518/s
+[SEGMENT-8] Tested: 14,200,000 | Rate: 32748/s
+[BIRTHDAY-9] Tested: 11,800,000 | Unique: 11,800,000 | Rate: 27125/s
+[SEGMENT-5] Tested: 14,200,000 | Rate: 32601/s
+[SEQ-forward-3] Tested: 14,200,000 | Rate: 32573/s | Current: 0x4000000000000000000000000000d8acbf
+[RANDOM-1] Tested: 12,500,000 | Rate: 28663/s
+[RANDOM-2] Tested: 12,400,000 | Rate: 28427/s
+[SEQ-backward-4] Tested: 14,100,000 | Rate: 32309/s | Current: 0x7fffffffffffffffffffffffffff28d9e0
+[SEGMENT-8] Tested: 14,300,000 | Rate: 32762/s
+[SEGMENT-6] Tested: 14,200,000 | Rate: 32524/s
+[SEGMENT-7] Tested: 14,200,000 | Rate: 32504/s
+[BIRTHDAY-9] Tested: 11,900,000 | Unique: 11,900,000 | Rate: 27126/s
+[SEGMENT-5] Tested: 14,300,000 | Rate: 32591/s
+[SEQ-forward-3] Tested: 14,300,000 | Rate: 32574/s | Current: 0x4000000000000000000000000000da335f
+[SEGMENT-8] Tested: 14,400,000 | Rate: 32775/s
+[SEQ-backward-4] Tested: 14,200,000 | Rate: 32312/s | Current: 0x7fffffffffffffffffffffffffff275340
+[RANDOM-1] Tested: 12,600,000 | Rate: 28671/s
+[SEGMENT-6] Tested: 14,300,000 | Rate: 32530/s
+[RANDOM-2] Tested: 12,500,000 | Rate: 28429/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 7.3 min | Total tested: 72,443,112
+Combined rate: 164622 keys/sec (9877323 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 14,300,000 | Rate: 32496/s
+[SEGMENT-5] Tested: 14,400,000 | Rate: 32588/s
+[SEQ-forward-3] Tested: 14,400,000 | Rate: 32571/s | Current: 0x4000000000000000000000000000dbb9ff
+[BIRTHDAY-9] Tested: 12,000,000 | Unique: 12,000,000 | Rate: 27130/s
+[SEQ-backward-4] Tested: 14,300,000 | Rate: 32318/s | Current: 0x7fffffffffffffffffffffffffff25cca0
+[SEGMENT-8] Tested: 14,500,000 | Rate: 32762/s
+[SEGMENT-6] Tested: 14,400,000 | Rate: 32530/s
+[RANDOM-1] Tested: 12,700,000 | Rate: 28674/s
+[SEGMENT-7] Tested: 14,400,000 | Rate: 32496/s
+[RANDOM-2] Tested: 12,600,000 | Rate: 28427/s
+[SEGMENT-5] Tested: 14,500,000 | Rate: 32595/s
+[SEQ-forward-3] Tested: 14,500,000 | Rate: 32569/s | Current: 0x4000000000000000000000000000dd409f
+[SEQ-backward-4] Tested: 14,400,000 | Rate: 32328/s | Current: 0x7fffffffffffffffffffffffffff244600
+[SEGMENT-8] Tested: 14,600,000 | Rate: 32760/s
+[SEGMENT-6] Tested: 14,500,000 | Rate: 32519/s
+[BIRTHDAY-9] Tested: 12,100,000 | Unique: 12,100,000 | Rate: 27127/s
+[SEGMENT-7] Tested: 14,500,000 | Rate: 32489/s
+[RANDOM-1] Tested: 12,800,000 | Rate: 28669/s
+[RANDOM-2] Tested: 12,700,000 | Rate: 28430/s
+[SEGMENT-5] Tested: 14,600,000 | Rate: 32584/s
+[SEQ-forward-3] Tested: 14,600,000 | Rate: 32583/s | Current: 0x4000000000000000000000000000dec73f
+[SEQ-backward-4] Tested: 14,500,000 | Rate: 32336/s | Current: 0x7fffffffffffffffffffffffffff22bf60
+[SEGMENT-8] Tested: 14,700,000 | Rate: 32759/s
+[SEGMENT-6] Tested: 14,600,000 | Rate: 32526/s
+[SEGMENT-7] Tested: 14,600,000 | Rate: 32501/s
+[BIRTHDAY-9] Tested: 12,200,000 | Unique: 12,200,000 | Rate: 27131/s
+[RANDOM-1] Tested: 12,900,000 | Rate: 28673/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 7.5 min | Total tested: 74,105,308
+Combined rate: 164657 keys/sec (9879420 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 12,800,000 | Rate: 28439/s
+[SEQ-backward-4] Tested: 14,600,000 | Rate: 32342/s | Current: 0x7fffffffffffffffffffffffffff2138c0
+[SEGMENT-5] Tested: 14,700,000 | Rate: 32560/s
+[SEQ-forward-3] Tested: 14,700,000 | Rate: 32559/s | Current: 0x4000000000000000000000000000e04ddf
+[SEGMENT-8] Tested: 14,800,000 | Rate: 32742/s
+[SEGMENT-6] Tested: 14,700,000 | Rate: 32511/s
+[SEGMENT-7] Tested: 14,700,000 | Rate: 32502/s
+[RANDOM-1] Tested: 13,000,000 | Rate: 28678/s
+[RANDOM-2] Tested: 12,900,000 | Rate: 28452/s
+[BIRTHDAY-9] Tested: 12,300,000 | Unique: 12,300,000 | Rate: 27122/s
+[SEQ-backward-4] Tested: 14,700,000 | Rate: 32355/s | Current: 0x7fffffffffffffffffffffffffff1fb220
+[SEQ-forward-3] Tested: 14,800,000 | Rate: 32548/s | Current: 0x4000000000000000000000000000e1d47f
+[SEGMENT-5] Tested: 14,800,000 | Rate: 32547/s
+[SEGMENT-6] Tested: 14,800,000 | Rate: 32512/s
+[SEGMENT-8] Tested: 14,900,000 | Rate: 32732/s
+[SEGMENT-7] Tested: 14,800,000 | Rate: 32495/s
+[RANDOM-1] Tested: 13,100,000 | Rate: 28684/s
+[RANDOM-2] Tested: 13,000,000 | Rate: 28448/s
+[BIRTHDAY-9] Tested: 12,400,000 | Unique: 12,400,000 | Rate: 27127/s
+[SEQ-backward-4] Tested: 14,800,000 | Rate: 32364/s | Current: 0x7fffffffffffffffffffffffffff1e2b80
+[SEGMENT-5] Tested: 14,900,000 | Rate: 32545/s
+[SEQ-forward-3] Tested: 14,900,000 | Rate: 32541/s | Current: 0x4000000000000000000000000000e35b1f
+[SEGMENT-6] Tested: 14,900,000 | Rate: 32508/s
+[SEGMENT-8] Tested: 15,000,000 | Rate: 32722/s
+[SEGMENT-7] Tested: 14,900,000 | Rate: 32487/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 7.7 min | Total tested: 75,657,336
+Combined rate: 164451 keys/sec (9867088 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 13,200,000 | Rate: 28681/s
+[RANDOM-2] Tested: 13,100,000 | Rate: 28453/s
+[SEQ-backward-4] Tested: 14,900,000 | Rate: 32360/s | Current: 0x7fffffffffffffffffffffffffff1ca4e0
+[BIRTHDAY-9] Tested: 12,500,000 | Unique: 12,500,000 | Rate: 27135/s
+[SEQ-forward-3] Tested: 15,000,000 | Rate: 32541/s | Current: 0x4000000000000000000000000000e4e1bf
+[SEGMENT-5] Tested: 15,000,000 | Rate: 32536/s
+[SEGMENT-6] Tested: 15,000,000 | Rate: 32526/s
+[SEGMENT-8] Tested: 15,100,000 | Rate: 32718/s
+[SEGMENT-7] Tested: 15,000,000 | Rate: 32490/s
+[RANDOM-1] Tested: 13,300,000 | Rate: 28695/s
+[SEQ-backward-4] Tested: 15,000,000 | Rate: 32354/s | Current: 0x7fffffffffffffffffffffffffff1b1e40
+[RANDOM-2] Tested: 13,200,000 | Rate: 28460/s
+[SEQ-forward-3] Tested: 15,100,000 | Rate: 32544/s | Current: 0x4000000000000000000000000000e6685f
+[SEGMENT-6] Tested: 15,100,000 | Rate: 32533/s
+[SEGMENT-5] Tested: 15,100,000 | Rate: 32532/s
+[BIRTHDAY-9] Tested: 12,600,000 | Unique: 12,600,000 | Rate: 27141/s
+[SEGMENT-8] Tested: 15,200,000 | Rate: 32715/s
+[SEGMENT-7] Tested: 15,100,000 | Rate: 32493/s
+[RANDOM-1] Tested: 13,400,000 | Rate: 28726/s
+[SEQ-backward-4] Tested: 15,100,000 | Rate: 32348/s | Current: 0x7fffffffffffffffffffffffffff1997a0
+[SEQ-forward-3] Tested: 15,200,000 | Rate: 32548/s | Current: 0x4000000000000000000000000000e7eeff
+[SEGMENT-5] Tested: 15,200,000 | Rate: 32528/s
+[SEGMENT-6] Tested: 15,200,000 | Rate: 32526/s
+[RANDOM-2] Tested: 13,300,000 | Rate: 28454/s
+[SEGMENT-7] Tested: 15,200,000 | Rate: 32499/s
+[SEGMENT-8] Tested: 15,300,000 | Rate: 32705/s
+[BIRTHDAY-9] Tested: 12,700,000 | Unique: 12,700,000 | Rate: 27143/s
+[SEQ-backward-4] Tested: 15,200,000 | Rate: 32354/s | Current: 0x7fffffffffffffffffffffffffff181100
+[RANDOM-1] Tested: 13,500,000 | Rate: 28726/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 7.8 min | Total tested: 77,318,623
+Combined rate: 164487 keys/sec (9869227 keys/min)
+======================================================================
+
+[SEQ-forward-3] Tested: 15,300,000 | Rate: 32537/s | Current: 0x4000000000000000000000000000e9759f
+[SEGMENT-5] Tested: 15,300,000 | Rate: 32524/s
+[SEGMENT-6] Tested: 15,300,000 | Rate: 32517/s
+[SEGMENT-7] Tested: 15,300,000 | Rate: 32494/s
+[SEGMENT-8] Tested: 15,400,000 | Rate: 32696/s
+[RANDOM-2] Tested: 13,400,000 | Rate: 28443/s
+[BIRTHDAY-9] Tested: 12,800,000 | Unique: 12,800,000 | Rate: 27143/s
+[SEQ-backward-4] Tested: 15,300,000 | Rate: 32358/s | Current: 0x7fffffffffffffffffffffffffff168a60
+[RANDOM-1] Tested: 13,600,000 | Rate: 28735/s
+[SEQ-forward-3] Tested: 15,400,000 | Rate: 32535/s | Current: 0x4000000000000000000000000000eafc3f
+[SEGMENT-5] Tested: 15,400,000 | Rate: 32530/s
+[SEGMENT-6] Tested: 15,400,000 | Rate: 32517/s
+[SEGMENT-7] Tested: 15,400,000 | Rate: 32500/s
+[SEGMENT-8] Tested: 15,500,000 | Rate: 32696/s
+[RANDOM-2] Tested: 13,500,000 | Rate: 28444/s
+[BIRTHDAY-9] Tested: 12,900,000 | Unique: 12,900,000 | Rate: 27145/s
+[SEQ-backward-4] Tested: 15,400,000 | Rate: 32354/s | Current: 0x7fffffffffffffffffffffffffff1503c0
+[SEQ-forward-3] Tested: 15,500,000 | Rate: 32533/s | Current: 0x4000000000000000000000000000ec82df
+[SEGMENT-5] Tested: 15,500,000 | Rate: 32531/s
+[SEGMENT-7] Tested: 15,500,000 | Rate: 32517/s
+[SEGMENT-6] Tested: 15,500,000 | Rate: 32516/s
+[RANDOM-1] Tested: 13,700,000 | Rate: 28738/s
+[SEGMENT-8] Tested: 15,600,000 | Rate: 32692/s
+[RANDOM-2] Tested: 13,600,000 | Rate: 28464/s
+[BIRTHDAY-9] Tested: 13,000,000 | Unique: 13,000,000 | Rate: 27147/s
+[SEQ-backward-4] Tested: 15,500,000 | Rate: 32353/s | Current: 0x7fffffffffffffffffffffffffff137d20
+[SEGMENT-5] Tested: 15,600,000 | Rate: 32530/s
+[SEQ-forward-3] Tested: 15,600,000 | Rate: 32522/s | Current: 0x4000000000000000000000000000ee097f
+[SEGMENT-7] Tested: 15,600,000 | Rate: 32519/s
+[SEGMENT-6] Tested: 15,600,000 | Rate: 32513/s
+[RANDOM-1] Tested: 13,800,000 | Rate: 28751/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 8.0 min | Total tested: 78,826,503
+Combined rate: 164202 keys/sec (9852103 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 15,700,000 | Rate: 32689/s
+[RANDOM-2] Tested: 13,700,000 | Rate: 28459/s
+[SEQ-backward-4] Tested: 15,600,000 | Rate: 32363/s | Current: 0x7fffffffffffffffffffffffffff11f680
+[SEGMENT-5] Tested: 15,700,000 | Rate: 32533/s
+[BIRTHDAY-9] Tested: 13,100,000 | Unique: 13,100,000 | Rate: 27139/s
+[SEGMENT-6] Tested: 15,700,000 | Rate: 32523/s
+[SEGMENT-7] Tested: 15,700,000 | Rate: 32522/s
+[SEQ-forward-3] Tested: 15,700,000 | Rate: 32519/s | Current: 0x4000000000000000000000000000ef901f
+[RANDOM-1] Tested: 13,900,000 | Rate: 28756/s
+[SEGMENT-8] Tested: 15,800,000 | Rate: 32685/s
+[RANDOM-2] Tested: 13,800,000 | Rate: 28456/s
+[SEQ-backward-4] Tested: 15,700,000 | Rate: 32349/s | Current: 0x7fffffffffffffffffffffffffff106fe0
+[SEQ-forward-3] Tested: 15,800,000 | Rate: 32530/s | Current: 0x4000000000000000000000000000f116bf
+[SEGMENT-5] Tested: 15,800,000 | Rate: 32530/s
+[SEGMENT-7] Tested: 15,800,000 | Rate: 32523/s
+[SEGMENT-6] Tested: 15,800,000 | Rate: 32512/s
+[BIRTHDAY-9] Tested: 13,200,000 | Unique: 13,200,000 | Rate: 27132/s
+[SEGMENT-8] Tested: 15,900,000 | Rate: 32678/s
+[RANDOM-1] Tested: 14,000,000 | Rate: 28758/s
+[SEQ-backward-4] Tested: 15,800,000 | Rate: 32345/s | Current: 0x7fffffffffffffffffffffffffff0ee940
+[RANDOM-2] Tested: 13,900,000 | Rate: 28447/s
+[SEGMENT-5] Tested: 15,900,000 | Rate: 32529/s
+[SEQ-forward-3] Tested: 15,900,000 | Rate: 32525/s | Current: 0x4000000000000000000000000000f29d5f
+[SEGMENT-6] Tested: 15,900,000 | Rate: 32520/s
+[SEGMENT-7] Tested: 15,900,000 | Rate: 32511/s
+[SEGMENT-8] Tested: 16,000,000 | Rate: 32669/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 8.2 min | Total tested: 80,499,204
+Combined rate: 164264 keys/sec (9855857 keys/min)
+======================================================================
+
+[BIRTHDAY-9] Tested: 13,300,000 | Unique: 13,300,000 | Rate: 27133/s
+[RANDOM-1] Tested: 14,100,000 | Rate: 28749/s
+[SEQ-backward-4] Tested: 15,900,000 | Rate: 32348/s | Current: 0x7fffffffffffffffffffffffffff0d62a0
+[SEGMENT-5] Tested: 16,000,000 | Rate: 32522/s
+[SEQ-forward-3] Tested: 16,000,000 | Rate: 32518/s | Current: 0x4000000000000000000000000000f423ff
+[SEGMENT-6] Tested: 16,000,000 | Rate: 32515/s
+[SEGMENT-7] Tested: 16,000,000 | Rate: 32509/s
+[RANDOM-2] Tested: 14,000,000 | Rate: 28443/s
+[SEGMENT-8] Tested: 16,100,000 | Rate: 32673/s
+[BIRTHDAY-9] Tested: 13,400,000 | Unique: 13,400,000 | Rate: 27132/s
+[RANDOM-1] Tested: 14,200,000 | Rate: 28746/s
+[SEQ-backward-4] Tested: 16,000,000 | Rate: 32359/s | Current: 0x7fffffffffffffffffffffffffff0bdc00
+[SEGMENT-5] Tested: 16,100,000 | Rate: 32533/s
+[SEGMENT-6] Tested: 16,100,000 | Rate: 32519/s
+[SEQ-forward-3] Tested: 16,100,000 | Rate: 32512/s | Current: 0x4000000000000000000000000000f5aa9f
+[SEGMENT-7] Tested: 16,100,000 | Rate: 32503/s
+[SEGMENT-8] Tested: 16,200,000 | Rate: 32677/s
+[RANDOM-2] Tested: 14,100,000 | Rate: 28436/s
+[RANDOM-1] Tested: 14,300,000 | Rate: 28742/s
+[BIRTHDAY-9] Tested: 13,500,000 | Unique: 13,500,000 | Rate: 27130/s
+[SEQ-backward-4] Tested: 16,100,000 | Rate: 32353/s | Current: 0x7fffffffffffffffffffffffffff0a5560
+[SEGMENT-5] Tested: 16,200,000 | Rate: 32529/s
+[SEGMENT-6] Tested: 16,200,000 | Rate: 32515/s
+[SEQ-forward-3] Tested: 16,200,000 | Rate: 32505/s | Current: 0x4000000000000000000000000000f7313f
+[SEGMENT-7] Tested: 16,200,000 | Rate: 32502/s
+[SEGMENT-8] Tested: 16,300,000 | Rate: 32682/s
+[RANDOM-2] Tested: 14,200,000 | Rate: 28436/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 8.3 min | Total tested: 82,135,902
+Combined rate: 164252 keys/sec (9855142 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 16,200,000 | Rate: 32342/s | Current: 0x7fffffffffffffffffffffffffff08cec0
+[RANDOM-1] Tested: 14,400,000 | Rate: 28739/s
+[SEGMENT-5] Tested: 16,300,000 | Rate: 32519/s
+[SEGMENT-6] Tested: 16,300,000 | Rate: 32516/s
+[BIRTHDAY-9] Tested: 13,600,000 | Unique: 13,600,000 | Rate: 27126/s
+[SEQ-forward-3] Tested: 16,300,000 | Rate: 32505/s | Current: 0x4000000000000000000000000000f8b7df
+[SEGMENT-7] Tested: 16,300,000 | Rate: 32499/s
+[SEGMENT-8] Tested: 16,400,000 | Rate: 32680/s
+[RANDOM-2] Tested: 14,300,000 | Rate: 28443/s
+[SEQ-backward-4] Tested: 16,300,000 | Rate: 32346/s | Current: 0x7fffffffffffffffffffffffffff074820
+[SEGMENT-6] Tested: 16,400,000 | Rate: 32523/s
+[SEQ-forward-3] Tested: 16,400,000 | Rate: 32514/s | Current: 0x4000000000000000000000000000fa3e7f
+[RANDOM-1] Tested: 14,500,000 | Rate: 28744/s
+[SEGMENT-5] Tested: 16,400,000 | Rate: 32504/s
+[SEGMENT-7] Tested: 16,400,000 | Rate: 32499/s
+[SEGMENT-8] Tested: 16,500,000 | Rate: 32676/s
+[BIRTHDAY-9] Tested: 13,700,000 | Unique: 13,700,000 | Rate: 27114/s
+[RANDOM-2] Tested: 14,400,000 | Rate: 28430/s
+[SEQ-backward-4] Tested: 16,400,000 | Rate: 32346/s | Current: 0x7fffffffffffffffffffffffffff05c180
+[SEQ-forward-3] Tested: 16,500,000 | Rate: 32528/s | Current: 0x4000000000000000000000000000fbc51f
+[SEGMENT-6] Tested: 16,500,000 | Rate: 32511/s
+[SEGMENT-5] Tested: 16,500,000 | Rate: 32510/s
+[SEGMENT-7] Tested: 16,500,000 | Rate: 32491/s
+[RANDOM-1] Tested: 14,600,000 | Rate: 28741/s
+[SEGMENT-8] Tested: 16,600,000 | Rate: 32669/s
+[BIRTHDAY-9] Tested: 13,800,000 | Unique: 13,800,000 | Rate: 27104/s
+[SEQ-backward-4] Tested: 16,500,000 | Rate: 32374/s | Current: 0x7fffffffffffffffffffffffffff043ae0
+[RANDOM-2] Tested: 14,500,000 | Rate: 28431/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 8.5 min | Total tested: 83,797,791
+Combined rate: 164288 keys/sec (9857302 keys/min)
+======================================================================
+
+[SEQ-forward-3] Tested: 16,600,000 | Rate: 32534/s | Current: 0x4000000000000000000000000000fd4bbf
+[SEGMENT-7] Tested: 16,600,000 | Rate: 32506/s
+[SEGMENT-5] Tested: 16,600,000 | Rate: 32506/s
+[SEGMENT-6] Tested: 16,600,000 | Rate: 32502/s
+[SEGMENT-8] Tested: 16,700,000 | Rate: 32663/s
+[RANDOM-1] Tested: 14,700,000 | Rate: 28743/s
+[SEQ-backward-4] Tested: 16,600,000 | Rate: 32384/s | Current: 0x7fffffffffffffffffffffffffff02b440
+[BIRTHDAY-9] Tested: 13,900,000 | Unique: 13,900,000 | Rate: 27107/s
+[SEQ-forward-3] Tested: 16,700,000 | Rate: 32545/s | Current: 0x4000000000000000000000000000fed25f
+[RANDOM-2] Tested: 14,600,000 | Rate: 28433/s
+[SEGMENT-6] Tested: 16,700,000 | Rate: 32514/s
+[SEGMENT-5] Tested: 16,700,000 | Rate: 32499/s
+[SEGMENT-7] Tested: 16,700,000 | Rate: 32495/s
+[SEGMENT-8] Tested: 16,800,000 | Rate: 32669/s
+[RANDOM-1] Tested: 14,800,000 | Rate: 28743/s
+[SEQ-backward-4] Tested: 16,700,000 | Rate: 32399/s | Current: 0x7fffffffffffffffffffffffffff012da0
+[SEQ-forward-3] Tested: 16,800,000 | Rate: 32533/s | Current: 0x40000000000000000000000000010058ff
+[BIRTHDAY-9] Tested: 14,000,000 | Unique: 14,000,000 | Rate: 27103/s
+[SEGMENT-5] Tested: 16,800,000 | Rate: 32512/s
+[SEGMENT-6] Tested: 16,800,000 | Rate: 32503/s
+[RANDOM-2] Tested: 14,700,000 | Rate: 28428/s
+[SEGMENT-7] Tested: 16,800,000 | Rate: 32487/s
+[SEGMENT-8] Tested: 16,900,000 | Rate: 32679/s
+[SEQ-backward-4] Tested: 16,800,000 | Rate: 32409/s | Current: 0x7ffffffffffffffffffffffffffeffa700
+[RANDOM-1] Tested: 14,900,000 | Rate: 28736/s
+[SEQ-forward-3] Tested: 16,900,000 | Rate: 32529/s | Current: 0x400000000000000000000000000101df9f
+[SEGMENT-5] Tested: 16,900,000 | Rate: 32508/s
+[SEGMENT-6] Tested: 16,900,000 | Rate: 32503/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 8.7 min | Total tested: 85,438,744
+Combined rate: 164284 keys/sec (9857061 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 16,900,000 | Rate: 32492/s
+[BIRTHDAY-9] Tested: 14,100,000 | Unique: 14,100,000 | Rate: 27105/s
+[SEGMENT-8] Tested: 17,000,000 | Rate: 32677/s
+[RANDOM-2] Tested: 14,800,000 | Rate: 28427/s
+[SEQ-backward-4] Tested: 16,900,000 | Rate: 32409/s | Current: 0x7ffffffffffffffffffffffffffefe2060
+[RANDOM-1] Tested: 15,000,000 | Rate: 28734/s
+[SEQ-forward-3] Tested: 17,000,000 | Rate: 32524/s | Current: 0x400000000000000000000000000103663f
+[SEGMENT-6] Tested: 17,000,000 | Rate: 32506/s
+[SEGMENT-5] Tested: 17,000,000 | Rate: 32501/s
+[SEGMENT-7] Tested: 17,000,000 | Rate: 32492/s
+[SEGMENT-8] Tested: 17,100,000 | Rate: 32680/s
+[BIRTHDAY-9] Tested: 14,200,000 | Unique: 14,200,000 | Rate: 27101/s
+[RANDOM-2] Tested: 14,900,000 | Rate: 28417/s
+[SEQ-backward-4] Tested: 17,000,000 | Rate: 32419/s | Current: 0x7ffffffffffffffffffffffffffefc99c0
+[RANDOM-1] Tested: 15,100,000 | Rate: 28733/s
+[SEQ-forward-3] Tested: 17,100,000 | Rate: 32515/s | Current: 0x400000000000000000000000000104ecdf
+[SEGMENT-5] Tested: 17,100,000 | Rate: 32506/s
+[SEGMENT-7] Tested: 17,100,000 | Rate: 32502/s
+[SEGMENT-8] Tested: 17,200,000 | Rate: 32689/s
+[SEGMENT-6] Tested: 17,100,000 | Rate: 32498/s
+[SEQ-backward-4] Tested: 17,100,000 | Rate: 32420/s | Current: 0x7ffffffffffffffffffffffffffefb1320
+[BIRTHDAY-9] Tested: 14,300,000 | Unique: 14,300,000 | Rate: 27092/s
+[RANDOM-2] Tested: 15,000,000 | Rate: 28410/s
+[SEQ-forward-3] Tested: 17,200,000 | Rate: 32523/s | Current: 0x400000000000000000000000000106737f
+[SEGMENT-5] Tested: 17,200,000 | Rate: 32521/s
+[SEGMENT-7] Tested: 17,200,000 | Rate: 32505/s
+[RANDOM-1] Tested: 15,200,000 | Rate: 28725/s
+[SEGMENT-8] Tested: 17,300,000 | Rate: 32676/s
+[SEGMENT-6] Tested: 17,200,000 | Rate: 32481/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 8.8 min | Total tested: 87,080,636
+Combined rate: 164283 keys/sec (9856952 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 17,200,000 | Rate: 32400/s | Current: 0x7ffffffffffffffffffffffffffef98c80
+[RANDOM-2] Tested: 15,100,000 | Rate: 28398/s
+[SEGMENT-5] Tested: 17,300,000 | Rate: 32532/s
+[BIRTHDAY-9] Tested: 14,400,000 | Unique: 14,400,000 | Rate: 27076/s
+[SEQ-forward-3] Tested: 17,300,000 | Rate: 32528/s | Current: 0x400000000000000000000000000107fa1f
+[SEGMENT-7] Tested: 17,300,000 | Rate: 32518/s
+[RANDOM-1] Tested: 15,300,000 | Rate: 28737/s
+[SEGMENT-8] Tested: 17,400,000 | Rate: 32664/s
+[SEGMENT-6] Tested: 17,300,000 | Rate: 32469/s
+[SEQ-backward-4] Tested: 17,300,000 | Rate: 32404/s | Current: 0x7ffffffffffffffffffffffffffef805e0
+[SEGMENT-7] Tested: 17,400,000 | Rate: 32543/s
+[SEQ-forward-3] Tested: 17,400,000 | Rate: 32539/s | Current: 0x40000000000000000000000000010980bf
+[SEGMENT-5] Tested: 17,400,000 | Rate: 32536/s
+[RANDOM-2] Tested: 15,200,000 | Rate: 28396/s
+[SEGMENT-8] Tested: 17,500,000 | Rate: 32661/s
+[RANDOM-1] Tested: 15,400,000 | Rate: 28737/s
+[BIRTHDAY-9] Tested: 14,500,000 | Unique: 14,500,000 | Rate: 27057/s
+[SEGMENT-6] Tested: 17,400,000 | Rate: 32467/s
+[SEQ-backward-4] Tested: 17,400,000 | Rate: 32409/s | Current: 0x7ffffffffffffffffffffffffffef67f40
+[SEGMENT-7] Tested: 17,500,000 | Rate: 32551/s
+[SEQ-forward-3] Tested: 17,500,000 | Rate: 32547/s | Current: 0x40000000000000000000000000010b075f
+[SEGMENT-5] Tested: 17,500,000 | Rate: 32538/s
+[RANDOM-2] Tested: 15,300,000 | Rate: 28409/s
+[SEGMENT-8] Tested: 17,600,000 | Rate: 32653/s
+[SEGMENT-6] Tested: 17,500,000 | Rate: 32465/s
+[RANDOM-1] Tested: 15,500,000 | Rate: 28730/s
+[BIRTHDAY-9] Tested: 14,600,000 | Unique: 14,600,000 | Rate: 27040/s
+[SEQ-backward-4] Tested: 17,500,000 | Rate: 32408/s | Current: 0x7ffffffffffffffffffffffffffef4f8a0
+
+======================================================================
+GLOBAL PROGRESS
+Time: 9.0 min | Total tested: 88,735,301
+Combined rate: 164304 keys/sec (9858265 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 17,600,000 | Rate: 32543/s
+[SEGMENT-7] Tested: 17,600,000 | Rate: 32541/s
+[SEQ-forward-3] Tested: 17,600,000 | Rate: 32540/s | Current: 0x40000000000000000000000000010c8dff
+[SEGMENT-8] Tested: 17,700,000 | Rate: 32652/s
+[SEGMENT-6] Tested: 17,600,000 | Rate: 32465/s
+[RANDOM-2] Tested: 15,400,000 | Rate: 28400/s
+[RANDOM-1] Tested: 15,600,000 | Rate: 28734/s
+[SEQ-backward-4] Tested: 17,600,000 | Rate: 32408/s | Current: 0x7ffffffffffffffffffffffffffef37200
+[BIRTHDAY-9] Tested: 14,700,000 | Unique: 14,700,000 | Rate: 27039/s
+[SEGMENT-7] Tested: 17,700,000 | Rate: 32548/s
+[SEGMENT-5] Tested: 17,700,000 | Rate: 32539/s
+[SEQ-forward-3] Tested: 17,700,000 | Rate: 32537/s | Current: 0x40000000000000000000000000010e149f
+[SEGMENT-8] Tested: 17,800,000 | Rate: 32659/s
+[SEGMENT-6] Tested: 17,700,000 | Rate: 32466/s
+[RANDOM-2] Tested: 15,500,000 | Rate: 28399/s
+[SEQ-backward-4] Tested: 17,700,000 | Rate: 32404/s | Current: 0x7ffffffffffffffffffffffffffef1eb60
+[RANDOM-1] Tested: 15,700,000 | Rate: 28726/s
+[SEGMENT-7] Tested: 17,800,000 | Rate: 32552/s
+[SEQ-forward-3] Tested: 17,800,000 | Rate: 32534/s | Current: 0x40000000000000000000000000010f9b3f
+[SEGMENT-5] Tested: 17,800,000 | Rate: 32533/s
+[BIRTHDAY-9] Tested: 14,800,000 | Unique: 14,800,000 | Rate: 27043/s
+[SEGMENT-8] Tested: 17,900,000 | Rate: 32658/s
+[SEGMENT-6] Tested: 17,800,000 | Rate: 32459/s
+[SEQ-backward-4] Tested: 17,800,000 | Rate: 32421/s | Current: 0x7ffffffffffffffffffffffffffef064c0
+[RANDOM-2] Tested: 15,600,000 | Rate: 28391/s
+[SEGMENT-7] Tested: 17,900,000 | Rate: 32563/s
+[RANDOM-1] Tested: 15,800,000 | Rate: 28731/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 9.2 min | Total tested: 90,359,423
+Combined rate: 164270 keys/sec (9856199 keys/min)
+======================================================================
+
+[SEQ-forward-3] Tested: 17,900,000 | Rate: 32540/s | Current: 0x40000000000000000000000000011121df
+[SEGMENT-5] Tested: 17,900,000 | Rate: 32536/s
+[BIRTHDAY-9] Tested: 14,900,000 | Unique: 14,900,000 | Rate: 27044/s
+[SEGMENT-8] Tested: 18,000,000 | Rate: 32664/s
+[SEGMENT-6] Tested: 17,900,000 | Rate: 32461/s
+[SEQ-backward-4] Tested: 17,900,000 | Rate: 32438/s | Current: 0x7ffffffffffffffffffffffffffeeede20
+[SEGMENT-7] Tested: 18,000,000 | Rate: 32562/s
+[RANDOM-2] Tested: 15,700,000 | Rate: 28385/s
+[SEQ-forward-3] Tested: 18,000,000 | Rate: 32538/s | Current: 0x400000000000000000000000000112a87f
+[SEGMENT-5] Tested: 18,000,000 | Rate: 32536/s
+[RANDOM-1] Tested: 15,900,000 | Rate: 28733/s
+[SEGMENT-8] Tested: 18,100,000 | Rate: 32662/s
+[BIRTHDAY-9] Tested: 15,000,000 | Unique: 15,000,000 | Rate: 27053/s
+[SEGMENT-6] Tested: 18,000,000 | Rate: 32460/s
+[SEQ-backward-4] Tested: 18,000,000 | Rate: 32439/s | Current: 0x7ffffffffffffffffffffffffffeed5780
+[SEGMENT-7] Tested: 18,100,000 | Rate: 32570/s
+[SEQ-forward-3] Tested: 18,100,000 | Rate: 32545/s | Current: 0x4000000000000000000000000001142f1f
+[SEGMENT-5] Tested: 18,100,000 | Rate: 32538/s
+[RANDOM-2] Tested: 15,800,000 | Rate: 28392/s
+[RANDOM-1] Tested: 16,000,000 | Rate: 28737/s
+[SEGMENT-8] Tested: 18,200,000 | Rate: 32660/s
+[SEGMENT-6] Tested: 18,100,000 | Rate: 32467/s
+[SEQ-backward-4] Tested: 18,100,000 | Rate: 32435/s | Current: 0x7ffffffffffffffffffffffffffeebd0e0
+[BIRTHDAY-9] Tested: 15,100,000 | Unique: 15,100,000 | Rate: 27054/s
+[SEGMENT-7] Tested: 18,200,000 | Rate: 32572/s
+[SEQ-forward-3] Tested: 18,200,000 | Rate: 32554/s | Current: 0x400000000000000000000000000115b5bf
+[SEGMENT-5] Tested: 18,200,000 | Rate: 32527/s
+[RANDOM-2] Tested: 15,900,000 | Rate: 28397/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 9.3 min | Total tested: 92,018,469
+Combined rate: 164298 keys/sec (9857904 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 18,300,000 | Rate: 32671/s
+[RANDOM-1] Tested: 16,100,000 | Rate: 28741/s
+[SEGMENT-6] Tested: 18,200,000 | Rate: 32465/s
+[SEQ-backward-4] Tested: 18,200,000 | Rate: 32443/s | Current: 0x7ffffffffffffffffffffffffffeea4a40
+[SEQ-forward-3] Tested: 18,300,000 | Rate: 32575/s | Current: 0x4000000000000000000000000001173c5f
+[BIRTHDAY-9] Tested: 15,200,000 | Unique: 15,200,000 | Rate: 27056/s
+[SEGMENT-7] Tested: 18,300,000 | Rate: 32564/s
+[SEGMENT-5] Tested: 18,300,000 | Rate: 32532/s
+[SEGMENT-8] Tested: 18,400,000 | Rate: 32686/s
+[RANDOM-1] Tested: 16,200,000 | Rate: 28751/s
+[RANDOM-2] Tested: 16,000,000 | Rate: 28389/s
+[SEGMENT-6] Tested: 18,300,000 | Rate: 32460/s
+[SEQ-backward-4] Tested: 18,300,000 | Rate: 32444/s | Current: 0x7ffffffffffffffffffffffffffee8c3a0
+[SEQ-forward-3] Tested: 18,400,000 | Rate: 32570/s | Current: 0x400000000000000000000000000118c2ff
+[SEGMENT-7] Tested: 18,400,000 | Rate: 32559/s
+[BIRTHDAY-9] Tested: 15,300,000 | Unique: 15,300,000 | Rate: 27064/s
+[SEGMENT-5] Tested: 18,400,000 | Rate: 32536/s
+[SEGMENT-8] Tested: 18,500,000 | Rate: 32694/s
+[RANDOM-1] Tested: 16,300,000 | Rate: 28748/s
+[SEGMENT-6] Tested: 18,400,000 | Rate: 32449/s
+[RANDOM-2] Tested: 16,100,000 | Rate: 28392/s
+[SEQ-backward-4] Tested: 18,400,000 | Rate: 32446/s | Current: 0x7ffffffffffffffffffffffffffee73d00
+[SEQ-forward-3] Tested: 18,500,000 | Rate: 32582/s | Current: 0x40000000000000000000000000011a499f
+[SEGMENT-7] Tested: 18,500,000 | Rate: 32562/s
+[SEGMENT-5] Tested: 18,500,000 | Rate: 32552/s
+[SEGMENT-8] Tested: 18,600,000 | Rate: 32691/s
+[BIRTHDAY-9] Tested: 15,400,000 | Unique: 15,400,000 | Rate: 27056/s
+[SEQ-backward-4] Tested: 18,500,000 | Rate: 32461/s | Current: 0x7ffffffffffffffffffffffffffee5b660
+
+======================================================================
+GLOBAL PROGRESS
+Time: 9.5 min | Total tested: 93,639,136
+Combined rate: 164258 keys/sec (9855491 keys/min)
+======================================================================
+
+[SEGMENT-6] Tested: 18,500,000 | Rate: 32451/s
+[RANDOM-1] Tested: 16,400,000 | Rate: 28747/s
+[RANDOM-2] Tested: 16,200,000 | Rate: 28395/s
+[SEQ-forward-3] Tested: 18,600,000 | Rate: 32579/s | Current: 0x40000000000000000000000000011bd03f
+[SEGMENT-7] Tested: 18,600,000 | Rate: 32561/s
+[SEGMENT-5] Tested: 18,600,000 | Rate: 32544/s
+[SEGMENT-8] Tested: 18,700,000 | Rate: 32694/s
+[BIRTHDAY-9] Tested: 15,500,000 | Unique: 15,500,000 | Rate: 27055/s
+[SEQ-backward-4] Tested: 18,600,000 | Rate: 32456/s | Current: 0x7ffffffffffffffffffffffffffee42fc0
+[SEGMENT-6] Tested: 18,600,000 | Rate: 32446/s
+[RANDOM-2] Tested: 16,300,000 | Rate: 28407/s
+[RANDOM-1] Tested: 16,500,000 | Rate: 28751/s
+[SEQ-forward-3] Tested: 18,700,000 | Rate: 32576/s | Current: 0x40000000000000000000000000011d56df
+[SEGMENT-7] Tested: 18,700,000 | Rate: 32561/s
+[SEGMENT-5] Tested: 18,700,000 | Rate: 32538/s
+[SEGMENT-8] Tested: 18,800,000 | Rate: 32699/s
+[SEGMENT-6] Tested: 18,700,000 | Rate: 32451/s
+[SEQ-backward-4] Tested: 18,700,000 | Rate: 32448/s | Current: 0x7ffffffffffffffffffffffffffee2a920
+[BIRTHDAY-9] Tested: 15,600,000 | Unique: 15,600,000 | Rate: 27055/s
+[SEQ-forward-3] Tested: 18,800,000 | Rate: 32584/s | Current: 0x40000000000000000000000000011edd7f
+[RANDOM-2] Tested: 16,400,000 | Rate: 28421/s
+[RANDOM-1] Tested: 16,600,000 | Rate: 28754/s
+[SEGMENT-7] Tested: 18,800,000 | Rate: 32564/s
+[SEGMENT-5] Tested: 18,800,000 | Rate: 32546/s
+[SEGMENT-8] Tested: 18,900,000 | Rate: 32699/s
+[SEQ-backward-4] Tested: 18,800,000 | Rate: 32451/s | Current: 0x7ffffffffffffffffffffffffffee12280
+[SEGMENT-6] Tested: 18,800,000 | Rate: 32448/s
+[SEQ-forward-3] Tested: 18,900,000 | Rate: 32582/s | Current: 0x400000000000000000000000000120641f
+
+======================================================================
+GLOBAL PROGRESS
+Time: 9.7 min | Total tested: 95,259,894
+Combined rate: 164221 keys/sec (9853232 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 18,900,000 | Rate: 32568/s
+[BIRTHDAY-9] Tested: 15,700,000 | Unique: 15,700,000 | Rate: 27051/s
+[SEGMENT-5] Tested: 18,900,000 | Rate: 32549/s
+[RANDOM-2] Tested: 16,500,000 | Rate: 28414/s
+[RANDOM-1] Tested: 16,700,000 | Rate: 28753/s
+[SEGMENT-8] Tested: 19,000,000 | Rate: 32690/s
+[SEGMENT-6] Tested: 18,900,000 | Rate: 32448/s
+[SEQ-backward-4] Tested: 18,900,000 | Rate: 32446/s | Current: 0x7ffffffffffffffffffffffffffedf9be0
+[SEQ-forward-3] Tested: 19,000,000 | Rate: 32574/s | Current: 0x400000000000000000000000000121eabf
+[SEGMENT-7] Tested: 19,000,000 | Rate: 32566/s
+[SEGMENT-5] Tested: 19,000,000 | Rate: 32553/s
+[RANDOM-2] Tested: 16,600,000 | Rate: 28416/s
+[RANDOM-1] Tested: 16,800,000 | Rate: 28756/s
+[BIRTHDAY-9] Tested: 15,800,000 | Unique: 15,800,000 | Rate: 27044/s
+[SEGMENT-8] Tested: 19,100,000 | Rate: 32692/s
+[SEGMENT-6] Tested: 19,000,000 | Rate: 32444/s
+[SEQ-backward-4] Tested: 19,000,000 | Rate: 32441/s | Current: 0x7ffffffffffffffffffffffffffede1540
+[SEQ-forward-3] Tested: 19,100,000 | Rate: 32577/s | Current: 0x400000000000000000000000000123715f
+[SEGMENT-7] Tested: 19,100,000 | Rate: 32563/s
+[SEGMENT-5] Tested: 19,100,000 | Rate: 32545/s
+[SEGMENT-8] Tested: 19,200,000 | Rate: 32696/s
+[RANDOM-2] Tested: 16,700,000 | Rate: 28416/s
+[RANDOM-1] Tested: 16,900,000 | Rate: 28750/s
+[BIRTHDAY-9] Tested: 15,900,000 | Unique: 15,900,000 | Rate: 27043/s
+[SEQ-backward-4] Tested: 19,100,000 | Rate: 32435/s | Current: 0x7ffffffffffffffffffffffffffedc8ea0
+[SEGMENT-6] Tested: 19,100,000 | Rate: 32435/s
+[SEQ-forward-3] Tested: 19,200,000 | Rate: 32581/s | Current: 0x400000000000000000000000000124f7ff
+[SEGMENT-7] Tested: 19,200,000 | Rate: 32561/s
+[SEGMENT-5] Tested: 19,200,000 | Rate: 32549/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 9.8 min | Total tested: 96,908,488
+Combined rate: 164231 keys/sec (9853880 keys/min)
+======================================================================
+
+[SEGMENT-8] Tested: 19,300,000 | Rate: 32688/s
+[RANDOM-2] Tested: 16,800,000 | Rate: 28416/s
+[RANDOM-1] Tested: 17,000,000 | Rate: 28746/s
+[BIRTHDAY-9] Tested: 16,000,000 | Unique: 16,000,000 | Rate: 27054/s
+[SEQ-backward-4] Tested: 19,200,000 | Rate: 32441/s | Current: 0x7ffffffffffffffffffffffffffedb0800
+[SEGMENT-6] Tested: 19,200,000 | Rate: 32428/s
+[SEQ-forward-3] Tested: 19,300,000 | Rate: 32581/s | Current: 0x4000000000000000000000000001267e9f
+[SEGMENT-7] Tested: 19,300,000 | Rate: 32555/s
+[SEGMENT-5] Tested: 19,300,000 | Rate: 32540/s
+[SEGMENT-8] Tested: 19,400,000 | Rate: 32680/s
+[RANDOM-2] Tested: 16,900,000 | Rate: 28416/s
+[SEQ-backward-4] Tested: 19,300,000 | Rate: 32447/s | Current: 0x7ffffffffffffffffffffffffffed98160
+[RANDOM-1] Tested: 17,100,000 | Rate: 28741/s
+[SEGMENT-6] Tested: 19,300,000 | Rate: 32431/s
+[BIRTHDAY-9] Tested: 16,100,000 | Unique: 16,100,000 | Rate: 27053/s
+[SEQ-forward-3] Tested: 19,400,000 | Rate: 32573/s | Current: 0x400000000000000000000000000128053f
+[SEGMENT-7] Tested: 19,400,000 | Rate: 32562/s
+[SEGMENT-5] Tested: 19,400,000 | Rate: 32547/s
+[SEGMENT-8] Tested: 19,500,000 | Rate: 32673/s
+[SEQ-backward-4] Tested: 19,400,000 | Rate: 32451/s | Current: 0x7ffffffffffffffffffffffffffed7fac0
+[SEGMENT-6] Tested: 19,400,000 | Rate: 32435/s
+[RANDOM-2] Tested: 17,000,000 | Rate: 28418/s
+[RANDOM-1] Tested: 17,200,000 | Rate: 28739/s
+[SEGMENT-7] Tested: 19,500,000 | Rate: 32574/s
+[SEQ-forward-3] Tested: 19,500,000 | Rate: 32566/s | Current: 0x4000000000000000000000000001298bdf
+[BIRTHDAY-9] Tested: 16,200,000 | Unique: 16,200,000 | Rate: 27044/s
+[SEGMENT-5] Tested: 19,500,000 | Rate: 32546/s
+[SEGMENT-8] Tested: 19,600,000 | Rate: 32682/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 10.0 min | Total tested: 98,450,520
+Combined rate: 164064 keys/sec (9843852 keys/min)
+======================================================================
+
+[SEQ-backward-4] Tested: 19,500,000 | Rate: 32454/s | Current: 0x7ffffffffffffffffffffffffffed67420
+[SEGMENT-6] Tested: 19,500,000 | Rate: 32437/s
+[SEGMENT-7] Tested: 19,600,000 | Rate: 32568/s
+[RANDOM-2] Tested: 17,100,000 | Rate: 28412/s
+[SEQ-forward-3] Tested: 19,600,000 | Rate: 32564/s | Current: 0x40000000000000000000000000012b127f
+[SEGMENT-5] Tested: 19,600,000 | Rate: 32552/s
+[RANDOM-1] Tested: 17,300,000 | Rate: 28726/s
+[BIRTHDAY-9] Tested: 16,300,000 | Unique: 16,300,000 | Rate: 27037/s
+[SEGMENT-8] Tested: 19,700,000 | Rate: 32664/s
+[SEQ-backward-4] Tested: 19,600,000 | Rate: 32450/s | Current: 0x7ffffffffffffffffffffffffffed4ed80
+[SEGMENT-6] Tested: 19,600,000 | Rate: 32428/s
+[SEGMENT-7] Tested: 19,700,000 | Rate: 32562/s
+[SEGMENT-5] Tested: 19,700,000 | Rate: 32554/s
+[SEQ-forward-3] Tested: 19,700,000 | Rate: 32553/s | Current: 0x40000000000000000000000000012c991f
+[RANDOM-2] Tested: 17,200,000 | Rate: 28413/s
+[RANDOM-1] Tested: 17,400,000 | Rate: 28724/s
+[SEGMENT-8] Tested: 19,800,000 | Rate: 32660/s
+[BIRTHDAY-9] Tested: 16,400,000 | Unique: 16,400,000 | Rate: 27036/s
+[SEQ-backward-4] Tested: 19,700,000 | Rate: 32457/s | Current: 0x7ffffffffffffffffffffffffffed366e0
+[SEGMENT-6] Tested: 19,700,000 | Rate: 32423/s
+[SEGMENT-7] Tested: 19,800,000 | Rate: 32580/s
+[SEQ-forward-3] Tested: 19,800,000 | Rate: 32553/s | Current: 0x40000000000000000000000000012e1fbf
+[SEGMENT-5] Tested: 19,800,000 | Rate: 32545/s
+[RANDOM-2] Tested: 17,300,000 | Rate: 28422/s
+[RANDOM-1] Tested: 17,500,000 | Rate: 28726/s
+[SEGMENT-8] Tested: 19,900,000 | Rate: 32653/s
+[SEQ-backward-4] Tested: 19,800,000 | Rate: 32467/s | Current: 0x7ffffffffffffffffffffffffffed1e040
+
+======================================================================
+GLOBAL PROGRESS
+Time: 10.2 min | Total tested: 100,027,235
+Combined rate: 163958 keys/sec (9837500 keys/min)
+======================================================================
+
+[BIRTHDAY-9] Tested: 16,500,000 | Unique: 16,500,000 | Rate: 27029/s
+[SEGMENT-6] Tested: 19,800,000 | Rate: 32431/s
+[SEGMENT-7] Tested: 19,900,000 | Rate: 32581/s
+[SEQ-forward-3] Tested: 19,900,000 | Rate: 32558/s | Current: 0x40000000000000000000000000012fa65f
+[SEGMENT-5] Tested: 19,900,000 | Rate: 32550/s
+[RANDOM-2] Tested: 17,400,000 | Rate: 28427/s
+[SEGMENT-8] Tested: 20,000,000 | Rate: 32647/s
+[RANDOM-1] Tested: 17,600,000 | Rate: 28722/s
+[SEQ-backward-4] Tested: 19,900,000 | Rate: 32474/s | Current: 0x7ffffffffffffffffffffffffffed059a0
+[SEGMENT-7] Tested: 20,000,000 | Rate: 32595/s
+[SEGMENT-6] Tested: 19,900,000 | Rate: 32428/s
+[BIRTHDAY-9] Tested: 16,600,000 | Unique: 16,600,000 | Rate: 27022/s
+[SEQ-forward-3] Tested: 20,000,000 | Rate: 32554/s | Current: 0x4000000000000000000000000001312cff
+[SEGMENT-5] Tested: 20,000,000 | Rate: 32548/s
+[SEQ-backward-4] Tested: 20,000,000 | Rate: 32484/s | Current: 0x7ffffffffffffffffffffffffffeced300
+[RANDOM-2] Tested: 17,500,000 | Rate: 28424/s
+[SEGMENT-8] Tested: 20,100,000 | Rate: 32639/s
+[RANDOM-1] Tested: 17,700,000 | Rate: 28714/s
+[SEGMENT-7] Tested: 20,100,000 | Rate: 32598/s
+[SEGMENT-6] Tested: 20,000,000 | Rate: 32429/s
+[SEGMENT-5] Tested: 20,100,000 | Rate: 32557/s
+[SEQ-forward-3] Tested: 20,100,000 | Rate: 32551/s | Current: 0x400000000000000000000000000132b39f
+[BIRTHDAY-9] Tested: 16,700,000 | Unique: 16,700,000 | Rate: 27019/s
+[SEGMENT-8] Tested: 20,200,000 | Rate: 32644/s
+[SEQ-backward-4] Tested: 20,100,000 | Rate: 32478/s | Current: 0x7ffffffffffffffffffffffffffecd4c60
+[RANDOM-2] Tested: 17,600,000 | Rate: 28415/s
+[SEGMENT-7] Tested: 20,200,000 | Rate: 32605/s
+[SEGMENT-6] Tested: 20,100,000 | Rate: 32431/s
+[RANDOM-1] Tested: 17,800,000 | Rate: 28716/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 10.3 min | Total tested: 101,674,352
+Combined rate: 163969 keys/sec (9838165 keys/min)
+======================================================================
+
+[SEGMENT-5] Tested: 20,200,000 | Rate: 32564/s
+[SEQ-forward-3] Tested: 20,200,000 | Rate: 32548/s | Current: 0x4000000000000000000000000001343a3f
+[BIRTHDAY-9] Tested: 16,800,000 | Unique: 16,800,000 | Rate: 27021/s
+[SEGMENT-8] Tested: 20,300,000 | Rate: 32644/s
+[SEQ-backward-4] Tested: 20,200,000 | Rate: 32479/s | Current: 0x7ffffffffffffffffffffffffffecbc5c0
+[SEGMENT-7] Tested: 20,300,000 | Rate: 32611/s
+[SEGMENT-6] Tested: 20,200,000 | Rate: 32441/s
+[RANDOM-2] Tested: 17,700,000 | Rate: 28413/s
+[RANDOM-1] Tested: 17,900,000 | Rate: 28723/s
+[SEGMENT-5] Tested: 20,300,000 | Rate: 32571/s
+[SEQ-forward-3] Tested: 20,300,000 | Rate: 32556/s | Current: 0x400000000000000000000000000135c0df
+[SEGMENT-8] Tested: 20,400,000 | Rate: 32641/s
+[SEQ-backward-4] Tested: 20,300,000 | Rate: 32476/s | Current: 0x7ffffffffffffffffffffffffffeca3f20
+[BIRTHDAY-9] Tested: 16,900,000 | Unique: 16,900,000 | Rate: 27029/s
+[SEGMENT-7] Tested: 20,400,000 | Rate: 32613/s
+[SEGMENT-6] Tested: 20,300,000 | Rate: 32446/s
+[SEGMENT-5] Tested: 20,400,000 | Rate: 32576/s
+[RANDOM-2] Tested: 17,800,000 | Rate: 28414/s
+[RANDOM-1] Tested: 18,000,000 | Rate: 28733/s
+[SEQ-forward-3] Tested: 20,400,000 | Rate: 32555/s | Current: 0x400000000000000000000000000137477f
+[SEGMENT-8] Tested: 20,500,000 | Rate: 32641/s
+[SEQ-backward-4] Tested: 20,400,000 | Rate: 32472/s | Current: 0x7ffffffffffffffffffffffffffec8b880
+[SEGMENT-7] Tested: 20,500,000 | Rate: 32605/s
+[SEGMENT-6] Tested: 20,400,000 | Rate: 32445/s
+[BIRTHDAY-9] Tested: 17,000,000 | Unique: 17,000,000 | Rate: 27027/s
+[SEGMENT-5] Tested: 20,500,000 | Rate: 32580/s
+[SEQ-forward-3] Tested: 20,500,000 | Rate: 32553/s | Current: 0x400000000000000000000000000138ce1f
+[RANDOM-2] Tested: 17,900,000 | Rate: 28419/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 10.5 min | Total tested: 103,254,265
+Combined rate: 163874 keys/sec (9832440 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 18,100,000 | Rate: 28724/s
+[SEGMENT-8] Tested: 20,600,000 | Rate: 32642/s
+[SEQ-backward-4] Tested: 20,500,000 | Rate: 32474/s | Current: 0x7ffffffffffffffffffffffffffec731e0
+[SEGMENT-6] Tested: 20,500,000 | Rate: 32450/s
+[SEGMENT-7] Tested: 20,600,000 | Rate: 32604/s
+[SEGMENT-5] Tested: 20,600,000 | Rate: 32578/s
+[BIRTHDAY-9] Tested: 17,100,000 | Unique: 17,100,000 | Rate: 27016/s
+[SEQ-forward-3] Tested: 20,600,000 | Rate: 32543/s | Current: 0x40000000000000000000000000013a54bf
+[RANDOM-2] Tested: 18,000,000 | Rate: 28419/s
+[RANDOM-1] Tested: 18,200,000 | Rate: 28729/s
+[SEGMENT-8] Tested: 20,700,000 | Rate: 32634/s
+[SEQ-backward-4] Tested: 20,600,000 | Rate: 32464/s | Current: 0x7ffffffffffffffffffffffffffec5ab40
+[SEGMENT-6] Tested: 20,600,000 | Rate: 32459/s
+[SEGMENT-7] Tested: 20,700,000 | Rate: 32611/s
+[SEGMENT-5] Tested: 20,700,000 | Rate: 32575/s
+[SEQ-forward-3] Tested: 20,700,000 | Rate: 32538/s | Current: 0x40000000000000000000000000013bdb5f
+[BIRTHDAY-9] Tested: 17,200,000 | Unique: 17,200,000 | Rate: 27014/s
+[RANDOM-2] Tested: 18,100,000 | Rate: 28419/s
+[RANDOM-1] Tested: 18,300,000 | Rate: 28730/s
+[SEGMENT-8] Tested: 20,800,000 | Rate: 32636/s
+[SEGMENT-6] Tested: 20,700,000 | Rate: 32465/s
+[SEQ-backward-4] Tested: 20,700,000 | Rate: 32460/s | Current: 0x7ffffffffffffffffffffffffffec424a0
+[SEGMENT-7] Tested: 20,800,000 | Rate: 32612/s
+[SEGMENT-5] Tested: 20,800,000 | Rate: 32568/s
+[SEQ-forward-3] Tested: 20,800,000 | Rate: 32535/s | Current: 0x40000000000000000000000000013d61ff
+
+======================================================================
+GLOBAL PROGRESS
+Time: 10.7 min | Total tested: 104,866,225
+Combined rate: 163832 keys/sec (9829928 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 18,200,000 | Rate: 28410/s
+[SEGMENT-8] Tested: 20,900,000 | Rate: 32618/s
+[RANDOM-1] Tested: 18,400,000 | Rate: 28715/s
+[SEGMENT-6] Tested: 20,800,000 | Rate: 32450/s
+[SEGMENT-7] Tested: 20,900,000 | Rate: 32602/s
+[BIRTHDAY-9] Tested: 17,300,000 | Unique: 17,300,000 | Rate: 26986/s
+[SEQ-backward-4] Tested: 20,800,000 | Rate: 32441/s | Current: 0x7ffffffffffffffffffffffffffec29e00
+[SEGMENT-5] Tested: 20,900,000 | Rate: 32550/s
+[SEQ-forward-3] Tested: 20,900,000 | Rate: 32516/s | Current: 0x40000000000000000000000000013ee89f
+[SEGMENT-8] Tested: 21,000,000 | Rate: 32599/s
+[SEGMENT-6] Tested: 20,900,000 | Rate: 32432/s
+[SEGMENT-7] Tested: 21,000,000 | Rate: 32583/s
+[SEQ-backward-4] Tested: 20,900,000 | Rate: 32425/s | Current: 0x7ffffffffffffffffffffffffffec11760
+[RANDOM-1] Tested: 18,500,000 | Rate: 28700/s
+[RANDOM-2] Tested: 18,300,000 | Rate: 28388/s
+[BIRTHDAY-9] Tested: 17,400,000 | Unique: 17,400,000 | Rate: 26963/s
+[SEGMENT-5] Tested: 21,000,000 | Rate: 32533/s
+[SEQ-forward-3] Tested: 21,000,000 | Rate: 32508/s | Current: 0x4000000000000000000000000001406f3f
+[SEGMENT-8] Tested: 21,100,000 | Rate: 32581/s
+[SEGMENT-7] Tested: 21,100,000 | Rate: 32578/s
+[SEGMENT-6] Tested: 21,000,000 | Rate: 32421/s
+[SEQ-backward-4] Tested: 21,000,000 | Rate: 32418/s | Current: 0x7ffffffffffffffffffffffffffebf90c0
+[RANDOM-1] Tested: 18,600,000 | Rate: 28689/s
+[RANDOM-2] Tested: 18,400,000 | Rate: 28372/s
+[SEGMENT-5] Tested: 21,100,000 | Rate: 32524/s
+[SEQ-forward-3] Tested: 21,100,000 | Rate: 32500/s | Current: 0x400000000000000000000000000141f5df
+[BIRTHDAY-9] Tested: 17,500,000 | Unique: 17,500,000 | Rate: 26945/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 10.8 min | Total tested: 106,433,582
+Combined rate: 163723 keys/sec (9823377 keys/min)
+======================================================================
+
+[SEGMENT-7] Tested: 21,200,000 | Rate: 32566/s
+[SEGMENT-8] Tested: 21,200,000 | Rate: 32555/s
+[SEGMENT-6] Tested: 21,100,000 | Rate: 32396/s
+[SEQ-backward-4] Tested: 21,100,000 | Rate: 32391/s | Current: 0x7ffffffffffffffffffffffffffebe0a20
+[RANDOM-1] Tested: 18,700,000 | Rate: 28684/s
+[SEGMENT-5] Tested: 21,200,000 | Rate: 32502/s
+[RANDOM-2] Tested: 18,500,000 | Rate: 28349/s
+[SEQ-forward-3] Tested: 21,200,000 | Rate: 32478/s | Current: 0x4000000000000000000000000001437c7f
+[BIRTHDAY-9] Tested: 17,600,000 | Unique: 17,600,000 | Rate: 26929/s
+[SEGMENT-8] Tested: 21,300,000 | Rate: 32546/s
+[SEGMENT-7] Tested: 21,300,000 | Rate: 32544/s
+[SEGMENT-6] Tested: 21,200,000 | Rate: 32383/s
+[SEQ-backward-4] Tested: 21,200,000 | Rate: 32375/s | Current: 0x7ffffffffffffffffffffffffffebc8380
+[SEGMENT-5] Tested: 21,300,000 | Rate: 32483/s
+[RANDOM-1] Tested: 18,800,000 | Rate: 28669/s
+[SEQ-forward-3] Tested: 21,300,000 | Rate: 32471/s | Current: 0x400000000000000000000000000145031f
+[RANDOM-2] Tested: 18,600,000 | Rate: 28336/s
+[BIRTHDAY-9] Tested: 17,700,000 | Unique: 17,700,000 | Rate: 26913/s
+[SEGMENT-7] Tested: 21,400,000 | Rate: 32525/s
+[SEGMENT-8] Tested: 21,400,000 | Rate: 32525/s
+[SEGMENT-6] Tested: 21,300,000 | Rate: 32369/s
+[SEQ-backward-4] Tested: 21,300,000 | Rate: 32365/s | Current: 0x7ffffffffffffffffffffffffffebafce0
+[SEGMENT-5] Tested: 21,400,000 | Rate: 32466/s
+[SEQ-forward-3] Tested: 21,400,000 | Rate: 32458/s | Current: 0x40000000000000000000000000014689bf
+[RANDOM-1] Tested: 18,900,000 | Rate: 28653/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 11.0 min | Total tested: 108,011,468
+Combined rate: 163633 keys/sec (9817954 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 18,700,000 | Rate: 28326/s
+[SEGMENT-6] Tested: 21,400,000 | Rate: 32352/s
+[SEGMENT-7] Tested: 21,500,000 | Rate: 32501/s
+[SEGMENT-8] Tested: 21,500,000 | Rate: 32502/s
+[SEQ-backward-4] Tested: 21,400,000 | Rate: 32345/s | Current: 0x7ffffffffffffffffffffffffffeb97640
+[BIRTHDAY-9] Tested: 17,800,000 | Unique: 17,800,000 | Rate: 26895/s
+[SEGMENT-5] Tested: 21,500,000 | Rate: 32451/s
+[SEQ-forward-3] Tested: 21,500,000 | Rate: 32440/s | Current: 0x400000000000000000000000000148105f
+[RANDOM-1] Tested: 19,000,000 | Rate: 28633/s
+[RANDOM-2] Tested: 18,800,000 | Rate: 28312/s
+[SEGMENT-6] Tested: 21,500,000 | Rate: 32343/s
+[SEGMENT-7] Tested: 21,600,000 | Rate: 32487/s
+[SEGMENT-8] Tested: 21,600,000 | Rate: 32487/s
+[SEQ-backward-4] Tested: 21,500,000 | Rate: 32330/s | Current: 0x7ffffffffffffffffffffffffffeb7efa0
+[BIRTHDAY-9] Tested: 17,900,000 | Unique: 17,900,000 | Rate: 26881/s
+[SEGMENT-5] Tested: 21,600,000 | Rate: 32435/s
+[SEQ-forward-3] Tested: 21,600,000 | Rate: 32429/s | Current: 0x40000000000000000000000000014996ff
+[RANDOM-1] Tested: 19,100,000 | Rate: 28629/s
+[RANDOM-2] Tested: 18,900,000 | Rate: 28301/s
+[SEGMENT-6] Tested: 21,600,000 | Rate: 32336/s
+[SEQ-backward-4] Tested: 21,600,000 | Rate: 32330/s | Current: 0x7ffffffffffffffffffffffffffeb66900
+[SEGMENT-8] Tested: 21,700,000 | Rate: 32476/s
+[SEGMENT-7] Tested: 21,700,000 | Rate: 32474/s
+[SEQ-forward-3] Tested: 21,700,000 | Rate: 32421/s | Current: 0x40000000000000000000000000014b1d9f
+[SEGMENT-5] Tested: 21,700,000 | Rate: 32417/s
+[BIRTHDAY-9] Tested: 18,000,000 | Unique: 18,000,000 | Rate: 26869/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 11.2 min | Total tested: 109,461,958
+Combined rate: 163354 keys/sec (9801259 keys/min)
+======================================================================
+
+[RANDOM-1] Tested: 19,200,000 | Rate: 28622/s
+[SEGMENT-6] Tested: 21,700,000 | Rate: 32316/s
+[RANDOM-2] Tested: 19,000,000 | Rate: 28291/s
+[SEGMENT-8] Tested: 21,800,000 | Rate: 32457/s
+[SEQ-backward-4] Tested: 21,700,000 | Rate: 32304/s | Current: 0x7ffffffffffffffffffffffffffeb4e260
+[SEGMENT-7] Tested: 21,800,000 | Rate: 32450/s
+[SEQ-forward-3] Tested: 21,800,000 | Rate: 32411/s | Current: 0x40000000000000000000000000014ca43f
+[SEGMENT-5] Tested: 21,800,000 | Rate: 32395/s
+[BIRTHDAY-9] Tested: 18,100,000 | Unique: 18,100,000 | Rate: 26844/s
+[RANDOM-1] Tested: 19,300,000 | Rate: 28602/s
+[SEGMENT-7] Tested: 21,900,000 | Rate: 32438/s
+[SEGMENT-6] Tested: 21,800,000 | Rate: 32289/s
+[SEQ-backward-4] Tested: 21,800,000 | Rate: 32285/s | Current: 0x7ffffffffffffffffffffffffffeb35bc0
+[SEGMENT-8] Tested: 21,900,000 | Rate: 32432/s
+[RANDOM-2] Tested: 19,100,000 | Rate: 28283/s
+[SEQ-forward-3] Tested: 21,900,000 | Rate: 32399/s | Current: 0x40000000000000000000000000014e2adf
+[SEGMENT-5] Tested: 21,900,000 | Rate: 32382/s
+[SEGMENT-6] Tested: 21,900,000 | Rate: 32284/s
+[RANDOM-1] Tested: 19,400,000 | Rate: 28595/s
+[SEQ-backward-4] Tested: 21,900,000 | Rate: 32278/s | Current: 0x7ffffffffffffffffffffffffffeb1d520
+[BIRTHDAY-9] Tested: 18,200,000 | Unique: 18,200,000 | Rate: 26824/s
+[SEGMENT-7] Tested: 22,000,000 | Rate: 32416/s
+[SEGMENT-8] Tested: 22,000,000 | Rate: 32407/s
+[RANDOM-2] Tested: 19,200,000 | Rate: 28272/s
+[SEQ-forward-3] Tested: 22,000,000 | Rate: 32381/s | Current: 0x40000000000000000000000000014fb17f
+[SEGMENT-5] Tested: 22,000,000 | Rate: 32371/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 11.3 min | Total tested: 110,957,962
+Combined rate: 163151 keys/sec (9789067 keys/min)
+======================================================================
+
+[SEGMENT-6] Tested: 22,000,000 | Rate: 32273/s
+[SEQ-backward-4] Tested: 22,000,000 | Rate: 32264/s | Current: 0x7ffffffffffffffffffffffffffeb04e80
+[SEGMENT-7] Tested: 22,100,000 | Rate: 32406/s
+[RANDOM-1] Tested: 19,500,000 | Rate: 28586/s
+[SEGMENT-8] Tested: 22,100,000 | Rate: 32392/s
+[BIRTHDAY-9] Tested: 18,300,000 | Unique: 18,300,000 | Rate: 26804/s
+[SEQ-forward-3] Tested: 22,100,000 | Rate: 32366/s | Current: 0x400000000000000000000000000151381f
+[SEGMENT-5] Tested: 22,100,000 | Rate: 32361/s
+[RANDOM-2] Tested: 19,300,000 | Rate: 28259/s
+[SEGMENT-6] Tested: 22,100,000 | Rate: 32256/s
+[SEQ-backward-4] Tested: 22,100,000 | Rate: 32252/s | Current: 0x7ffffffffffffffffffffffffffeaec7e0
+[SEGMENT-7] Tested: 22,200,000 | Rate: 32390/s
+[SEGMENT-8] Tested: 22,200,000 | Rate: 32373/s
+[RANDOM-1] Tested: 19,600,000 | Rate: 28581/s
+[SEQ-forward-3] Tested: 22,200,000 | Rate: 32351/s | Current: 0x400000000000000000000000000152bebf
+[SEGMENT-5] Tested: 22,200,000 | Rate: 32344/s
+[RANDOM-2] Tested: 19,400,000 | Rate: 28245/s
+[BIRTHDAY-9] Tested: 18,400,000 | Unique: 18,400,000 | Rate: 26785/s
+[SEGMENT-6] Tested: 22,200,000 | Rate: 32243/s
+[SEQ-backward-4] Tested: 22,200,000 | Rate: 32240/s | Current: 0x7ffffffffffffffffffffffffffead4140
+[SEGMENT-7] Tested: 22,300,000 | Rate: 32385/s
+[SEGMENT-8] Tested: 22,300,000 | Rate: 32353/s
+[SEQ-forward-3] Tested: 22,300,000 | Rate: 32344/s | Current: 0x400000000000000000000000000154455f
+[RANDOM-1] Tested: 19,700,000 | Rate: 28564/s
+[SEGMENT-5] Tested: 22,300,000 | Rate: 32328/s
+
+======================================================================
+GLOBAL PROGRESS
+Time: 11.5 min | Total tested: 112,512,143
+Combined rate: 163038 keys/sec (9782287 keys/min)
+======================================================================
+
+[RANDOM-2] Tested: 19,500,000 | Rate: 28226/s
+[BIRTHDAY-9] Tested: 18,500,000 | Unique: 18,500,000 | Rate: 26766/s
+[SEGMENT-6] Tested: 22,300,000 | Rate: 32232/s
+[SEQ-backward-4] Tested: 22,300,000 | Rate: 32221/s | Current: 0x7ffffffffffffffffffffffffffeabbaa0
+[SEGMENT-7] Tested: 22,400,000 | Rate: 32359/s
