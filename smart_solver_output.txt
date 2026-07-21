@@ -1,0 +1,236 @@
+
+======================================================================
+SMART 11+1 WORD SOLVER
+======================================================================
+
+Strategy: Given 11 words, find valid 12th words
+This reduces search space dramatically!
+
+
+======================================================================
+Test 1/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe this subject real black time proof only
+======================================================================
+Testing 1404 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 2/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe this subject real black time proof world
+======================================================================
+Testing 1404 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 3/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe this subject real black time only world
+======================================================================
+Testing 1422 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 4/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe this subject real black proof only world
+======================================================================
+Testing 1407 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 5/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe this subject real time proof only world
+======================================================================
+Testing 1439 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 6/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe this subject black time proof only world
+======================================================================
+Testing 1405 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 7/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe this real black time proof only world
+======================================================================
+Testing 1398 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 8/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food breathe subject real black time proof only world
+======================================================================
+Testing 1431 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 9/12
+======================================================================
+Testing 11-word sequence:
+  moon tower food this subject real black time proof only world
+======================================================================
+Testing 1427 possible 12th words...
+
+Found 92 valid 12th words:
+  - addict          → 1Kp9T9bsByrtZPnnYdDXbEPyuQMdXfd8ju
+  - afraid          → 1A8KeEpukL16pB8CdB3X2jMAeBJxYaJabw
+  - anger           → 16XHgVAkU6ZeoocwEJbjrR3PVFnX3ftFvJ
+  - arch            → 15ZKVpLu2AKos22UFeUff5HMGSQmTCTnGS
+  - arrest          → 1LPkT5z5czX6MEQHxYri66ppsB9f5w6Srh
+  - audit           → 1Jx4468qkR783oCViDn4zgRdXJBM3RwmYj
+  - badge           → 14sZNtePYfgWgL3teGqeE3ybpvf7JwXkDY
+  - because         → 16tupzRoBYet2qzY2uni1HniVSpeykBgDC
+  - beyond          → 1PscAR8SRj8Q2hFa161H7E2RKShLrPmxAH
+  - brown           → 1PUC2xYEGQp6fPScUaBZ7ZQEP7DVudFHgy
+  - cabbage         → 15guFMGABtoHETtnWzyqeqA9E1Zd8g4aTj
+  - cancel          → 1KN6Pf8C7HVHam2k1Baxp7V8GH7g5bJhfF
+  - chair           → 14PXCdEBqWZ6yjgyTZ2NWLH3Ht7Rjaq69r
+  - chest           → 13yzmKr5do3a6e6SNbEyHtwBqZxapikY59
+  - chunk           → 14xCkKf278VTeeTVLXvNXSHFzeNDByZ2n5
+  - clerk           → 1EXu5NjnysXTRAyRRtQmfmJ9VGjgGuTddG
+  - collect         → 17wfzpyR6GLv1MAnuf3THCXvaKhx6wRzs5
+  - conduct         → 13d9Y2XmFs3EPd33uboHu3H4814TettZWm
+  - crawl           → 1M56r7yJ4s2xjZJzVUKb2LZQFxys6ud5uw
+  - cube            → 1Kgd7vCcJFofrSFXC24wW39kA63hYHEYqM
+  - dance           → 1LdqzMgoGYdZsVE9iqs8qBG42PQkjXANca
+  - decorate        → 15xq4s3gBdMtc4VQBQ83NKYu4dAQgrEjyU
+  - demise          → 13YW1BDziaqJ5J3d666QQM1wpDCT3ohs79
+  - diary           → 153vg38gj7QaXCLmxTJdjadrDUZJMWHXAC
+  - distance        → 1LpLhVANqEEEkq3WsVVFu3G5VnmFag4ixJ
+  - dream           → 1GQtGXLyTaErbCu7mtvPFSoxjgXPcuiauq
+  - effort          → 1JvR6Po2H6TEe3Uv1QL5FbFU3aStj5ArAw
+  - extra           → 1KJeCLsuFDdR6oLzBi9x4am732ydAKejaG
+  - false           → 18WGTfKmxak8SCkZY5jU8R5kghrXHyFUSw
+  - fish            → 1mAgzarqg54e2vyTqBHkQtHuTVFxZXUmP
+  - flash           → 1LL4Mzdu36iimSQqfTNzujGVftgxBy3nEv
+  - foam            → 1Jvfrj3VvfaNA34wVt9rg26sbkQ3Zzbib5
+  - fringe          → 1Pw8uyrQkVMBRBPw5YHJjHZdDoRw6Hgytg
+  - giggle          → 16QgsD9PBgeFeJtUcoo9JPbsDNbFRSsU9
+  - glory           → 1CY79fYD4hWoQBn4cJH3GW3MJ8DL3iPFBF
+  - gold            → 1GTBThSvGYCSTq1i7qBgevoycRidv21u2u
+  - guitar          → 17XqJWr6YCkMEbHsKzMUUocYVE2gjJAhzN
+  - hat             → 1HFMrYkgKpLjwkFgj6njpwcpVPcqDs9Yb
+  - hero            → 1GzajR415aQpqcyHEe2nYnwECQ24v4Mnss
+  - horror          → 1NbgaYYdNZZd1TQnh6TQSUT6FqKVWAXfe8
+  - hunt            → 1NSWrVfkXW9NPA3zbkkjYKAjGDr9TMg5Vy
+  - ill             → 17CeZLfycWMJkiF2tSQykBJgBqFECyab3H
+  - inch            → 1GYoWJT4YudwiTV547kpdUu3c1XXHPTQ9D
+  - iron            → 1FWjPWnCDVNioeE24frmw1kNrx8uc9ZbZu
+  - joy             → 1AoxYHuKq7UQ5pUGgMNCcY9G9LCAFDqU9Y
+  - kite            → 1KaoxSYBjYKkjqPofq8Mor2VYDnzzJJRsB
+  - lady            → 1ER2EwRS79A881jeMScaBEst2Goxp9ABEP
+  - lesson          → 1CQ8jas54FWSfz6H7HxuNjCP7PZo7Tq1zW
+  - lobster         → 16BxJ9jiebD2ipzbZT7NtE19KP8UqPWwdX
+  - lyrics          → 1Bho95VLiJJUwfVGMya385jvboxaqrtNE8
+  - manual          → 15MeUCnGg8E5RFH1je9NAb85iYtba7ufF4
+  - master          → 1PoJpURp2jaYA7c6vKCC6PhSUn4r2u8dBM
+  - merit           → 1Px6nBhnUyn3Vj7zKV3bjeDRDN64NKrdQQ
+  - metal           → 19b3kvjpZ8DdJgRmbrCWwdyHkoWjGKbcGm
+  - mix             → 1PkVwGbXJVXMGtFSZjY4mP7wYa1sPwDdqN
+  - mushroom        → 1FsR8eeKjZkAa2eYFUgdvii6NpamyZq3ma
+  - network         → 1LuE5NrkNX9N4mxcXoMP3dv56xWUYzFMkx
+  - normal          → 13XxNjo25XqkuRuGii1rvk4DgeDi3weWvW
+  - original        → 19mxxTZQnfxeApajjSmQpasKpuwJoiQVuS
+  - patient         → 1AVWUQEJeUkGB4nh862z2FJB6C6cbbSc7X
+  - pen             → 1Jp1K8LrH3UHDGtBd1G1oMFGBW4aQvJm3R
+  - pigeon          → 1HHgrqup1pZL8uoBFqE5ZpHvkUwYJkjZi7
+  - pledge          → 1DqS5h9ifmssF6U22dYGRenzEucyk25Q2i
+  - property        → 17z1MruXH4PT3b1CbeBsopRGo4mZmagqCQ
+  - quiz            → 1QACnWiPU9NKWz5CaVibfmkmEFxdoRWVTx
+  - ramp            → 1RVdsbDHRr5D8k8EabeyFzknMcyNemYnL
+  - remain          → 175DpiMMZcsVsApKed7vistPRDTa8bP4bH
+  - reopen          → 17XvEh8yAwTJXPkVYGM9e9WuzYszgxUQys
+  - ribbon          → 15LddY68Fx3eeoVypWvbNAHesMqAY59LTx
+  - river           → 1LVEZYv6eQ9Nu6DfMKPbVy78r3o5zs1CGF
+  - service         → 1CMqXYBn9qJDQG9QwfipvT5nUQJgn5UvXY
+  - shock           → 16GVskQgKfu7JezaAcoBNwjzrSWibu3rC1
+  - six             → 173M4ViP5qCfM8QJxayLEKsef3B3x45Wjh
+  - slam            → 1KxMPv9EbcDZgJaUP5MEamafuxZKMhdeRc
+  - social          → 18WKPbYFJWAVyJfpLiJWybd46rZQq3Mspf
+  - soda            → 1EcDM7Ey1r1skwbjzDrDvoscHa1EA4psgv
+  - spring          → 14gZ4uBewp4yGBHQ4u9FV44Vvmqi8cgCpn
+  - tape            → 1HxCukCXYK84mFSxcgwwSQ1zaanRJffzvk
+  - tent            → 1GyzNNncZzMhiFCTQWs3Tfy7G8kuaJZuVW
+  - then            → 19UDZx1os5yUDWNnwuEaJEkCSaVo3BHTGd
+  - time            → 1Fja7JWP3NBj7ajtPdXNxSYZ8djLrSWHkM
+  - torch           → 1BUS8LasFrdJ5js6rP8P8cH84VwDHgc3FB
+  - tragic          → 113F9KbbVU2eVzLmocPN3KdTUApFq9TXFe
+  - trouble         → 1Be3Max4sueA2UvY9WasdK8ME5PbWFVHAw
+  - tuition         → 15wwP9q6QjYTKAFY3EBMas9UswBneMgpkz
+  - ugly            → 12fMQR2vErRQoZ9SfeScq1fHauk38fEiXu
+  - uphold          → 1BxtngAGKK6K6DunzFMkB2hExAEJK4LcSg
+  - venue           → 1MniFBtjUeU74v1wMxMoWUw1BgYHYuMmgC
+  - wagon           → 1KpjjCVzXceA76GGHQAL2tbRWfyQLMmvzh
+  - whisper         → 14rAPpFh8iN5G6F4avCh7d8Fu4Vfan47DC
+  - worry           → 1AM9unZvYcDzaRKyoqHSkTyP3UWZ2ij4ty
+  - zebra           → 13XJ3Va3SZUQ9dD9RzPPtpi1w1k5oTRQRY
+
+
+======================================================================
+Test 10/12
+======================================================================
+Testing 11-word sequence:
+  moon tower breathe this subject real black time proof only world
+======================================================================
+Testing 1414 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 11/12
+======================================================================
+Testing 11-word sequence:
+  moon food breathe this subject real black time proof only world
+======================================================================
+Testing 1409 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+Test 12/12
+======================================================================
+Testing 11-word sequence:
+  tower food breathe this subject real black time proof only world
+======================================================================
+Testing 1404 possible 12th words...
+
+Found 0 valid 12th words:
+
+
+======================================================================
+No solution found in tested 11-word sequences
+======================================================================
