@@ -1,0 +1,1416 @@
+
+╔════════════════════════════════════════════════════════════════════╗
+║                FAST MULTI-STRATEGY SOLVER                          ║
+║                                                                    ║
+║  Testing maximum keys/second with multiple strategies              ║
+╚════════════════════════════════════════════════════════════════════╝
+    
+Starting 6 solver threads...
+Range: 0x4000000000000000000000000000000000 to 0x7fffffffffffffffffffffffffffffffff
+
+[RANDOM-1] Started - Strategy: random
+[RANDOM-2] Started - Strategy: random
+[SEQ-FWD] Started - Strategy: sequential_forward
+[SEQ-BWD] Started - Strategy: sequential_backward
+[MIDDLE-1] Started - Strategy: middle_out
+[MIDDLE-2] Started - Strategy: middle_out
+[MIDDLE-2] Middle-out: 500,000 offset: 250,000
+[SEQ-FWD] Forward: 500,000 @ 0x400000000000000000000000000007a120
+[MIDDLE-1] Middle-out: 500,000 offset: 250,000
+[SEQ-BWD] Backward: 500,000 @ 0x7ffffffffffffffffffffffffffff85edf
+[MIDDLE-2] Middle-out: 1,000,000 offset: 500,000
+[SEQ-BWD] Backward: 1,000,000 @ 0x7ffffffffffffffffffffffffffff0bdbf
+[SEQ-FWD] Forward: 1,000,000 @ 0x40000000000000000000000000000f4240
+[MIDDLE-1] Middle-out: 1,000,000 offset: 500,000
+[SEQ-FWD] Forward: 1,500,000 @ 0x400000000000000000000000000016e360
+[MIDDLE-2] Middle-out: 1,500,000 offset: 750,000
+[SEQ-BWD] Backward: 1,500,000 @ 0x7fffffffffffffffffffffffffffe91c9f
+[MIDDLE-1] Middle-out: 1,500,000 offset: 750,000
+[SEQ-FWD] Forward: 2,000,000 @ 0x40000000000000000000000000001e8480
+
+======================================================================
+Time: 10s | Total: 8,604,221 | Rate: 859048/s (3092572245/hour)
+======================================================================
+[RANDOM-2] Random: 500,000
+[SEQ-BWD] Backward: 2,000,000 @ 0x7fffffffffffffffffffffffffffe17b7f
+[MIDDLE-2] Middle-out: 2,000,000 offset: 1,000,000
+[RANDOM-1] Random: 500,000
+[MIDDLE-1] Middle-out: 2,000,000 offset: 1,000,000
+[SEQ-FWD] Forward: 2,500,000 @ 0x40000000000000000000000000002625a0
+[SEQ-BWD] Backward: 2,500,000 @ 0x7fffffffffffffffffffffffffffd9da5f
+[MIDDLE-2] Middle-out: 2,500,000 offset: 1,250,000
+[MIDDLE-1] Middle-out: 2,500,000 offset: 1,250,000
+[SEQ-FWD] Forward: 3,000,000 @ 0x40000000000000000000000000002dc6c0
+[SEQ-BWD] Backward: 3,000,000 @ 0x7fffffffffffffffffffffffffffd2393f
+[MIDDLE-2] Middle-out: 3,000,000 offset: 1,500,000
+[SEQ-FWD] Forward: 3,500,000 @ 0x40000000000000000000000000003567e0
+[SEQ-BWD] Backward: 3,500,000 @ 0x7fffffffffffffffffffffffffffca981f
+[MIDDLE-1] Middle-out: 3,000,000 offset: 1,500,000
+[MIDDLE-2] Middle-out: 3,500,000 offset: 1,750,000
+[SEQ-FWD] Forward: 4,000,000 @ 0x40000000000000000000000000003d0900
+
+======================================================================
+Time: 20s | Total: 16,626,925 | Rate: 828618/s (2983026589/hour)
+======================================================================
+[SEQ-BWD] Backward: 4,000,000 @ 0x7fffffffffffffffffffffffffffc2f6ff
+[MIDDLE-1] Middle-out: 3,500,000 offset: 1,750,000
+[RANDOM-1] Random: 1,000,000
+[MIDDLE-2] Middle-out: 4,000,000 offset: 2,000,000
+[RANDOM-2] Random: 1,000,000
+[SEQ-FWD] Forward: 4,500,000 @ 0x400000000000000000000000000044aa20
+[SEQ-BWD] Backward: 4,500,000 @ 0x7fffffffffffffffffffffffffffbb55df
+[MIDDLE-1] Middle-out: 4,000,000 offset: 2,000,000
+[MIDDLE-2] Middle-out: 4,500,000 offset: 2,250,000[SEQ-FWD] Forward: 5,000,000 @ 0x40000000000000000000000000004c4b40
+
+[SEQ-BWD] Backward: 5,000,000 @ 0x7fffffffffffffffffffffffffffb3b4bf
+[MIDDLE-1] Middle-out: 4,500,000 offset: 2,250,000
+[MIDDLE-2] Middle-out: 5,000,000 offset: 2,500,000
+[SEQ-FWD] Forward: 5,500,000 @ 0x400000000000000000000000000053ec60
+[SEQ-BWD] Backward: 5,500,000 @ 0x7fffffffffffffffffffffffffffac139f
+[MIDDLE-1] Middle-out: 5,000,000 offset: 2,500,000
+
+======================================================================
+Time: 30s | Total: 24,942,057 | Rate: 828252/s (2981705781/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 5,500,000 offset: 2,750,000
+[SEQ-FWD] Forward: 6,000,000 @ 0x40000000000000000000000000005b8d80
+[SEQ-BWD] Backward: 6,000,000 @ 0x7fffffffffffffffffffffffffffa4727f
+[RANDOM-1] Random: 1,500,000
+[MIDDLE-1] Middle-out: 5,500,000 offset: 2,750,000
+[RANDOM-2] Random: 1,500,000
+[MIDDLE-2] Middle-out: 6,000,000 offset: 3,000,000
+[SEQ-FWD] Forward: 6,500,000 @ 0x4000000000000000000000000000632ea0
+[SEQ-BWD] Backward: 6,500,000 @ 0x7fffffffffffffffffffffffffff9cd15f
+[MIDDLE-1] Middle-out: 6,000,000 offset: 3,000,000
+[MIDDLE-2] Middle-out: 6,500,000 offset: 3,250,000
+[SEQ-BWD] Backward: 7,000,000 @ 0x7fffffffffffffffffffffffffff95303f
+[SEQ-FWD] Forward: 7,000,000 @ 0x40000000000000000000000000006acfc0
+[MIDDLE-1] Middle-out: 6,500,000 offset: 3,250,000
+[MIDDLE-2] Middle-out: 7,000,000 offset: 3,500,000
+[SEQ-BWD] Backward: 7,500,000 @ 0x7fffffffffffffffffffffffffff8d8f1f
+[MIDDLE-1] Middle-out: 7,000,000 offset: 3,500,000
+
+======================================================================
+Time: 40s | Total: 33,194,186 | Rate: 822144/s (2959717306/hour)
+======================================================================
+[SEQ-FWD] Forward: 7,500,000 @ 0x40000000000000000000000000007270e0
+[MIDDLE-2] Middle-out: 7,500,000 offset: 3,750,000
+[SEQ-BWD] Backward: 8,000,000 @ 0x7fffffffffffffffffffffffffff85edff
+[RANDOM-1] Random: 2,000,000
+[SEQ-FWD] Forward: 8,000,000 @ 0x40000000000000000000000000007a1200
+[MIDDLE-1] Middle-out: 7,500,000 offset: 3,750,000
+[RANDOM-2] Random: 2,000,000
+[SEQ-BWD] Backward: 8,500,000 @ 0x7fffffffffffffffffffffffffff7e4cdf
+[MIDDLE-2] Middle-out: 8,000,000 offset: 4,000,000
+[MIDDLE-1] Middle-out: 8,000,000 offset: 4,000,000
+[SEQ-FWD] Forward: 8,500,000 @ 0x400000000000000000000000000081b320
+[SEQ-BWD] Backward: 9,000,000 @ 0x7fffffffffffffffffffffffffff76abbf
+[MIDDLE-2] Middle-out: 8,500,000 offset: 4,250,000
+[MIDDLE-1] Middle-out: 8,500,000 offset: 4,250,000
+[SEQ-FWD] Forward: 9,000,000 @ 0x4000000000000000000000000000895440
+
+======================================================================
+Time: 50s | Total: 41,057,469 | Rate: 814568/s (2932443690/hour)
+======================================================================
+[SEQ-BWD] Backward: 9,500,000 @ 0x7fffffffffffffffffffffffffff6f0a9f
+[MIDDLE-2] Middle-out: 9,000,000 offset: 4,500,000
+[MIDDLE-1] Middle-out: 9,000,000 offset: 4,500,000
+[SEQ-FWD] Forward: 9,500,000 @ 0x400000000000000000000000000090f560
+[RANDOM-1] Random: 2,500,000
+[MIDDLE-2] Middle-out: 9,500,000 offset: 4,750,000
+[SEQ-BWD] Backward: 10,000,000 @ 0x7fffffffffffffffffffffffffff67697f
+[RANDOM-2] Random: 2,500,000
+[MIDDLE-1] Middle-out: 9,500,000 offset: 4,750,000
+[SEQ-FWD] Forward: 10,000,000 @ 0x4000000000000000000000000000989680
+[SEQ-BWD] Backward: 10,500,000 @ 0x7fffffffffffffffffffffffffff5fc85f
+[MIDDLE-2] Middle-out: 10,000,000 offset: 5,000,000
+[SEQ-FWD] Forward: 10,500,000 @ 0x4000000000000000000000000000a037a0
+[MIDDLE-2] Middle-out: 10,500,000 offset: 5,250,000[MIDDLE-1] Middle-out: 10,000,000 offset: 5,000,000
+
+[SEQ-BWD] Backward: 11,000,000 @ 0x7fffffffffffffffffffffffffff58273f
+[MIDDLE-1] Middle-out: 10,500,000 offset: 5,250,000[SEQ-FWD] Forward: 11,000,000 @ 0x4000000000000000000000000000a7d8c0
+
+[MIDDLE-2] Middle-out: 11,000,000 offset: 5,500,000[SEQ-BWD] Backward: 11,500,000 @ 0x7fffffffffffffffffffffffffff50861f
+
+======================================================================
+Time: 60s | Total: 49,897,658 | Rate: 825421/s (2971515290/hour)
+======================================================================
+
+[RANDOM-1] Random: 3,000,000
+[MIDDLE-1] Middle-out: 11,000,000 offset: 5,500,000
+[SEQ-FWD] Forward: 11,500,000 @ 0x4000000000000000000000000000af79e0
+[SEQ-BWD] Backward: 12,000,000 @ 0x7fffffffffffffffffffffffffff48e4ff
+[MIDDLE-2] Middle-out: 11,500,000 offset: 5,750,000
+[RANDOM-2] Random: 3,000,000
+[SEQ-FWD] Forward: 12,000,000 @ 0x4000000000000000000000000000b71b00
+[MIDDLE-1] Middle-out: 11,500,000 offset: 5,750,000
+[SEQ-BWD] Backward: 12,500,000 @ 0x7fffffffffffffffffffffffffff4143df
+[MIDDLE-2] Middle-out: 12,000,000 offset: 6,000,000
+[MIDDLE-1] Middle-out: 12,000,000 offset: 6,000,000
+[SEQ-FWD] Forward: 12,500,000 @ 0x4000000000000000000000000000bebc20
+[SEQ-BWD] Backward: 13,000,000 @ 0x7fffffffffffffffffffffffffff39a2bf
+[MIDDLE-2] Middle-out: 12,500,000 offset: 6,250,000
+
+======================================================================
+Time: 70s | Total: 58,056,083 | Rate: 823711/s (2965358469/hour)
+======================================================================
+[RANDOM-1] Random: 3,500,000
+[MIDDLE-1] Middle-out: 12,500,000 offset: 6,250,000
+[SEQ-FWD] Forward: 13,000,000 @ 0x4000000000000000000000000000c65d40
+[SEQ-BWD] Backward: 13,500,000 @ 0x7fffffffffffffffffffffffffff32019f
+[MIDDLE-2] Middle-out: 13,000,000 offset: 6,500,000
+[MIDDLE-1] Middle-out: 13,000,000 offset: 6,500,000
+[RANDOM-2] Random: 3,500,000
+[SEQ-BWD] Backward: 14,000,000 @ 0x7fffffffffffffffffffffffffff2a607f
+[SEQ-FWD] Forward: 13,500,000 @ 0x4000000000000000000000000000cdfe60
+[MIDDLE-1] Middle-out: 13,500,000 offset: 6,750,000
+[MIDDLE-2] Middle-out: 13,500,000 offset: 6,750,000
+[SEQ-BWD] Backward: 14,500,000 @ 0x7fffffffffffffffffffffffffff22bf5f
+[SEQ-FWD] Forward: 14,000,000 @ 0x4000000000000000000000000000d59f80
+[MIDDLE-2] Middle-out: 14,000,000 offset: 7,000,000
+[MIDDLE-1] Middle-out: 14,000,000 offset: 7,000,000
+[SEQ-BWD] Backward: 15,000,000 @ 0x7fffffffffffffffffffffffffff1b1e3f
+[SEQ-FWD] Forward: 14,500,000 @ 0x4000000000000000000000000000dd40a0
+
+======================================================================
+Time: 81s | Total: 66,563,535 | Rate: 826844/s (2976637187/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 14,500,000 offset: 7,250,000
+[RANDOM-1] Random: 4,000,000
+[SEQ-BWD] Backward: 15,500,000 @ 0x7fffffffffffffffffffffffffff137d1f
+[MIDDLE-1] Middle-out: 14,500,000 offset: 7,250,000
+[RANDOM-2] Random: 4,000,000
+[SEQ-FWD] Forward: 15,000,000 @ 0x4000000000000000000000000000e4e1c0
+[MIDDLE-2] Middle-out: 15,000,000 offset: 7,500,000
+[SEQ-BWD] Backward: 16,000,000 @ 0x7fffffffffffffffffffffffffff0bdbff
+[SEQ-FWD] Forward: 15,500,000 @ 0x4000000000000000000000000000ec82e0
+[MIDDLE-1] Middle-out: 15,000,000 offset: 7,500,000
+[MIDDLE-2] Middle-out: 15,500,000 offset: 7,750,000
+[SEQ-BWD] Backward: 16,500,000 @ 0x7fffffffffffffffffffffffffff043adf
+[SEQ-FWD] Forward: 16,000,000 @ 0x4000000000000000000000000000f42400
+[MIDDLE-1] Middle-out: 15,500,000 offset: 7,750,000
+[RANDOM-1] Random: 4,500,000
+[MIDDLE-2] Middle-out: 16,000,000 offset: 8,000,000
+[SEQ-BWD] Backward: 17,000,000 @ 0x7ffffffffffffffffffffffffffefc99bf
+
+======================================================================
+Time: 91s | Total: 74,347,331 | Rate: 820357/s (2953285230/hour)
+======================================================================
+[SEQ-FWD] Forward: 16,500,000 @ 0x4000000000000000000000000000fbc520
+[MIDDLE-1] Middle-out: 16,000,000 offset: 8,000,000
+[MIDDLE-2] Middle-out: 16,500,000 offset: 8,250,000
+[RANDOM-2] Random: 4,500,000
+[SEQ-BWD] Backward: 17,500,000 @ 0x7ffffffffffffffffffffffffffef4f89f
+[SEQ-FWD] Forward: 17,000,000 @ 0x4000000000000000000000000001036640
+[MIDDLE-1] Middle-out: 16,500,000 offset: 8,250,000
+[SEQ-BWD] Backward: 18,000,000 @ 0x7ffffffffffffffffffffffffffeed577f
+[MIDDLE-2] Middle-out: 17,000,000 offset: 8,500,000
+[SEQ-FWD] Forward: 17,500,000 @ 0x40000000000000000000000000010b0760
+[MIDDLE-1] Middle-out: 17,000,000 offset: 8,500,000
+[SEQ-BWD] Backward: 18,500,000 @ 0x7ffffffffffffffffffffffffffee5b65f
+[MIDDLE-2] Middle-out: 17,500,000 offset: 8,750,000
+[SEQ-FWD] Forward: 18,000,000 @ 0x400000000000000000000000000112a880
+[MIDDLE-1] Middle-out: 17,500,000 offset: 8,750,000
+[RANDOM-1] Random: 5,000,000
+
+======================================================================
+Time: 101s | Total: 82,850,031 | Rate: 822970/s (2962691541/hour)
+======================================================================
+[SEQ-BWD] Backward: 19,000,000 @ 0x7ffffffffffffffffffffffffffede153f
+[MIDDLE-2] Middle-out: 18,000,000 offset: 9,000,000
+[SEQ-FWD] Forward: 18,500,000 @ 0x40000000000000000000000000011a49a0
+[MIDDLE-1] Middle-out: 18,000,000 offset: 9,000,000
+[RANDOM-2] Random: 5,000,000
+[SEQ-BWD] Backward: 19,500,000 @ 0x7ffffffffffffffffffffffffffed6741f
+[SEQ-FWD] Forward: 19,000,000 @ 0x400000000000000000000000000121eac0
+[MIDDLE-2] Middle-out: 18,500,000 offset: 9,250,000
+[MIDDLE-1] Middle-out: 18,500,000 offset: 9,250,000
+[SEQ-BWD] Backward: 20,000,000 @ 0x7ffffffffffffffffffffffffffeced2ff
+[SEQ-FWD] Forward: 19,500,000 @ 0x4000000000000000000000000001298be0
+[MIDDLE-2] Middle-out: 19,000,000 offset: 9,500,000
+[MIDDLE-1] Middle-out: 19,000,000 offset: 9,500,000
+[SEQ-BWD] Backward: 20,500,000 @ 0x7ffffffffffffffffffffffffffec731df
+[SEQ-FWD] Forward: 20,000,000 @ 0x4000000000000000000000000001312d00
+[MIDDLE-2] Middle-out: 19,500,000 offset: 9,750,000
+[RANDOM-1] Random: 5,500,000
+
+======================================================================
+Time: 111s | Total: 91,267,084 | Rate: 824268/s (2967363687/hour)
+======================================================================
+[SEQ-BWD] Backward: 21,000,000 @ 0x7ffffffffffffffffffffffffffebf90bf
+[SEQ-FWD] Forward: 20,500,000 @ 0x400000000000000000000000000138ce20
+[MIDDLE-1] Middle-out: 19,500,000 offset: 9,750,000
+[RANDOM-2] Random: 5,500,000
+[MIDDLE-2] Middle-out: 20,000,000 offset: 10,000,000
+[SEQ-BWD] Backward: 21,500,000 @ 0x7ffffffffffffffffffffffffffeb7ef9f
+[MIDDLE-1] Middle-out: 20,000,000 offset: 10,000,000
+[SEQ-FWD] Forward: 21,000,000 @ 0x4000000000000000000000000001406f40
+[MIDDLE-2] Middle-out: 20,500,000 offset: 10,250,000
+[SEQ-BWD] Backward: 22,000,000 @ 0x7ffffffffffffffffffffffffffeb04e7f
+[MIDDLE-1] Middle-out: 20,500,000 offset: 10,250,000
+[SEQ-FWD] Forward: 21,500,000 @ 0x4000000000000000000000000001481060
+[MIDDLE-2] Middle-out: 21,000,000 offset: 10,500,000
+[MIDDLE-1] Middle-out: 21,000,000 offset: 10,500,000
+[SEQ-BWD] Backward: 22,500,000 @ 0x7ffffffffffffffffffffffffffea8ad5f
+[RANDOM-1] Random: 6,000,000
+[SEQ-FWD] Forward: 22,000,000 @ 0x40000000000000000000000000014fb180
+
+======================================================================
+Time: 121s | Total: 99,358,853 | Rate: 822807/s (2962104443/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 21,500,000 offset: 10,750,000
+[RANDOM-2] Random: 6,000,000
+[MIDDLE-1] Middle-out: 21,500,000 offset: 10,750,000
+[SEQ-BWD] Backward: 23,000,000 @ 0x7ffffffffffffffffffffffffffea10c3f
+[SEQ-FWD] Forward: 22,500,000 @ 0x40000000000000000000000000015752a0
+[MIDDLE-2] Middle-out: 22,000,000 offset: 11,000,000
+[MIDDLE-1] Middle-out: 22,000,000 offset: 11,000,000
+[SEQ-BWD] Backward: 23,500,000 @ 0x7ffffffffffffffffffffffffffe996b1f
+[SEQ-FWD] Forward: 23,000,000 @ 0x40000000000000000000000000015ef3c0
+[MIDDLE-2] Middle-out: 22,500,000 offset: 11,250,000
+[MIDDLE-1] Middle-out: 22,500,000 offset: 11,250,000
+[SEQ-BWD] Backward: 24,000,000 @ 0x7ffffffffffffffffffffffffffe91c9ff
+[RANDOM-1] Random: 6,500,000
+[SEQ-FWD] Forward: 23,500,000 @ 0x40000000000000000000000000016694e0
+[MIDDLE-2] Middle-out: 23,000,000 offset: 11,500,000
+[RANDOM-2] Random: 6,500,000
+[SEQ-BWD] Backward: 24,500,000 @ 0x7ffffffffffffffffffffffffffe8a28df
+
+======================================================================
+Time: 131s | Total: 107,466,449 | Rate: 821856/s (2958683245/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 23,000,000 offset: 11,500,000
+[SEQ-FWD] Forward: 24,000,000 @ 0x40000000000000000000000000016e3600
+[MIDDLE-2] Middle-out: 23,500,000 offset: 11,750,000
+[SEQ-BWD] Backward: 25,000,000 @ 0x7ffffffffffffffffffffffffffe8287bf
+[MIDDLE-1] Middle-out: 23,500,000 offset: 11,750,000
+[SEQ-FWD] Forward: 24,500,000 @ 0x400000000000000000000000000175d720
+[MIDDLE-2] Middle-out: 24,000,000 offset: 12,000,000
+[SEQ-BWD] Backward: 25,500,000 @ 0x7ffffffffffffffffffffffffffe7ae69f
+[MIDDLE-1] Middle-out: 24,000,000 offset: 12,000,000
+[SEQ-FWD] Forward: 25,000,000 @ 0x40000000000000000000000000017d7840
+[MIDDLE-2] Middle-out: 24,500,000 offset: 12,250,000
+[SEQ-BWD] Backward: 26,000,000 @ 0x7ffffffffffffffffffffffffffe73457f
+[RANDOM-1] Random: 7,000,000
+[RANDOM-2] Random: 7,000,000
+[SEQ-FWD] Forward: 25,500,000 @ 0x4000000000000000000000000001851960
+
+======================================================================
+Time: 141s | Total: 115,190,496 | Rate: 818108/s (2945189483/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 24,500,000 offset: 12,250,000
+[MIDDLE-2] Middle-out: 25,000,000 offset: 12,500,000
+[SEQ-BWD] Backward: 26,500,000 @ 0x7ffffffffffffffffffffffffffe6ba45f
+[SEQ-FWD] Forward: 26,000,000 @ 0x40000000000000000000000000018cba80
+[MIDDLE-2] Middle-out: 25,500,000 offset: 12,750,000
+[MIDDLE-1] Middle-out: 25,000,000 offset: 12,500,000
+[SEQ-BWD] Backward: 27,000,000 @ 0x7ffffffffffffffffffffffffffe64033f
+[SEQ-FWD] Forward: 26,500,000 @ 0x4000000000000000000000000001945ba0
+[MIDDLE-1] Middle-out: 25,500,000 offset: 12,750,000
+[MIDDLE-2] Middle-out: 26,000,000 offset: 13,000,000
+[SEQ-FWD] Forward: 27,000,000 @ 0x40000000000000000000000000019bfcc0
+[SEQ-BWD] Backward: 27,500,000 @ 0x7ffffffffffffffffffffffffffe5c621f
+[MIDDLE-1] Middle-out: 26,000,000 offset: 13,000,000
+[MIDDLE-2] Middle-out: 26,500,000 offset: 13,250,000
+[RANDOM-2] Random: 7,500,000
+[SEQ-BWD] Backward: 28,000,000 @ 0x7ffffffffffffffffffffffffffe54c0ff
+
+======================================================================
+Time: 151s | Total: 123,485,620 | Rate: 818560/s (2946817598/hour)
+======================================================================[SEQ-FWD] Forward: 27,500,000 @ 0x4000000000000000000000000001a39de0
+
+[RANDOM-1] Random: 7,500,000
+[MIDDLE-1] Middle-out: 26,500,000 offset: 13,250,000
+[MIDDLE-2] Middle-out: 27,000,000 offset: 13,500,000
+[SEQ-BWD] Backward: 28,500,000 @ 0x7ffffffffffffffffffffffffffe4d1fdf
+[SEQ-FWD] Forward: 28,000,000 @ 0x4000000000000000000000000001ab3f00
+[MIDDLE-1] Middle-out: 27,000,000 offset: 13,500,000
+[MIDDLE-2] Middle-out: 27,500,000 offset: 13,750,000
+[SEQ-BWD] Backward: 29,000,000 @ 0x7ffffffffffffffffffffffffffe457ebf
+[SEQ-FWD] Forward: 28,500,000 @ 0x4000000000000000000000000001b2e020
+[MIDDLE-1] Middle-out: 27,500,000 offset: 13,750,000
+[MIDDLE-2] Middle-out: 28,000,000 offset: 14,000,000
+[SEQ-BWD] Backward: 29,500,000 @ 0x7ffffffffffffffffffffffffffe3ddd9f
+[SEQ-FWD] Forward: 29,000,000 @ 0x4000000000000000000000000001ba8140
+[MIDDLE-1] Middle-out: 28,000,000 offset: 14,000,000
+[MIDDLE-2] Middle-out: 28,500,000 offset: 14,250,000
+[RANDOM-2] Random: 8,000,000
+[RANDOM-1] Random: 8,000,000
+
+======================================================================
+Time: 161s | Total: 132,396,544 | Rate: 822666/s (2961596782/hour)
+======================================================================
+[SEQ-FWD] Forward: 29,500,000 @ 0x4000000000000000000000000001c22260
+[SEQ-BWD] Backward: 30,000,000 @ 0x7ffffffffffffffffffffffffffe363c7f
+[MIDDLE-2] Middle-out: 29,000,000 offset: 14,500,000
+[MIDDLE-1] Middle-out: 28,500,000 offset: 14,250,000
+[SEQ-BWD] Backward: 30,500,000 @ 0x7ffffffffffffffffffffffffffe2e9b5f
+[SEQ-FWD] Forward: 30,000,000 @ 0x4000000000000000000000000001c9c380
+[MIDDLE-1] Middle-out: 29,000,000 offset: 14,500,000
+[MIDDLE-2] Middle-out: 29,500,000 offset: 14,750,000
+[SEQ-BWD] Backward: 31,000,000 @ 0x7ffffffffffffffffffffffffffe26fa3f
+[SEQ-FWD] Forward: 30,500,000 @ 0x4000000000000000000000000001d164a0
+[MIDDLE-1] Middle-out: 29,500,000 offset: 14,750,000
+[MIDDLE-2] Middle-out: 30,000,000 offset: 15,000,000
+[SEQ-BWD] Backward: 31,500,000 @ 0x7ffffffffffffffffffffffffffe1f591f
+[MIDDLE-1] Middle-out: 30,000,000 offset: 15,000,000
+[SEQ-FWD] Forward: 31,000,000 @ 0x4000000000000000000000000001d905c0
+[MIDDLE-2] Middle-out: 30,500,000 offset: 15,250,000
+[RANDOM-1] Random: 8,500,000
+
+======================================================================
+Time: 171s | Total: 141,196,677 | Rate: 825243/s (2970875528/hour)
+======================================================================
+[RANDOM-2] Random: 8,500,000
+[SEQ-BWD] Backward: 32,000,000 @ 0x7ffffffffffffffffffffffffffe17b7ff
+[MIDDLE-1] Middle-out: 30,500,000 offset: 15,250,000
+[SEQ-FWD] Forward: 31,500,000 @ 0x4000000000000000000000000001e0a6e0
+[MIDDLE-2] Middle-out: 31,000,000 offset: 15,500,000
+[SEQ-BWD] Backward: 32,500,000 @ 0x7ffffffffffffffffffffffffffe1016df
+[MIDDLE-1] Middle-out: 31,000,000 offset: 15,500,000
+[SEQ-FWD] Forward: 32,000,000 @ 0x4000000000000000000000000001e84800
+[MIDDLE-2] Middle-out: 31,500,000 offset: 15,750,000
+[SEQ-BWD] Backward: 33,000,000 @ 0x7ffffffffffffffffffffffffffe0875bf
+[RANDOM-1] Random: 9,000,000
+[MIDDLE-1] Middle-out: 31,500,000 offset: 15,750,000
+[SEQ-FWD] Forward: 32,500,000 @ 0x4000000000000000000000000001efe920
+[MIDDLE-2] Middle-out: 32,000,000 offset: 16,000,000
+[SEQ-BWD] Backward: 33,500,000 @ 0x7ffffffffffffffffffffffffffe00d49f
+[MIDDLE-1] Middle-out: 32,000,000 offset: 16,000,000
+[RANDOM-2] Random: 9,000,000
+
+======================================================================
+Time: 181s | Total: 149,357,848 | Rate: 824237/s (2967253420/hour)
+======================================================================
+[SEQ-FWD] Forward: 33,000,000 @ 0x4000000000000000000000000001f78a40
+[MIDDLE-2] Middle-out: 32,500,000 offset: 16,250,000
+[SEQ-BWD] Backward: 34,000,000 @ 0x7ffffffffffffffffffffffffffdf9337f
+[MIDDLE-1] Middle-out: 32,500,000 offset: 16,250,000
+[SEQ-FWD] Forward: 33,500,000 @ 0x4000000000000000000000000001ff2b60
+[MIDDLE-2] Middle-out: 33,000,000 offset: 16,500,000
+[SEQ-BWD] Backward: 34,500,000 @ 0x7ffffffffffffffffffffffffffdf1925f
+[MIDDLE-1] Middle-out: 33,000,000 offset: 16,500,000
+[SEQ-FWD] Forward: 34,000,000 @ 0x400000000000000000000000000206cc80
+[MIDDLE-2] Middle-out: 33,500,000 offset: 16,750,000
+[RANDOM-1] Random: 9,500,000
+[SEQ-BWD] Backward: 35,000,000 @ 0x7ffffffffffffffffffffffffffde9f13f
+[MIDDLE-1] Middle-out: 33,500,000 offset: 16,750,000
+[SEQ-FWD] Forward: 34,500,000 @ 0x40000000000000000000000000020e6da0
+[MIDDLE-2] Middle-out: 34,000,000 offset: 17,000,000
+[SEQ-BWD] Backward: 35,500,000 @ 0x7ffffffffffffffffffffffffffde2501f
+[SEQ-FWD] Forward: 35,000,000 @ 0x4000000000000000000000000002160ec0
+[MIDDLE-1] Middle-out: 34,000,000 offset: 17,000,000
+
+======================================================================
+Time: 191s | Total: 158,122,447 | Rate: 826447/s (2975209157/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 34,500,000 offset: 17,250,000
+[RANDOM-2] Random: 9,500,000
+[SEQ-BWD] Backward: 36,000,000 @ 0x7ffffffffffffffffffffffffffddaaeff
+[MIDDLE-1] Middle-out: 34,500,000 offset: 17,250,000
+[SEQ-FWD] Forward: 35,500,000 @ 0x40000000000000000000000000021dafe0
+[MIDDLE-2] Middle-out: 35,000,000 offset: 17,500,000
+[SEQ-BWD] Backward: 36,500,000 @ 0x7ffffffffffffffffffffffffffdd30ddf
+[MIDDLE-1] Middle-out: 35,000,000 offset: 17,500,000
+[SEQ-FWD] Forward: 36,000,000 @ 0x4000000000000000000000000002255100[MIDDLE-2] Middle-out: 35,500,000 offset: 17,750,000
+
+[RANDOM-1] Random: 10,000,000
+[SEQ-BWD] Backward: 37,000,000 @ 0x7ffffffffffffffffffffffffffdcb6cbf
+[MIDDLE-1] Middle-out: 35,500,000 offset: 17,750,000
+[SEQ-FWD] Forward: 36,500,000 @ 0x40000000000000000000000000022cf220
+[MIDDLE-2] Middle-out: 36,000,000 offset: 18,000,000
+
+======================================================================
+Time: 201s | Total: 166,261,240 | Rate: 825502/s (2971808858/hour)
+======================================================================
+[SEQ-BWD] Backward: 37,500,000 @ 0x7ffffffffffffffffffffffffffdc3cb9f
+[MIDDLE-1] Middle-out: 36,000,000 offset: 18,000,000
+[SEQ-FWD] Forward: 37,000,000 @ 0x4000000000000000000000000002349340
+[RANDOM-2] Random: 10,000,000
+[MIDDLE-2] Middle-out: 36,500,000 offset: 18,250,000
+[SEQ-BWD] Backward: 38,000,000 @ 0x7ffffffffffffffffffffffffffdbc2a7f
+[MIDDLE-1] Middle-out: 36,500,000 offset: 18,250,000
+[SEQ-FWD] Forward: 37,500,000 @ 0x40000000000000000000000000023c3460
+[MIDDLE-2] Middle-out: 37,000,000 offset: 18,500,000
+[RANDOM-1] Random: 10,500,000
+[SEQ-BWD] Backward: 38,500,000 @ 0x7ffffffffffffffffffffffffffdb4895f
+[SEQ-FWD] Forward: 38,000,000 @ 0x400000000000000000000000000243d580
+[MIDDLE-1] Middle-out: 37,000,000 offset: 18,500,000
+[MIDDLE-2] Middle-out: 37,500,000 offset: 18,750,000
+[SEQ-BWD] Backward: 39,000,000 @ 0x7ffffffffffffffffffffffffffdace83f
+[SEQ-FWD] Forward: 38,500,000 @ 0x40000000000000000000000000024b76a0
+
+======================================================================
+Time: 211s | Total: 174,038,747 | Rate: 823158/s (2963369098/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 37,500,000 offset: 18,750,000
+[MIDDLE-2] Middle-out: 38,000,000 offset: 19,000,000
+[RANDOM-2] Random: 10,500,000
+[SEQ-BWD] Backward: 39,500,000 @ 0x7ffffffffffffffffffffffffffda5471f
+[SEQ-FWD] Forward: 39,000,000 @ 0x40000000000000000000000000025317c0
+[MIDDLE-1] Middle-out: 38,000,000 offset: 19,000,000
+[SEQ-BWD] Backward: 40,000,000 @ 0x7ffffffffffffffffffffffffffd9da5ff
+[MIDDLE-2] Middle-out: 38,500,000 offset: 19,250,000
+[SEQ-FWD] Forward: 39,500,000 @ 0x40000000000000000000000000025ab8e0
+[RANDOM-1] Random: 11,000,000
+[MIDDLE-1] Middle-out: 38,500,000 offset: 19,250,000
+[SEQ-BWD] Backward: 40,500,000 @ 0x7ffffffffffffffffffffffffffd9604df
+[MIDDLE-2] Middle-out: 39,000,000 offset: 19,500,000
+[SEQ-FWD] Forward: 40,000,000 @ 0x4000000000000000000000000002625a00
+[MIDDLE-1] Middle-out: 39,000,000 offset: 19,500,000
+[SEQ-BWD] Backward: 41,000,000 @ 0x7ffffffffffffffffffffffffffd8e63bf
+[MIDDLE-2] Middle-out: 39,500,000 offset: 19,750,000
+
+======================================================================
+Time: 221s | Total: 182,498,840 | Rate: 824043/s (2966554830/hour)
+======================================================================
+[SEQ-FWD] Forward: 40,500,000 @ 0x400000000000000000000000000269fb20
+[MIDDLE-1] Middle-out: 39,500,000 offset: 19,750,000
+[SEQ-BWD] Backward: 41,500,000 @ 0x7ffffffffffffffffffffffffffd86c29f
+[RANDOM-2] Random: 11,000,000
+[SEQ-FWD] Forward: 41,000,000 @ 0x4000000000000000000000000002719c40
+[MIDDLE-2] Middle-out: 40,000,000 offset: 20,000,000
+[SEQ-BWD] Backward: 42,000,000 @ 0x7ffffffffffffffffffffffffffd7f217f
+[MIDDLE-1] Middle-out: 40,000,000 offset: 20,000,000
+[SEQ-FWD] Forward: 41,500,000 @ 0x4000000000000000000000000002793d60[MIDDLE-2] Middle-out: 40,500,000 offset: 20,250,000
+
+[RANDOM-1] Random: 11,500,000
+[SEQ-BWD] Backward: 42,500,000 @ 0x7ffffffffffffffffffffffffffd77805f
+[MIDDLE-1] Middle-out: 40,500,000 offset: 20,250,000
+[MIDDLE-2] Middle-out: 41,000,000 offset: 20,500,000
+[SEQ-FWD] Forward: 42,000,000 @ 0x400000000000000000000000000280de80
+[SEQ-BWD] Backward: 43,000,000 @ 0x7ffffffffffffffffffffffffffd6fdf3f
+
+======================================================================
+Time: 232s | Total: 190,801,575 | Rate: 823741/s (2965466931/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 41,000,000 offset: 20,500,000
+[MIDDLE-2] Middle-out: 41,500,000 offset: 20,750,000
+[SEQ-BWD] Backward: 43,500,000 @ 0x7ffffffffffffffffffffffffffd683e1f
+[RANDOM-2] Random: 11,500,000
+[SEQ-FWD] Forward: 42,500,000 @ 0x4000000000000000000000000002887fa0
+[MIDDLE-1] Middle-out: 41,500,000 offset: 20,750,000
+[SEQ-FWD] Forward: 43,000,000 @ 0x40000000000000000000000000029020c0
+[MIDDLE-2] Middle-out: 42,000,000 offset: 21,000,000
+[SEQ-BWD] Backward: 44,000,000 @ 0x7ffffffffffffffffffffffffffd609cff
+[MIDDLE-1] Middle-out: 42,000,000 offset: 21,000,000
+[RANDOM-1] Random: 12,000,000
+[SEQ-FWD] Forward: 43,500,000 @ 0x400000000000000000000000000297c1e0
+[MIDDLE-2] Middle-out: 42,500,000 offset: 21,250,000
+[SEQ-BWD] Backward: 44,500,000 @ 0x7ffffffffffffffffffffffffffd58fbdf
+[MIDDLE-1] Middle-out: 42,500,000 offset: 21,250,000
+[SEQ-FWD] Forward: 44,000,000 @ 0x40000000000000000000000000029f6300
+[MIDDLE-2] Middle-out: 43,000,000 offset: 21,500,000
+
+======================================================================
+Time: 242s | Total: 199,020,163 | Rate: 823416/s (2964297639/hour)
+======================================================================
+[RANDOM-2] Random: 12,000,000
+[SEQ-BWD] Backward: 45,000,000 @ 0x7ffffffffffffffffffffffffffd515abf
+[MIDDLE-1] Middle-out: 43,000,000 offset: 21,500,000
+[SEQ-FWD] Forward: 44,500,000 @ 0x4000000000000000000000000002a70420
+[MIDDLE-2] Middle-out: 43,500,000 offset: 21,750,000
+[SEQ-BWD] Backward: 45,500,000 @ 0x7ffffffffffffffffffffffffffd49b99f
+[MIDDLE-1] Middle-out: 43,500,000 offset: 21,750,000
+[MIDDLE-2] Middle-out: 44,000,000 offset: 22,000,000
+[RANDOM-1] Random: 12,500,000
+[SEQ-FWD] Forward: 45,000,000 @ 0x4000000000000000000000000002aea540
+[SEQ-BWD] Backward: 46,000,000 @ 0x7ffffffffffffffffffffffffffd42187f
+[SEQ-FWD] Forward: 45,500,000 @ 0x4000000000000000000000000002b64660[MIDDLE-1] Middle-out: 44,000,000 offset: 22,000,000
+
+[MIDDLE-2] Middle-out: 44,500,000 offset: 22,250,000
+[SEQ-BWD] Backward: 46,500,000 @ 0x7ffffffffffffffffffffffffffd3a775f
+
+======================================================================
+Time: 252s | Total: 207,230,041 | Rate: 823191/s (2963486813/hour)
+======================================================================
+[SEQ-FWD] Forward: 46,000,000 @ 0x4000000000000000000000000002bde780
+[RANDOM-2] Random: 12,500,000
+[MIDDLE-2] Middle-out: 45,000,000 offset: 22,500,000
+[MIDDLE-1] Middle-out: 44,500,000 offset: 22,250,000
+[SEQ-BWD] Backward: 47,000,000 @ 0x7ffffffffffffffffffffffffffd32d63f
+[SEQ-FWD] Forward: 46,500,000 @ 0x4000000000000000000000000002c588a0
+[MIDDLE-1] Middle-out: 45,000,000 offset: 22,500,000
+[MIDDLE-2] Middle-out: 45,500,000 offset: 22,750,000
+[SEQ-BWD] Backward: 47,500,000 @ 0x7ffffffffffffffffffffffffffd2b351f
+[RANDOM-1] Random: 13,000,000
+[MIDDLE-1] Middle-out: 45,500,000 offset: 22,750,000
+[SEQ-FWD] Forward: 47,000,000 @ 0x4000000000000000000000000002cd29c0
+[SEQ-BWD] Backward: 48,000,000 @ 0x7ffffffffffffffffffffffffffd2393ff
+[MIDDLE-2] Middle-out: 46,000,000 offset: 23,000,000
+[SEQ-FWD] Forward: 47,500,000 @ 0x4000000000000000000000000002d4cae0
+[MIDDLE-1] Middle-out: 46,000,000 offset: 23,000,000
+[RANDOM-2] Random: 13,000,000
+[MIDDLE-2] Middle-out: 46,500,000 offset: 23,250,000
+[SEQ-BWD] Backward: 48,500,000 @ 0x7ffffffffffffffffffffffffffd1bf2df
+
+======================================================================
+Time: 262s | Total: 215,923,314 | Rate: 824720/s (2968990946/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 46,500,000 offset: 23,250,000
+[SEQ-FWD] Forward: 48,000,000 @ 0x4000000000000000000000000002dc6c00
+[SEQ-BWD] Backward: 49,000,000 @ 0x7ffffffffffffffffffffffffffd1451bf
+[MIDDLE-2] Middle-out: 47,000,000 offset: 23,500,000
+[MIDDLE-1] Middle-out: 47,000,000 offset: 23,500,000
+[SEQ-BWD] Backward: 49,500,000 @ 0x7ffffffffffffffffffffffffffd0cb09f
+[RANDOM-1] Random: 13,500,000
+[MIDDLE-2] Middle-out: 47,500,000 offset: 23,750,000
+[SEQ-FWD] Forward: 48,500,000 @ 0x4000000000000000000000000002e40d20
+[SEQ-BWD] Backward: 50,000,000 @ 0x7ffffffffffffffffffffffffffd050f7f
+[MIDDLE-1] Middle-out: 47,500,000 offset: 23,750,000
+[SEQ-FWD] Forward: 49,000,000 @ 0x4000000000000000000000000002ebae40[RANDOM-2] Random: 13,500,000
+
+[MIDDLE-2] Middle-out: 48,000,000 offset: 24,000,000
+[SEQ-BWD] Backward: 50,500,000 @ 0x7ffffffffffffffffffffffffffcfd6e5f
+[MIDDLE-1] Middle-out: 48,000,000 offset: 24,000,000
+[SEQ-FWD] Forward: 49,500,000 @ 0x4000000000000000000000000002f34f60
+[MIDDLE-2] Middle-out: 48,500,000 offset: 24,250,000
+
+======================================================================
+Time: 272s | Total: 224,803,870 | Rate: 827032/s (2977315585/hour)
+======================================================================
+[SEQ-BWD] Backward: 51,000,000 @ 0x7ffffffffffffffffffffffffffcf5cd3f
+[SEQ-FWD] Forward: 50,000,000 @ 0x4000000000000000000000000002faf080
+[MIDDLE-1] Middle-out: 48,500,000 offset: 24,250,000
+[MIDDLE-2] Middle-out: 49,000,000 offset: 24,500,000
+[RANDOM-1] Random: 14,000,000
+[SEQ-BWD] Backward: 51,500,000 @ 0x7ffffffffffffffffffffffffffcee2c1f
+[RANDOM-2] Random: 14,000,000
+[MIDDLE-1] Middle-out: 49,000,000 offset: 24,500,000
+[SEQ-FWD] Forward: 50,500,000 @ 0x40000000000000000000000000030291a0
+[MIDDLE-2] Middle-out: 49,500,000 offset: 24,750,000
+[SEQ-BWD] Backward: 52,000,000 @ 0x7ffffffffffffffffffffffffffce68aff
+[MIDDLE-2] Middle-out: 50,000,000 offset: 25,000,000
+[SEQ-FWD] Forward: 51,000,000 @ 0x40000000000000000000000000030a32c0
+[SEQ-BWD] Backward: 52,500,000 @ 0x7ffffffffffffffffffffffffffcdee9df
+[MIDDLE-1] Middle-out: 49,500,000 offset: 24,750,000
+[SEQ-FWD] Forward: 51,500,000 @ 0x400000000000000000000000000311d3e0
+
+======================================================================
+Time: 282s | Total: 233,520,408 | Rate: 828186/s (2981470688/hour)
+[MIDDLE-2] Middle-out: 50,500,000 offset: 25,250,000
+======================================================================
+[RANDOM-1] Random: 14,500,000
+[SEQ-BWD] Backward: 53,000,000 @ 0x7ffffffffffffffffffffffffffcd748bf
+[MIDDLE-1] Middle-out: 50,000,000 offset: 25,000,000
+[SEQ-FWD] Forward: 52,000,000 @ 0x4000000000000000000000000003197500
+[MIDDLE-2] Middle-out: 51,000,000 offset: 25,500,000
+[SEQ-BWD] Backward: 53,500,000 @ 0x7ffffffffffffffffffffffffffccfa79f
+[RANDOM-2] Random: 14,500,000
+[MIDDLE-1] Middle-out: 50,500,000 offset: 25,250,000
+[SEQ-FWD] Forward: 52,500,000 @ 0x4000000000000000000000000003211620
+[MIDDLE-2] Middle-out: 51,500,000 offset: 25,750,000
+[SEQ-BWD] Backward: 54,000,000 @ 0x7ffffffffffffffffffffffffffcc8067f
+[MIDDLE-1] Middle-out: 51,000,000 offset: 25,500,000
+[SEQ-FWD] Forward: 53,000,000 @ 0x400000000000000000000000000328b740
+[MIDDLE-2] Middle-out: 52,000,000 offset: 26,000,000
+[SEQ-BWD] Backward: 54,500,000 @ 0x7ffffffffffffffffffffffffffcc0655f
+[MIDDLE-1] Middle-out: 51,500,000 offset: 25,750,000
+
+======================================================================
+Time: 292s | Total: 242,014,099 | Rate: 828793/s (2983653792/hour)
+======================================================================
+[SEQ-FWD] Forward: 53,500,000 @ 0x4000000000000000000000000003305860
+[MIDDLE-2] Middle-out: 52,500,000 offset: 26,250,000
+[RANDOM-1] Random: 15,000,000
+[SEQ-BWD] Backward: 55,000,000 @ 0x7ffffffffffffffffffffffffffcb8c43f
+[MIDDLE-1] Middle-out: 52,000,000 offset: 26,000,000
+[SEQ-FWD] Forward: 54,000,000 @ 0x400000000000000000000000000337f980
+[MIDDLE-2] Middle-out: 53,000,000 offset: 26,500,000
+[RANDOM-2] Random: 15,000,000
+[SEQ-BWD] Backward: 55,500,000 @ 0x7ffffffffffffffffffffffffffcb1231f
+[MIDDLE-1] Middle-out: 52,500,000 offset: 26,250,000
+[SEQ-FWD] Forward: 54,500,000 @ 0x40000000000000000000000000033f9aa0
+[MIDDLE-2] Middle-out: 53,500,000 offset: 26,750,000
+[SEQ-BWD] Backward: 56,000,000 @ 0x7ffffffffffffffffffffffffffca981ff
+[MIDDLE-1] Middle-out: 53,000,000 offset: 26,500,000
+[SEQ-FWD] Forward: 55,000,000 @ 0x4000000000000000000000000003473bc0
+[MIDDLE-2] Middle-out: 54,000,000 offset: 27,000,000
+[RANDOM-1] Random: 15,500,000
+[SEQ-BWD] Backward: 56,500,000 @ 0x7ffffffffffffffffffffffffffca1e0df
+[SEQ-FWD] Forward: 55,500,000 @ 0x40000000000000000000000000034edce0
+======================================================================
+Time: 302s | Total: 250,650,463 | Rate: 829317/s (2985542820/hour)
+======================================================================
+
+[MIDDLE-1] Middle-out: 53,500,000 offset: 26,750,000
+[MIDDLE-2] Middle-out: 54,500,000 offset: 27,250,000
+[SEQ-BWD] Backward: 57,000,000 @ 0x7ffffffffffffffffffffffffffc9a3fbf
+[MIDDLE-1] Middle-out: 54,000,000 offset: 27,000,000
+[RANDOM-2] Random: 15,500,000
+[SEQ-FWD] Forward: 56,000,000 @ 0x4000000000000000000000000003567e00
+[SEQ-BWD] Backward: 57,500,000 @ 0x7ffffffffffffffffffffffffffc929e9f
+[SEQ-FWD] Forward: 56,500,000 @ 0x40000000000000000000000000035e1f20
+[MIDDLE-2] Middle-out: 55,000,000 offset: 27,500,000
+[MIDDLE-1] Middle-out: 54,500,000 offset: 27,250,000
+[SEQ-BWD] Backward: 58,000,000 @ 0x7ffffffffffffffffffffffffffc8afd7f
+[MIDDLE-2] Middle-out: 55,500,000 offset: 27,750,000
+[SEQ-FWD] Forward: 57,000,000 @ 0x400000000000000000000000000365c040
+[MIDDLE-1] Middle-out: 55,000,000 offset: 27,500,000
+
+======================================================================
+Time: 312s | Total: 258,626,795 | Rate: 828088/s (2981115813/hour)
+======================================================================
+[RANDOM-1] Random: 16,000,000
+[SEQ-BWD] Backward: 58,500,000 @ 0x7ffffffffffffffffffffffffffc835c5f
+[SEQ-FWD] Forward: 57,500,000 @ 0x40000000000000000000000000036d6160
+[MIDDLE-2] Middle-out: 56,000,000 offset: 28,000,000
+[MIDDLE-1] Middle-out: 55,500,000 offset: 27,750,000
+[RANDOM-2] Random: 16,000,000
+[SEQ-BWD] Backward: 59,000,000 @ 0x7ffffffffffffffffffffffffffc7bbb3f
+[SEQ-FWD] Forward: 58,000,000 @ 0x4000000000000000000000000003750280
+[MIDDLE-2] Middle-out: 56,500,000 offset: 28,250,000
+[MIDDLE-1] Middle-out: 56,000,000 offset: 28,000,000
+[SEQ-BWD] Backward: 59,500,000 @ 0x7ffffffffffffffffffffffffffc741a1f
+[MIDDLE-1] Middle-out: 56,500,000 offset: 28,250,000
+[MIDDLE-2] Middle-out: 57,000,000 offset: 28,500,000
+[SEQ-FWD] Forward: 58,500,000 @ 0x40000000000000000000000000037ca3a0
+[RANDOM-1] Random: 16,500,000
+[SEQ-BWD] Backward: 60,000,000 @ 0x7ffffffffffffffffffffffffffc6c78ff
+[MIDDLE-1] Middle-out: 57,000,000 offset: 28,500,000
+
+======================================================================
+Time: 322s | Total: 266,233,946 | Rate: 825900/s (2973241465/hour)
+======================================================================
+[SEQ-FWD] Forward: 59,000,000 @ 0x40000000000000000000000000038444c0
+[MIDDLE-2] Middle-out: 57,500,000 offset: 28,750,000
+[MIDDLE-1] Middle-out: 57,500,000 offset: 28,750,000
+[SEQ-BWD] Backward: 60,500,000 @ 0x7ffffffffffffffffffffffffffc64d7df
+[MIDDLE-2] Middle-out: 58,000,000 offset: 29,000,000
+[RANDOM-2] Random: 16,500,000
+[SEQ-FWD] Forward: 59,500,000 @ 0x40000000000000000000000000038be5e0
+[MIDDLE-1] Middle-out: 58,000,000 offset: 29,000,000
+[SEQ-BWD] Backward: 61,000,000 @ 0x7ffffffffffffffffffffffffffc5d36bf
+[MIDDLE-2] Middle-out: 58,500,000 offset: 29,250,000
+[SEQ-FWD] Forward: 60,000,000 @ 0x4000000000000000000000000003938700
+[MIDDLE-1] Middle-out: 58,500,000 offset: 29,250,000
+[SEQ-BWD] Backward: 61,500,000 @ 0x7ffffffffffffffffffffffffffc55959f
+[MIDDLE-2] Middle-out: 59,000,000 offset: 29,500,000
+[SEQ-FWD] Forward: 60,500,000 @ 0x40000000000000000000000000039b2820
+[RANDOM-1] Random: 17,000,000
+
+======================================================================
+Time: 332s | Total: 274,480,817 | Rate: 825789/s (2972840544/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 59,000,000 offset: 29,500,000
+[MIDDLE-2] Middle-out: 59,500,000 offset: 29,750,000
+[SEQ-BWD] Backward: 62,000,000 @ 0x7ffffffffffffffffffffffffffc4df47f
+[SEQ-FWD] Forward: 61,000,000 @ 0x4000000000000000000000000003a2c940
+[MIDDLE-1] Middle-out: 59,500,000 offset: 29,750,000
+[RANDOM-2] Random: 17,000,000
+[MIDDLE-2] Middle-out: 60,000,000 offset: 30,000,000
+[SEQ-BWD] Backward: 62,500,000 @ 0x7ffffffffffffffffffffffffffc46535f
+[SEQ-FWD] Forward: 61,500,000 @ 0x4000000000000000000000000003aa6a60
+[MIDDLE-1] Middle-out: 60,000,000 offset: 30,000,000
+[MIDDLE-2] Middle-out: 60,500,000 offset: 30,250,000
+[SEQ-BWD] Backward: 63,000,000 @ 0x7ffffffffffffffffffffffffffc3eb23f
+[SEQ-FWD] Forward: 62,000,000 @ 0x4000000000000000000000000003b20b80
+[MIDDLE-1] Middle-out: 60,500,000 offset: 30,250,000
+[MIDDLE-2] Middle-out: 61,000,000 offset: 30,500,000
+[SEQ-BWD] Backward: 63,500,000 @ 0x7ffffffffffffffffffffffffffc37111f
+[RANDOM-1] Random: 17,500,000
+[SEQ-FWD] Forward: 62,500,000 @ 0x4000000000000000000000000003b9aca0
+[MIDDLE-1] Middle-out: 61,000,000 offset: 30,500,000
+
+======================================================================
+Time: 343s | Total: 283,343,275 | Rate: 827220/s (2977990367/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 61,500,000 offset: 30,750,000
+[SEQ-BWD] Backward: 64,000,000 @ 0x7ffffffffffffffffffffffffffc2f6fff
+[SEQ-FWD] Forward: 63,000,000 @ 0x4000000000000000000000000003c14dc0
+[MIDDLE-1] Middle-out: 61,500,000 offset: 30,750,000
+[RANDOM-2] Random: 17,500,000
+[SEQ-BWD] Backward: 64,500,000 @ 0x7ffffffffffffffffffffffffffc27cedf
+[SEQ-FWD] Forward: 63,500,000 @ 0x4000000000000000000000000003c8eee0
+[MIDDLE-2] Middle-out: 62,000,000 offset: 31,000,000
+[MIDDLE-1] Middle-out: 62,000,000 offset: 31,000,000
+[SEQ-FWD] Forward: 64,000,000 @ 0x4000000000000000000000000003d09000
+[SEQ-BWD] Backward: 65,000,000 @ 0x7ffffffffffffffffffffffffffc202dbf
+[RANDOM-1] Random: 18,000,000
+[MIDDLE-2] Middle-out: 62,500,000 offset: 31,250,000
+[MIDDLE-1] Middle-out: 62,500,000 offset: 31,250,000
+[SEQ-BWD] Backward: 65,500,000 @ 0x7ffffffffffffffffffffffffffc188c9f
+[SEQ-FWD] Forward: 64,500,000 @ 0x4000000000000000000000000003d83120
+
+======================================================================
+Time: 353s | Total: 291,600,096 | Rate: 826975/s (2977110222/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 63,000,000 offset: 31,500,000
+[MIDDLE-1] Middle-out: 63,000,000 offset: 31,500,000
+[RANDOM-2] Random: 18,000,000
+[SEQ-BWD] Backward: 66,000,000 @ 0x7ffffffffffffffffffffffffffc10eb7f
+[SEQ-FWD] Forward: 65,000,000 @ 0x4000000000000000000000000003dfd240
+[MIDDLE-2] Middle-out: 63,500,000 offset: 31,750,000
+[MIDDLE-1] Middle-out: 63,500,000 offset: 31,750,000
+[SEQ-BWD] Backward: 66,500,000 @ 0x7ffffffffffffffffffffffffffc094a5f
+[SEQ-FWD] Forward: 65,500,000 @ 0x4000000000000000000000000003e77360
+[MIDDLE-2] Middle-out: 64,000,000 offset: 32,000,000
+[MIDDLE-1] Middle-out: 64,000,000 offset: 32,000,000
+[SEQ-BWD] Backward: 67,000,000 @ 0x7ffffffffffffffffffffffffffc01a93f
+[SEQ-FWD] Forward: 66,000,000 @ 0x4000000000000000000000000003ef1480
+[MIDDLE-2] Middle-out: 64,500,000 offset: 32,250,000
+[RANDOM-1] Random: 18,500,000
+[MIDDLE-1] Middle-out: 64,500,000 offset: 32,250,000
+
+======================================================================
+Time: 363s | Total: 299,753,065 | Rate: 826226/s (2974411909/hour)
+======================================================================
+[SEQ-BWD] Backward: 67,500,000 @ 0x7ffffffffffffffffffffffffffbfa081f
+[SEQ-FWD] Forward: 66,500,000 @ 0x4000000000000000000000000003f6b5a0
+[MIDDLE-2] Middle-out: 65,000,000 offset: 32,500,000
+[MIDDLE-1] Middle-out: 65,000,000 offset: 32,500,000
+[RANDOM-2] Random: 18,500,000
+[SEQ-FWD] Forward: 67,000,000 @ 0x4000000000000000000000000003fe56c0
+[SEQ-BWD] Backward: 68,000,000 @ 0x7ffffffffffffffffffffffffffbf266ff
+[MIDDLE-2] Middle-out: 65,500,000 offset: 32,750,000
+[MIDDLE-1] Middle-out: 65,500,000 offset: 32,750,000
+[SEQ-BWD] Backward: 68,500,000 @ 0x7ffffffffffffffffffffffffffbeac5df
+[SEQ-FWD] Forward: 67,500,000 @ 0x400000000000000000000000000405f7e0
+[MIDDLE-2] Middle-out: 66,000,000 offset: 33,000,000
+[MIDDLE-1] Middle-out: 66,000,000 offset: 33,000,000
+[RANDOM-1] Random: 19,000,000
+[SEQ-BWD] Backward: 69,000,000 @ 0x7ffffffffffffffffffffffffffbe324bf[SEQ-FWD] Forward: 68,000,000 @ 0x40000000000000000000000000040d9900
+
+
+======================================================================
+Time: 373s | Total: 308,058,649 | Rate: 826037/s (2973733537/hour)
+[MIDDLE-2] Middle-out: 66,500,000 offset: 33,250,000======================================================================
+
+[MIDDLE-1] Middle-out: 66,500,000 offset: 33,250,000
+[SEQ-BWD] Backward: 69,500,000 @ 0x7ffffffffffffffffffffffffffbdb839f
+[SEQ-FWD] Forward: 68,500,000 @ 0x4000000000000000000000000004153a20
+[RANDOM-2] Random: 19,000,000
+[MIDDLE-2] Middle-out: 67,000,000 offset: 33,500,000
+[MIDDLE-1] Middle-out: 67,000,000 offset: 33,500,000
+[SEQ-FWD] Forward: 69,000,000 @ 0x40000000000000000000000000041cdb40
+[SEQ-BWD] Backward: 70,000,000 @ 0x7ffffffffffffffffffffffffffbd3e27f
+[MIDDLE-2] Middle-out: 67,500,000 offset: 33,750,000
+[SEQ-FWD] Forward: 69,500,000 @ 0x4000000000000000000000000004247c60
+[MIDDLE-1] Middle-out: 67,500,000 offset: 33,750,000
+[SEQ-BWD] Backward: 70,500,000 @ 0x7ffffffffffffffffffffffffffbcc415f
+[MIDDLE-2] Middle-out: 68,000,000 offset: 34,000,000
+[SEQ-FWD] Forward: 70,000,000 @ 0x40000000000000000000000000042c1d80
+[MIDDLE-1] Middle-out: 68,000,000 offset: 34,000,000
+
+======================================================================
+Time: 383s | Total: 316,205,367 | Rate: 825679/s (2972444772/hour)
+======================================================================
+[RANDOM-1] Random: 19,500,000
+[SEQ-BWD] Backward: 71,000,000 @ 0x7ffffffffffffffffffffffffffbc4a03f
+[MIDDLE-2] Middle-out: 68,500,000 offset: 34,250,000
+[RANDOM-2] Random: 19,500,000
+[MIDDLE-1] Middle-out: 68,500,000 offset: 34,250,000
+[SEQ-BWD] Backward: 71,500,000 @ 0x7ffffffffffffffffffffffffffbbcff1f
+[SEQ-FWD] Forward: 70,500,000 @ 0x400000000000000000000000000433bea0
+[MIDDLE-2] Middle-out: 69,000,000 offset: 34,500,000
+[SEQ-BWD] Backward: 72,000,000 @ 0x7ffffffffffffffffffffffffffbb55dff
+[MIDDLE-1] Middle-out: 69,000,000 offset: 34,500,000
+[SEQ-FWD] Forward: 71,000,000 @ 0x40000000000000000000000000043b5fc0
+[MIDDLE-2] Middle-out: 69,500,000 offset: 34,750,000
+[MIDDLE-1] Middle-out: 69,500,000 offset: 34,750,000
+[SEQ-FWD] Forward: 71,500,000 @ 0x40000000000000000000000000044300e0
+[SEQ-BWD] Backward: 72,500,000 @ 0x7ffffffffffffffffffffffffffbadbcdf
+[RANDOM-1] Random: 20,000,000
+[MIDDLE-2] Middle-out: 70,000,000 offset: 35,000,000
+
+======================================================================
+Time: 393s | Total: 324,420,621 | Rate: 825557/s (2972003734/hour)
+======================================================================
+[RANDOM-2] Random: 20,000,000
+[MIDDLE-1] Middle-out: 70,000,000 offset: 35,000,000
+[SEQ-BWD] Backward: 73,000,000 @ 0x7ffffffffffffffffffffffffffba61bbf[SEQ-FWD] Forward: 72,000,000 @ 0x40000000000000000000000000044aa200
+
+[MIDDLE-2] Middle-out: 70,500,000 offset: 35,250,000
+[SEQ-FWD] Forward: 72,500,000 @ 0x4000000000000000000000000004524320
+[SEQ-BWD] Backward: 73,500,000 @ 0x7ffffffffffffffffffffffffffb9e7a9f
+[MIDDLE-1] Middle-out: 70,500,000 offset: 35,250,000
+[MIDDLE-2] Middle-out: 71,000,000 offset: 35,500,000
+[MIDDLE-1] Middle-out: 71,000,000 offset: 35,500,000[SEQ-FWD] Forward: 73,000,000 @ 0x400000000000000000000000000459e440
+
+[SEQ-BWD] Backward: 74,000,000 @ 0x7ffffffffffffffffffffffffffb96d97f
+[RANDOM-1] Random: 20,500,000
+[SEQ-BWD] Backward: 74,500,000 @ 0x7ffffffffffffffffffffffffffb8f385f
+[MIDDLE-1] Middle-out: 71,500,000 offset: 35,750,000[SEQ-FWD] Forward: 73,500,000 @ 0x4000000000000000000000000004618560
+
+[MIDDLE-2] Middle-out: 71,500,000 offset: 35,750,000
+
+======================================================================
+Time: 403s | Total: 332,500,587 | Rate: 824930/s (2969749069/hour)
+======================================================================
+[RANDOM-2] Random: 20,500,000
+[SEQ-BWD] Backward: 75,000,000 @ 0x7ffffffffffffffffffffffffffb87973f
+[SEQ-FWD] Forward: 74,000,000 @ 0x4000000000000000000000000004692680
+[MIDDLE-1] Middle-out: 72,000,000 offset: 36,000,000
+[MIDDLE-2] Middle-out: 72,000,000 offset: 36,000,000
+[SEQ-FWD] Forward: 74,500,000 @ 0x400000000000000000000000000470c7a0
+[SEQ-BWD] Backward: 75,500,000 @ 0x7ffffffffffffffffffffffffffb7ff61f
+[MIDDLE-1] Middle-out: 72,500,000 offset: 36,250,000
+[MIDDLE-2] Middle-out: 72,500,000 offset: 36,250,000
+[SEQ-FWD] Forward: 75,000,000 @ 0x40000000000000000000000000047868c0
+[SEQ-BWD] Backward: 76,000,000 @ 0x7ffffffffffffffffffffffffffb7854ff
+[MIDDLE-1] Middle-out: 73,000,000 offset: 36,500,000
+[MIDDLE-2] Middle-out: 73,000,000 offset: 36,500,000
+[RANDOM-1] Random: 21,000,000
+[SEQ-FWD] Forward: 75,500,000 @ 0x40000000000000000000000000048009e0
+[SEQ-BWD] Backward: 76,500,000 @ 0x7ffffffffffffffffffffffffffb70b3df
+
+======================================================================
+Time: 413s | Total: 341,217,010 | Rate: 825922/s (2973319204/hour)
+======================================================================
+[RANDOM-2] Random: 21,000,000
+[MIDDLE-1] Middle-out: 73,500,000 offset: 36,750,000
+[MIDDLE-2] Middle-out: 73,500,000 offset: 36,750,000
+[SEQ-FWD] Forward: 76,000,000 @ 0x400000000000000000000000000487ab00
+[SEQ-BWD] Backward: 77,000,000 @ 0x7ffffffffffffffffffffffffffb6912bf
+[MIDDLE-1] Middle-out: 74,000,000 offset: 37,000,000
+[MIDDLE-2] Middle-out: 74,000,000 offset: 37,000,000
+[SEQ-FWD] Forward: 76,500,000 @ 0x40000000000000000000000000048f4c20
+[SEQ-BWD] Backward: 77,500,000 @ 0x7ffffffffffffffffffffffffffb61719f
+[MIDDLE-1] Middle-out: 74,500,000 offset: 37,250,000
+[MIDDLE-2] Middle-out: 74,500,000 offset: 37,250,000
+[SEQ-BWD] Backward: 78,000,000 @ 0x7ffffffffffffffffffffffffffb59d07f
+[SEQ-FWD] Forward: 77,000,000 @ 0x400000000000000000000000000496ed40
+[RANDOM-1] Random: 21,500,000
+[MIDDLE-1] Middle-out: 75,000,000 offset: 37,500,000
+[MIDDLE-2] Middle-out: 75,000,000 offset: 37,500,000
+[SEQ-BWD] Backward: 78,500,000 @ 0x7ffffffffffffffffffffffffffb522f5f
+[SEQ-FWD] Forward: 77,500,000 @ 0x40000000000000000000000000049e8e60
+
+======================================================================
+Time: 423s | Total: 349,649,848 | Rate: 826095/s (2973943604/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 75,500,000 offset: 37,750,000
+[RANDOM-2] Random: 21,500,000
+[MIDDLE-2] Middle-out: 75,500,000 offset: 37,750,000
+[SEQ-BWD] Backward: 79,000,000 @ 0x7ffffffffffffffffffffffffffb4a8e3f
+[SEQ-FWD] Forward: 78,000,000 @ 0x4000000000000000000000000004a62f80
+[MIDDLE-1] Middle-out: 76,000,000 offset: 38,000,000
+[MIDDLE-2] Middle-out: 76,000,000 offset: 38,000,000
+[SEQ-BWD] Backward: 79,500,000 @ 0x7ffffffffffffffffffffffffffb42ed1f
+[SEQ-FWD] Forward: 78,500,000 @ 0x4000000000000000000000000004add0a0
+[MIDDLE-1] Middle-out: 76,500,000 offset: 38,250,000
+[MIDDLE-2] Middle-out: 76,500,000 offset: 38,250,000
+[SEQ-FWD] Forward: 79,000,000 @ 0x4000000000000000000000000004b571c0
+[SEQ-BWD] Backward: 80,000,000 @ 0x7ffffffffffffffffffffffffffb3b4bff
+[RANDOM-1] Random: 22,000,000
+
+======================================================================
+Time: 433s | Total: 357,620,965 | Rate: 825257/s (2970924630/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 77,000,000 offset: 38,500,000
+[SEQ-FWD] Forward: 79,500,000 @ 0x4000000000000000000000000004bd12e0
+[SEQ-BWD] Backward: 80,500,000 @ 0x7ffffffffffffffffffffffffffb33aadf[MIDDLE-2] Middle-out: 77,000,000 offset: 38,500,000
+
+[RANDOM-2] Random: 22,000,000
+[SEQ-FWD] Forward: 80,000,000 @ 0x4000000000000000000000000004c4b400
+[MIDDLE-1] Middle-out: 77,500,000 offset: 38,750,000
+[MIDDLE-2] Middle-out: 77,500,000 offset: 38,750,000
+[SEQ-BWD] Backward: 81,000,000 @ 0x7ffffffffffffffffffffffffffb2c09bf
+[SEQ-FWD] Forward: 80,500,000 @ 0x4000000000000000000000000004cc5520
+[MIDDLE-2] Middle-out: 78,000,000 offset: 39,000,000
+[MIDDLE-1] Middle-out: 78,000,000 offset: 39,000,000
+[SEQ-BWD] Backward: 81,500,000 @ 0x7ffffffffffffffffffffffffffb24689f
+[RANDOM-1] Random: 22,500,000
+[SEQ-FWD] Forward: 81,000,000 @ 0x4000000000000000000000000004d3f640
+[MIDDLE-1] Middle-out: 78,500,000 offset: 39,250,000
+[MIDDLE-2] Middle-out: 78,500,000 offset: 39,250,000
+[SEQ-BWD] Backward: 82,000,000 @ 0x7ffffffffffffffffffffffffffb1cc77f
+
+======================================================================
+Time: 444s | Total: 366,165,075 | Rate: 825611/s (2972201090/hour)
+======================================================================
+[SEQ-FWD] Forward: 81,500,000 @ 0x4000000000000000000000000004db9760
+[MIDDLE-1] Middle-out: 79,000,000 offset: 39,500,000
+[RANDOM-2] Random: 22,500,000
+[SEQ-BWD] Backward: 82,500,000 @ 0x7ffffffffffffffffffffffffffb15265f
+[MIDDLE-2] Middle-out: 79,000,000 offset: 39,500,000
+[SEQ-FWD] Forward: 82,000,000 @ 0x4000000000000000000000000004e33880
+[MIDDLE-1] Middle-out: 79,500,000 offset: 39,750,000
+[SEQ-BWD] Backward: 83,000,000 @ 0x7ffffffffffffffffffffffffffb0d853f
+[MIDDLE-2] Middle-out: 79,500,000 offset: 39,750,000
+[SEQ-FWD] Forward: 82,500,000 @ 0x4000000000000000000000000004ead9a0
+[MIDDLE-1] Middle-out: 80,000,000 offset: 40,000,000
+[RANDOM-1] Random: 23,000,000
+[SEQ-BWD] Backward: 83,500,000 @ 0x7ffffffffffffffffffffffffffb05e41f
+[MIDDLE-2] Middle-out: 80,000,000 offset: 40,000,000
+[SEQ-FWD] Forward: 83,000,000 @ 0x4000000000000000000000000004f27ac0
+[MIDDLE-1] Middle-out: 80,500,000 offset: 40,250,000
+
+======================================================================
+Time: 454s | Total: 374,406,869 | Rate: 825574/s (2972066699/hour)
+[SEQ-BWD] Backward: 84,000,000 @ 0x7ffffffffffffffffffffffffffafe42ff======================================================================
+
+[SEQ-FWD] Forward: 83,500,000 @ 0x4000000000000000000000000004fa1be0
+[MIDDLE-2] Middle-out: 80,500,000 offset: 40,250,000
+[MIDDLE-1] Middle-out: 81,000,000 offset: 40,500,000
+[SEQ-BWD] Backward: 84,500,000 @ 0x7ffffffffffffffffffffffffffaf6a1df
+[RANDOM-2] Random: 23,000,000
+[SEQ-FWD] Forward: 84,000,000 @ 0x400000000000000000000000000501bd00
+[MIDDLE-2] Middle-out: 81,000,000 offset: 40,500,000
+[MIDDLE-1] Middle-out: 81,500,000 offset: 40,750,000
+[SEQ-BWD] Backward: 85,000,000 @ 0x7ffffffffffffffffffffffffffaef00bf
+[SEQ-FWD] Forward: 84,500,000 @ 0x4000000000000000000000000005095e20
+[MIDDLE-2] Middle-out: 81,500,000 offset: 40,750,000
+[MIDDLE-1] Middle-out: 82,000,000 offset: 41,000,000
+[RANDOM-1] Random: 23,500,000
+[SEQ-BWD] Backward: 85,500,000 @ 0x7ffffffffffffffffffffffffffae75f9f
+[MIDDLE-2] Middle-out: 82,000,000 offset: 41,000,000
+[SEQ-FWD] Forward: 85,000,000 @ 0x400000000000000000000000000510ff40
+
+======================================================================
+Time: 464s | Total: 382,406,638 | Rate: 824771/s (2969174973/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 82,500,000 offset: 41,250,000
+[SEQ-BWD] Backward: 86,000,000 @ 0x7ffffffffffffffffffffffffffadfbe7f
+[MIDDLE-2] Middle-out: 82,500,000 offset: 41,250,000
+[RANDOM-2] Random: 23,500,000
+[SEQ-FWD] Forward: 85,500,000 @ 0x400000000000000000000000000518a060
+[MIDDLE-1] Middle-out: 83,000,000 offset: 41,500,000
+[SEQ-BWD] Backward: 86,500,000 @ 0x7ffffffffffffffffffffffffffad81d5f
+[MIDDLE-2] Middle-out: 83,000,000 offset: 41,500,000
+[SEQ-FWD] Forward: 86,000,000 @ 0x4000000000000000000000000005204180
+[MIDDLE-1] Middle-out: 83,500,000 offset: 41,750,000
+[RANDOM-1] Random: 24,000,000
+[SEQ-BWD] Backward: 87,000,000 @ 0x7ffffffffffffffffffffffffffad07c3f
+[SEQ-FWD] Forward: 86,500,000 @ 0x400000000000000000000000000527e2a0
+[MIDDLE-2] Middle-out: 83,500,000 offset: 41,750,000
+[MIDDLE-1] Middle-out: 84,000,000 offset: 42,000,000
+[SEQ-BWD] Backward: 87,500,000 @ 0x7ffffffffffffffffffffffffffac8db1f
+
+======================================================================
+Time: 474s | Total: 390,794,343 | Rate: 825052/s (2970188864/hour)
+======================================================================
+[SEQ-FWD] Forward: 87,000,000 @ 0x40000000000000000000000000052f83c0
+[MIDDLE-2] Middle-out: 84,000,000 offset: 42,000,000
+[MIDDLE-1] Middle-out: 84,500,000 offset: 42,250,000
+[SEQ-BWD] Backward: 88,000,000 @ 0x7ffffffffffffffffffffffffffac139ff
+[RANDOM-2] Random: 24,000,000
+[SEQ-FWD] Forward: 87,500,000 @ 0x40000000000000000000000000053724e0
+[MIDDLE-2] Middle-out: 84,500,000 offset: 42,250,000
+[SEQ-BWD] Backward: 88,500,000 @ 0x7ffffffffffffffffffffffffffab998df
+[MIDDLE-1] Middle-out: 85,000,000 offset: 42,500,000
+[SEQ-FWD] Forward: 88,000,000 @ 0x40000000000000000000000000053ec600
+[MIDDLE-2] Middle-out: 85,000,000 offset: 42,500,000
+[RANDOM-1] Random: 24,500,000
+[SEQ-BWD] Backward: 89,000,000 @ 0x7ffffffffffffffffffffffffffab1f7bf
+[MIDDLE-1] Middle-out: 85,500,000 offset: 42,750,000
+[SEQ-FWD] Forward: 88,500,000 @ 0x4000000000000000000000000005466720
+[MIDDLE-2] Middle-out: 85,500,000 offset: 42,750,000
+
+======================================================================
+Time: 484s | Total: 398,718,019 | Rate: 824364/s (2967710699/hour)
+======================================================================
+[SEQ-BWD] Backward: 89,500,000 @ 0x7ffffffffffffffffffffffffffaaa569f
+[SEQ-FWD] Forward: 89,000,000 @ 0x40000000000000000000000000054e0840
+[MIDDLE-1] Middle-out: 86,000,000 offset: 43,000,000
+[MIDDLE-2] Middle-out: 86,000,000 offset: 43,000,000
+[SEQ-BWD] Backward: 90,000,000 @ 0x7ffffffffffffffffffffffffffaa2b57f
+[SEQ-FWD] Forward: 89,500,000 @ 0x400000000000000000000000000555a960
+[MIDDLE-1] Middle-out: 86,500,000 offset: 43,250,000
+[RANDOM-2] Random: 24,500,000
+[MIDDLE-2] Middle-out: 86,500,000 offset: 43,250,000
+[SEQ-FWD] Forward: 90,000,000 @ 0x40000000000000000000000000055d4a80
+[RANDOM-1] Random: 25,000,000
+[SEQ-BWD] Backward: 90,500,000 @ 0x7ffffffffffffffffffffffffffa9b145f
+[MIDDLE-1] Middle-out: 87,000,000 offset: 43,500,000
+[MIDDLE-2] Middle-out: 87,000,000 offset: 43,500,000
+[SEQ-FWD] Forward: 90,500,000 @ 0x400000000000000000000000000564eba0
+[SEQ-BWD] Backward: 91,000,000 @ 0x7ffffffffffffffffffffffffffa93733f
+[MIDDLE-1] Middle-out: 87,500,000 offset: 43,750,000
+[MIDDLE-2] Middle-out: 87,500,000 offset: 43,750,000
+
+======================================================================
+Time: 494s | Total: 407,715,368 | Rate: 825684/s (2972463207/hour)
+======================================================================
+[SEQ-BWD] Backward: 91,500,000 @ 0x7ffffffffffffffffffffffffffa8bd21f
+[SEQ-FWD] Forward: 91,000,000 @ 0x40000000000000000000000000056c8cc0
+[MIDDLE-1] Middle-out: 88,000,000 offset: 44,000,000
+[RANDOM-2] Random: 25,000,000
+[SEQ-BWD] Backward: 92,000,000 @ 0x7ffffffffffffffffffffffffffa8430ff
+[MIDDLE-2] Middle-out: 88,000,000 offset: 44,000,000
+[SEQ-FWD] Forward: 91,500,000 @ 0x4000000000000000000000000005742de0
+[MIDDLE-1] Middle-out: 88,500,000 offset: 44,250,000
+[SEQ-BWD] Backward: 92,500,000 @ 0x7ffffffffffffffffffffffffffa7c8fdf
+[RANDOM-1] Random: 25,500,000
+[MIDDLE-2] Middle-out: 88,500,000 offset: 44,250,000
+[MIDDLE-1] Middle-out: 89,000,000 offset: 44,500,000
+[SEQ-FWD] Forward: 92,000,000 @ 0x40000000000000000000000000057bcf00
+[SEQ-BWD] Backward: 93,000,000 @ 0x7ffffffffffffffffffffffffffa74eebf
+[MIDDLE-2] Middle-out: 89,000,000 offset: 44,500,000
+[MIDDLE-1] Middle-out: 89,500,000 offset: 44,750,000
+[SEQ-FWD] Forward: 92,500,000 @ 0x4000000000000000000000000005837020
+[SEQ-BWD] Backward: 93,500,000 @ 0x7ffffffffffffffffffffffffffa6d4d9f
+[RANDOM-2] Random: 25,500,000
+
+======================================================================
+Time: 504s | Total: 416,510,703 | Rate: 826692/s (2976092007/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 89,500,000 offset: 44,750,000
+[SEQ-FWD] Forward: 93,000,000 @ 0x40000000000000000000000000058b1140
+[MIDDLE-1] Middle-out: 90,000,000 offset: 45,000,000
+[SEQ-BWD] Backward: 94,000,000 @ 0x7ffffffffffffffffffffffffffa65ac7f
+[SEQ-FWD] Forward: 93,500,000 @ 0x400000000000000000000000000592b260
+[MIDDLE-2] Middle-out: 90,000,000 offset: 45,000,000
+[RANDOM-1] Random: 26,000,000
+[SEQ-BWD] Backward: 94,500,000 @ 0x7ffffffffffffffffffffffffffa5e0b5f
+[MIDDLE-1] Middle-out: 90,500,000 offset: 45,250,000
+[SEQ-FWD] Forward: 94,000,000 @ 0x40000000000000000000000000059a5380
+[SEQ-BWD] Backward: 95,000,000 @ 0x7ffffffffffffffffffffffffffa566a3f
+[MIDDLE-2] Middle-out: 90,500,000 offset: 45,250,000
+[RANDOM-2] Random: 26,000,000
+[MIDDLE-1] Middle-out: 91,000,000 offset: 45,500,000
+[SEQ-FWD] Forward: 94,500,000 @ 0x4000000000000000000000000005a1f4a0
+
+======================================================================
+Time: 514s | Total: 424,356,624 | Rate: 825725/s (2972610221/hour)
+======================================================================
+[SEQ-BWD] Backward: 95,500,000 @ 0x7ffffffffffffffffffffffffffa4ec91f
+[MIDDLE-2] Middle-out: 91,000,000 offset: 45,500,000
+[MIDDLE-1] Middle-out: 91,500,000 offset: 45,750,000
+[SEQ-FWD] Forward: 95,000,000 @ 0x4000000000000000000000000005a995c0
+[SEQ-BWD] Backward: 96,000,000 @ 0x7ffffffffffffffffffffffffffa4727ff
+[MIDDLE-2] Middle-out: 91,500,000 offset: 45,750,000
+[MIDDLE-1] Middle-out: 92,000,000 offset: 46,000,000
+[RANDOM-1] Random: 26,500,000
+[SEQ-FWD] Forward: 95,500,000 @ 0x4000000000000000000000000005b136e0
+[SEQ-BWD] Backward: 96,500,000 @ 0x7ffffffffffffffffffffffffffa3f86df
+[MIDDLE-1] Middle-out: 92,500,000 offset: 46,250,000
+[MIDDLE-2] Middle-out: 92,000,000 offset: 46,000,000
+[RANDOM-2] Random: 26,500,000
+[SEQ-FWD] Forward: 96,000,000 @ 0x4000000000000000000000000005b8d800
+[SEQ-BWD] Backward: 97,000,000 @ 0x7ffffffffffffffffffffffffffa37e5bf
+[MIDDLE-1] Middle-out: 93,000,000 offset: 46,500,000
+[MIDDLE-2] Middle-out: 92,500,000 offset: 46,250,000
+======================================================================
+
+Time: 524s | Total: 432,929,544 | Rate: 826221/s (2974394419/hour)
+======================================================================
+[SEQ-FWD] Forward: 96,500,000 @ 0x4000000000000000000000000005c07920
+[SEQ-BWD] Backward: 97,500,000 @ 0x7ffffffffffffffffffffffffffa30449f
+[MIDDLE-1] Middle-out: 93,500,000 offset: 46,750,000
+[MIDDLE-2] Middle-out: 93,000,000 offset: 46,500,000
+[SEQ-FWD] Forward: 97,000,000 @ 0x4000000000000000000000000005c81a40
+[SEQ-BWD] Backward: 98,000,000 @ 0x7ffffffffffffffffffffffffffa28a37f
+[RANDOM-1] Random: 27,000,000
+[MIDDLE-1] Middle-out: 94,000,000 offset: 47,000,000
+[MIDDLE-2] Middle-out: 93,500,000 offset: 46,750,000
+[RANDOM-2] Random: 27,000,000
+[SEQ-BWD] Backward: 98,500,000 @ 0x7ffffffffffffffffffffffffffa21025f
+[SEQ-FWD] Forward: 97,500,000 @ 0x4000000000000000000000000005cfbb60
+[MIDDLE-1] Middle-out: 94,500,000 offset: 47,250,000
+[MIDDLE-2] Middle-out: 94,000,000 offset: 47,000,000
+[SEQ-FWD] Forward: 98,000,000 @ 0x4000000000000000000000000005d75c80
+[SEQ-BWD] Backward: 99,000,000 @ 0x7ffffffffffffffffffffffffffa19613f
+[MIDDLE-1] Middle-out: 95,000,000 offset: 47,500,000
+
+======================================================================
+Time: 534s | Total: 441,562,000 | Rate: 826777/s (2976398886/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 94,500,000 offset: 47,250,000
+[SEQ-BWD] Backward: 99,500,000 @ 0x7ffffffffffffffffffffffffffa11c01f
+[SEQ-FWD] Forward: 98,500,000 @ 0x4000000000000000000000000005defda0
+[MIDDLE-1] Middle-out: 95,500,000 offset: 47,750,000
+[RANDOM-1] Random: 27,500,000
+[MIDDLE-2] Middle-out: 95,000,000 offset: 47,500,000
+[SEQ-BWD] Backward: 100,000,000 @ 0x7ffffffffffffffffffffffffffa0a1eff
+[SEQ-FWD] Forward: 99,000,000 @ 0x4000000000000000000000000005e69ec0
+[MIDDLE-1] Middle-out: 96,000,000 offset: 48,000,000
+[MIDDLE-2] Middle-out: 95,500,000 offset: 47,750,000
+[RANDOM-2] Random: 27,500,000
+[SEQ-FWD] Forward: 99,500,000 @ 0x4000000000000000000000000005ee3fe0
+[SEQ-BWD] Backward: 100,500,000 @ 0x7ffffffffffffffffffffffffffa027ddf
+[MIDDLE-1] Middle-out: 96,500,000 offset: 48,250,000[MIDDLE-2] Middle-out: 96,000,000 offset: 48,000,000
+
+[SEQ-BWD] Backward: 101,000,000 @ 0x7ffffffffffffffffffffffffff9fadcbf
+[SEQ-FWD] Forward: 100,000,000 @ 0x4000000000000000000000000005f5e100
+
+======================================================================
+Time: 544s | Total: 450,428,455 | Rate: 827639/s (2979501472/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 97,000,000 offset: 48,500,000
+[MIDDLE-2] Middle-out: 96,500,000 offset: 48,250,000
+[RANDOM-1] Random: 28,000,000
+[SEQ-BWD] Backward: 101,500,000 @ 0x7ffffffffffffffffffffffffff9f33b9f
+[SEQ-FWD] Forward: 100,500,000 @ 0x4000000000000000000000000005fd8220
+[MIDDLE-1] Middle-out: 97,500,000 offset: 48,750,000
+[SEQ-BWD] Backward: 102,000,000 @ 0x7ffffffffffffffffffffffffff9eb9a7f
+[MIDDLE-2] Middle-out: 97,000,000 offset: 48,500,000
+[SEQ-FWD] Forward: 101,000,000 @ 0x4000000000000000000000000006052340
+[MIDDLE-1] Middle-out: 98,000,000 offset: 49,000,000
+[SEQ-BWD] Backward: 102,500,000 @ 0x7ffffffffffffffffffffffffff9e3f95f
+[MIDDLE-2] Middle-out: 97,500,000 offset: 48,750,000
+[RANDOM-2] Random: 28,000,000
+[SEQ-FWD] Forward: 101,500,000 @ 0x40000000000000000000000000060cc460
+[MIDDLE-1] Middle-out: 98,500,000 offset: 49,250,000
+[SEQ-BWD] Backward: 103,000,000 @ 0x7ffffffffffffffffffffffffff9dc583f
+
+======================================================================
+Time: 554s | Total: 458,266,786 | Rate: 826728/s (2976219435/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 98,000,000 offset: 49,000,000
+[SEQ-FWD] Forward: 102,000,000 @ 0x4000000000000000000000000006146580
+[RANDOM-1] Random: 28,500,000
+[MIDDLE-1] Middle-out: 99,000,000 offset: 49,500,000
+[SEQ-BWD] Backward: 103,500,000 @ 0x7ffffffffffffffffffffffffff9d4b71f
+[MIDDLE-2] Middle-out: 98,500,000 offset: 49,250,000
+[SEQ-FWD] Forward: 102,500,000 @ 0x40000000000000000000000000061c06a0
+[SEQ-BWD] Backward: 104,000,000 @ 0x7ffffffffffffffffffffffffff9cd15ff
+[MIDDLE-1] Middle-out: 99,500,000 offset: 49,750,000
+[SEQ-FWD] Forward: 103,000,000 @ 0x400000000000000000000000000623a7c0
+[MIDDLE-2] Middle-out: 99,000,000 offset: 49,500,000
+[MIDDLE-1] Middle-out: 100,000,000 offset: 50,000,000
+[RANDOM-2] Random: 28,500,000
+[SEQ-BWD] Backward: 104,500,000 @ 0x7ffffffffffffffffffffffffff9c574df
+[SEQ-FWD] Forward: 103,500,000 @ 0x40000000000000000000000000062b48e0
+[MIDDLE-2] Middle-out: 99,500,000 offset: 49,750,000
+
+======================================================================
+Time: 564s | Total: 466,264,215 | Rate: 826211/s (2974360651/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 100,500,000 offset: 50,250,000
+[RANDOM-1] Random: 29,000,000
+[SEQ-BWD] Backward: 105,000,000 @ 0x7ffffffffffffffffffffffffff9bdd3bf
+[SEQ-FWD] Forward: 104,000,000 @ 0x400000000000000000000000000632ea00
+[MIDDLE-2] Middle-out: 100,000,000 offset: 50,000,000
+[MIDDLE-1] Middle-out: 101,000,000 offset: 50,500,000
+[SEQ-FWD] Forward: 104,500,000 @ 0x40000000000000000000000000063a8b20
+[SEQ-BWD] Backward: 105,500,000 @ 0x7ffffffffffffffffffffffffff9b6329f
+[MIDDLE-2] Middle-out: 100,500,000 offset: 50,250,000
+[MIDDLE-1] Middle-out: 101,500,000 offset: 50,750,000
+[SEQ-FWD] Forward: 105,000,000 @ 0x4000000000000000000000000006422c40
+[SEQ-BWD] Backward: 106,000,000 @ 0x7ffffffffffffffffffffffffff9ae917f
+[MIDDLE-2] Middle-out: 101,000,000 offset: 50,500,000
+[RANDOM-2] Random: 29,000,000
+[MIDDLE-1] Middle-out: 102,000,000 offset: 51,000,000
+[SEQ-FWD] Forward: 105,500,000 @ 0x400000000000000000000000000649cd60
+[SEQ-BWD] Backward: 106,500,000 @ 0x7ffffffffffffffffffffffffff9a6f05f
+[RANDOM-1] Random: 29,500,000
+
+======================================================================
+Time: 574s | Total: 474,727,328 | Rate: 826475/s (2975310594/hour)
+======================================================================
+[MIDDLE-2] Middle-out: 101,500,000 offset: 50,750,000
+[SEQ-FWD] Forward: 106,000,000 @ 0x4000000000000000000000000006516e80
+[MIDDLE-1] Middle-out: 102,500,000 offset: 51,250,000
+[SEQ-BWD] Backward: 107,000,000 @ 0x7ffffffffffffffffffffffffff99f4f3f
+[MIDDLE-2] Middle-out: 102,000,000 offset: 51,000,000
+[SEQ-FWD] Forward: 106,500,000 @ 0x4000000000000000000000000006590fa0
+[MIDDLE-1] Middle-out: 103,000,000 offset: 51,500,000
+[SEQ-BWD] Backward: 107,500,000 @ 0x7ffffffffffffffffffffffffff997ae1f
+[MIDDLE-2] Middle-out: 102,500,000 offset: 51,250,000
+[MIDDLE-1] Middle-out: 103,500,000 offset: 51,750,000
+[RANDOM-2] Random: 29,500,000
+[SEQ-FWD] Forward: 107,000,000 @ 0x400000000000000000000000000660b0c0
+[SEQ-BWD] Backward: 108,000,000 @ 0x7ffffffffffffffffffffffffff9900cff
+[RANDOM-1] Random: 30,000,000
+[SEQ-FWD] Forward: 107,500,000 @ 0x40000000000000000000000000066851e0
+[MIDDLE-1] Middle-out: 104,000,000 offset: 52,000,000
+[MIDDLE-2] Middle-out: 103,000,000 offset: 51,500,000
+
+======================================================================
+Time: 584s | Total: 483,121,474 | Rate: 826600/s (2975761390/hour)
+======================================================================
+[SEQ-BWD] Backward: 108,500,000 @ 0x7ffffffffffffffffffffffffff9886bdf
+[MIDDLE-1] Middle-out: 104,500,000 offset: 52,250,000
+[MIDDLE-2] Middle-out: 103,500,000 offset: 51,750,000
+[SEQ-FWD] Forward: 108,000,000 @ 0x40000000000000000000000000066ff300
+[SEQ-BWD] Backward: 109,000,000 @ 0x7ffffffffffffffffffffffffff980cabf
+[MIDDLE-1] Middle-out: 105,000,000 offset: 52,500,000
+[SEQ-FWD] Forward: 108,500,000 @ 0x4000000000000000000000000006779420
+[MIDDLE-2] Middle-out: 104,000,000 offset: 52,000,000
+[SEQ-BWD] Backward: 109,500,000 @ 0x7ffffffffffffffffffffffffff979299f
+[RANDOM-2] Random: 30,000,000
+[SEQ-FWD] Forward: 109,000,000 @ 0x40000000000000000000000000067f3540
+[MIDDLE-1] Middle-out: 105,500,000 offset: 52,750,000
+[RANDOM-1] Random: 30,500,000
+[MIDDLE-2] Middle-out: 104,500,000 offset: 52,250,000
+[SEQ-BWD] Backward: 110,000,000 @ 0x7ffffffffffffffffffffffffff971887f
+[SEQ-FWD] Forward: 109,500,000 @ 0x400000000000000000000000000686d660
+
+======================================================================
+[MIDDLE-1] Middle-out: 106,000,000 offset: 53,000,000Time: 595s | Total: 491,655,288 | Rate: 826857/s (2976686357/hour)
+
+======================================================================
+[MIDDLE-2] Middle-out: 105,000,000 offset: 52,500,000
+[SEQ-BWD] Backward: 110,500,000 @ 0x7ffffffffffffffffffffffffff969e75f
+[SEQ-FWD] Forward: 110,000,000 @ 0x40000000000000000000000000068e7780
+[MIDDLE-1] Middle-out: 106,500,000 offset: 53,250,000
+[SEQ-BWD] Backward: 111,000,000 @ 0x7ffffffffffffffffffffffffff962463f
+[MIDDLE-2] Middle-out: 105,500,000 offset: 52,750,000
+[MIDDLE-1] Middle-out: 107,000,000 offset: 53,500,000
+[SEQ-BWD] Backward: 111,500,000 @ 0x7ffffffffffffffffffffffffff95aa51f
+[SEQ-FWD] Forward: 110,500,000 @ 0x40000000000000000000000000069618a0
+[MIDDLE-2] Middle-out: 106,000,000 offset: 53,000,000
+[RANDOM-2] Random: 30,500,000
+[RANDOM-1] Random: 31,000,000
+[SEQ-BWD] Backward: 112,000,000 @ 0x7ffffffffffffffffffffffffff95303ff
+[SEQ-FWD] Forward: 111,000,000 @ 0x40000000000000000000000000069db9c0
+[MIDDLE-1] Middle-out: 107,500,000 offset: 53,750,000
+[MIDDLE-2] Middle-out: 106,500,000 offset: 53,250,000
+
+======================================================================
+Time: 605s | Total: 500,016,780 | Rate: 826908/s (2976868861/hour)
+======================================================================
+[SEQ-BWD] Backward: 112,500,000 @ 0x7ffffffffffffffffffffffffff94b62df
+[SEQ-FWD] Forward: 111,500,000 @ 0x4000000000000000000000000006a55ae0
+[MIDDLE-1] Middle-out: 108,000,000 offset: 54,000,000
+[MIDDLE-2] Middle-out: 107,000,000 offset: 53,500,000
+[SEQ-BWD] Backward: 113,000,000 @ 0x7ffffffffffffffffffffffffff943c1bf
+[SEQ-FWD] Forward: 112,000,000 @ 0x4000000000000000000000000006acfc00
+[MIDDLE-1] Middle-out: 108,500,000 offset: 54,250,000
+[MIDDLE-2] Middle-out: 107,500,000 offset: 53,750,000
+[RANDOM-2] Random: 31,000,000
+[SEQ-BWD] Backward: 113,500,000 @ 0x7ffffffffffffffffffffffffff93c209f
+[RANDOM-1] Random: 31,500,000
+[SEQ-FWD] Forward: 112,500,000 @ 0x4000000000000000000000000006b49d20
+[MIDDLE-1] Middle-out: 109,000,000 offset: 54,500,000
+[SEQ-BWD] Backward: 114,000,000 @ 0x7ffffffffffffffffffffffffff9347f7f
+[MIDDLE-2] Middle-out: 108,000,000 offset: 54,000,000
+[SEQ-FWD] Forward: 113,000,000 @ 0x4000000000000000000000000006bc3e40
+
+======================================================================
+Time: 615s | Total: 508,260,311 | Rate: 826724/s (2976208050/hour)
+======================================================================
+[SEQ-BWD] Backward: 114,500,000 @ 0x7ffffffffffffffffffffffffff92cde5f
+[MIDDLE-2] Middle-out: 108,500,000 offset: 54,250,000
+[MIDDLE-1] Middle-out: 109,500,000 offset: 54,750,000
+[SEQ-FWD] Forward: 113,500,000 @ 0x4000000000000000000000000006c3df60
+[SEQ-BWD] Backward: 115,000,000 @ 0x7ffffffffffffffffffffffffff9253d3f
+[MIDDLE-2] Middle-out: 109,000,000 offset: 54,500,000
+[SEQ-FWD] Forward: 114,000,000 @ 0x4000000000000000000000000006cb8080
+[MIDDLE-1] Middle-out: 110,000,000 offset: 55,000,000
+[RANDOM-2] Random: 31,500,000
+[SEQ-BWD] Backward: 115,500,000 @ 0x7ffffffffffffffffffffffffff91d9c1f
+[MIDDLE-2] Middle-out: 109,500,000 offset: 54,750,000
+[RANDOM-1] Random: 32,000,000
+[SEQ-FWD] Forward: 114,500,000 @ 0x4000000000000000000000000006d321a0
+[MIDDLE-1] Middle-out: 110,500,000 offset: 55,250,000
+[MIDDLE-2] Middle-out: 110,000,000 offset: 55,000,000
+[SEQ-BWD] Backward: 116,000,000 @ 0x7ffffffffffffffffffffffffff915faff
+[SEQ-FWD] Forward: 115,000,000 @ 0x4000000000000000000000000006dac2c0
+[MIDDLE-1] Middle-out: 111,000,000 offset: 55,500,000
+
+======================================================================
+Time: 625s | Total: 516,370,186 | Rate: 826356/s (2974882500/hour)
+======================================================================
+[SEQ-FWD] Forward: 115,500,000 @ 0x4000000000000000000000000006e263e0
+[SEQ-BWD] Backward: 116,500,000 @ 0x7ffffffffffffffffffffffffff90e59df
+[MIDDLE-2] Middle-out: 110,500,000 offset: 55,250,000
+[MIDDLE-1] Middle-out: 111,500,000 offset: 55,750,000
+[SEQ-FWD] Forward: 116,000,000 @ 0x4000000000000000000000000006ea0500
+[RANDOM-1] Random: 32,500,000
+[MIDDLE-2] Middle-out: 111,000,000 offset: 55,500,000
+[MIDDLE-1] Middle-out: 112,000,000 offset: 56,000,000
+[SEQ-BWD] Backward: 117,000,000 @ 0x7ffffffffffffffffffffffffff906b8bf
+[RANDOM-2] Random: 32,000,000
+[MIDDLE-1] Middle-out: 112,500,000 offset: 56,250,000
+[SEQ-FWD] Forward: 116,500,000 @ 0x4000000000000000000000000006f1a620
+[MIDDLE-2] Middle-out: 111,500,000 offset: 55,750,000
+[SEQ-BWD] Backward: 117,500,000 @ 0x7ffffffffffffffffffffffffff8ff179f
+[MIDDLE-1] Middle-out: 113,000,000 offset: 56,500,000
+
+======================================================================
+Time: 635s | Total: 524,770,829 | Rate: 826005/s (2973617660/hour)
+======================================================================
+[SEQ-FWD] Forward: 117,000,000 @ 0x4000000000000000000000000006f94740
+[SEQ-BWD] Backward: 118,000,000 @ 0x7ffffffffffffffffffffffffff8f7767f[MIDDLE-2] Middle-out: 112,000,000 offset: 56,000,000
+
+[MIDDLE-1] Middle-out: 113,500,000 offset: 56,750,000
+[RANDOM-1] Random: 33,000,000
+[SEQ-FWD] Forward: 117,500,000 @ 0x400000000000000000000000000700e860[SEQ-BWD] Backward: 118,500,000 @ 0x7ffffffffffffffffffffffffff8efd55f
+
+[MIDDLE-2] Middle-out: 112,500,000 offset: 56,250,000
+[RANDOM-2] Random: 32,500,000
+[MIDDLE-1] Middle-out: 114,000,000 offset: 57,000,000
+[SEQ-FWD] Forward: 118,000,000 @ 0x4000000000000000000000000007088980
+[MIDDLE-2] Middle-out: 113,000,000 offset: 56,500,000
+[SEQ-BWD] Backward: 119,000,000 @ 0x7ffffffffffffffffffffffffff8e8343f
+[MIDDLE-1] Middle-out: 114,500,000 offset: 57,250,000
+[MIDDLE-2] Middle-out: 113,500,000 offset: 56,750,000[SEQ-BWD] Backward: 119,500,000 @ 0x7ffffffffffffffffffffffffff8e0931f
+
+
+======================================================================
+Time: 645s | Total: 532,261,325 | Rate: 824721/s (2968995083/hour)
+======================================================================
+[SEQ-FWD] Forward: 118,500,000 @ 0x4000000000000000000000000007102aa0
+[MIDDLE-2] Middle-out: 114,000,000 offset: 57,000,000
+[MIDDLE-1] Middle-out: 115,000,000 offset: 57,500,000
+[SEQ-BWD] Backward: 120,000,000 @ 0x7ffffffffffffffffffffffffff8d8f1ff
+[RANDOM-1] Random: 33,500,000
+[SEQ-FWD] Forward: 119,000,000 @ 0x400000000000000000000000000717cbc0
+[RANDOM-2] Random: 33,000,000
+[MIDDLE-2] Middle-out: 114,500,000 offset: 57,250,000
+[MIDDLE-1] Middle-out: 115,500,000 offset: 57,750,000
+[SEQ-BWD] Backward: 120,500,000 @ 0x7ffffffffffffffffffffffffff8d150df
+[SEQ-FWD] Forward: 119,500,000 @ 0x40000000000000000000000000071f6ce0
+[MIDDLE-2] Middle-out: 115,000,000 offset: 57,500,000
+[MIDDLE-1] Middle-out: 116,000,000 offset: 58,000,000
+[SEQ-BWD] Backward: 121,000,000 @ 0x7ffffffffffffffffffffffffff8c9afbf
+
+======================================================================
+Time: 655s | Total: 539,598,356 | Rate: 823300/s (2963880436/hour)
+======================================================================
+[SEQ-FWD] Forward: 120,000,000 @ 0x4000000000000000000000000007270e00
+[MIDDLE-2] Middle-out: 115,500,000 offset: 57,750,000
+[SEQ-BWD] Backward: 121,500,000 @ 0x7ffffffffffffffffffffffffff8c20e9f
+[MIDDLE-1] Middle-out: 116,500,000 offset: 58,250,000
+[SEQ-FWD] Forward: 120,500,000 @ 0x40000000000000000000000000072eaf20
+[RANDOM-1] Random: 34,000,000
+[MIDDLE-1] Middle-out: 117,000,000 offset: 58,500,000
+[SEQ-BWD] Backward: 122,000,000 @ 0x7ffffffffffffffffffffffffff8ba6d7f
+[MIDDLE-2] Middle-out: 116,000,000 offset: 58,000,000
+[RANDOM-2] Random: 33,500,000
+[SEQ-FWD] Forward: 121,000,000 @ 0x4000000000000000000000000007365040
+[MIDDLE-2] Middle-out: 116,500,000 offset: 58,250,000
+[MIDDLE-1] Middle-out: 117,500,000 offset: 58,750,000
+[SEQ-BWD] Backward: 122,500,000 @ 0x7ffffffffffffffffffffffffff8b2cc5f
+[SEQ-FWD] Forward: 121,500,000 @ 0x40000000000000000000000000073df160
+
+======================================================================
+Time: 666s | Total: 546,972,532 | Rate: 821823/s (2958562870/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 118,000,000 offset: 59,000,000
+[MIDDLE-2] Middle-out: 117,000,000 offset: 58,500,000
+[SEQ-BWD] Backward: 123,000,000 @ 0x7ffffffffffffffffffffffffff8ab2b3f
+[SEQ-FWD] Forward: 122,000,000 @ 0x4000000000000000000000000007459280
+[SEQ-BWD] Backward: 123,500,000 @ 0x7ffffffffffffffffffffffffff8a38a1f
+[MIDDLE-1] Middle-out: 118,500,000 offset: 59,250,000
+[MIDDLE-2] Middle-out: 117,500,000 offset: 58,750,000
+[RANDOM-1] Random: 34,500,000
+[SEQ-FWD] Forward: 122,500,000 @ 0x40000000000000000000000000074d33a0
+[SEQ-BWD] Backward: 124,000,000 @ 0x7ffffffffffffffffffffffffff89be8ff
+[MIDDLE-1] Middle-out: 119,000,000 offset: 59,500,000
+[MIDDLE-2] Middle-out: 118,000,000 offset: 59,000,000
+[RANDOM-2] Random: 34,000,000
+[SEQ-FWD] Forward: 123,000,000 @ 0x400000000000000000000000000754d4c0
+
+======================================================================
+Time: 676s | Total: 554,219,541 | Rate: 820361/s (2953299939/hour)
+======================================================================
+[SEQ-BWD] Backward: 124,500,000 @ 0x7ffffffffffffffffffffffffff89447df
+[MIDDLE-1] Middle-out: 119,500,000 offset: 59,750,000
+[MIDDLE-2] Middle-out: 118,500,000 offset: 59,250,000
+[SEQ-FWD] Forward: 123,500,000 @ 0x40000000000000000000000000075c75e0
+[SEQ-BWD] Backward: 125,000,000 @ 0x7ffffffffffffffffffffffffff88ca6bf
+[RANDOM-1] Random: 35,000,000
+[MIDDLE-1] Middle-out: 120,000,000 offset: 60,000,000
+[MIDDLE-2] Middle-out: 119,000,000 offset: 59,500,000
+[SEQ-FWD] Forward: 124,000,000 @ 0x4000000000000000000000000007641700
+[SEQ-BWD] Backward: 125,500,000 @ 0x7ffffffffffffffffffffffffff885059f
+[RANDOM-2] Random: 34,500,000
+[MIDDLE-1] Middle-out: 120,500,000 offset: 60,250,000
+[MIDDLE-2] Middle-out: 119,500,000 offset: 59,750,000
+[SEQ-FWD] Forward: 124,500,000 @ 0x40000000000000000000000000076bb820
+[SEQ-BWD] Backward: 126,000,000 @ 0x7ffffffffffffffffffffffffff87d647f
+
+======================================================================
+Time: 686s | Total: 561,636,042 | Rate: 819180/s (2949046345/hour)
+======================================================================
+[MIDDLE-1] Middle-out: 121,000,000 offset: 60,500,000
+[MIDDLE-2] Middle-out: 120,000,000 offset: 60,000,000
+[SEQ-FWD] Forward: 125,000,000 @ 0x4000000000000000000000000007735940
+[SEQ-BWD] Backward: 126,500,000 @ 0x7ffffffffffffffffffffffffff875c35f
+[MIDDLE-1] Middle-out: 121,500,000 offset: 60,750,000
+[MIDDLE-2] Middle-out: 120,500,000 offset: 60,250,000
+[SEQ-FWD] Forward: 125,500,000 @ 0x40000000000000000000000000077afa60
+[RANDOM-1] Random: 35,500,000
