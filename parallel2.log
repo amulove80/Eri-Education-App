@@ -1,3 +1,5 @@
 [PARALLEL-2] Starting focused search on top candidates...
 [PARALLEL-2] [11:09:04] Tested: 946,455 | Rate: 31548/s
 [PARALLEL-2] [11:09:34] Tested: 1,735,833 | Rate: 28931/s
+[PARALLEL-2] [11:10:04] Tested: 2,824,149 | Rate: 31379/s
+[PARALLEL-2] [11:10:34] Tested: 3,677,391 | Rate: 30645/s
